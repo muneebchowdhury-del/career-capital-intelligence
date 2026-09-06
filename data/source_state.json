@@ -10,13 +10,13 @@
     }
   },
   "signal:EUROSTAT-JVS-EU": {
-    "last_checked_at": "2026-09-06T10:48:01Z",
-    "final_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/jvs_q_r21?lang=EN&geo=EU27_2020&freq=Q&indic_em=JOBRATE&sizeclas=TOTAL&s_adj=NSA&lastTimePeriod=12",
-    "last_success_at": "2026-09-06T10:48:02Z",
+    "last_checked_at": "2026-09-06T10:58:38Z",
+    "final_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/jvs_q_r21?lang=EN&geo=EU27_2020&freq=Q&indic_em=JVR&sizeclas=TOTAL&s_adj=NSA&lastTimePeriod=4",
+    "last_success_at": "2026-09-06T10:58:39Z",
     "last_error": null,
     "last_result": {
-      "rows": 0,
-      "new": 0
+      "rows": 87,
+      "new": 87
     }
   },
   "watch:S1": {

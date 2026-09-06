@@ -1,7 +1,7 @@
 {
-  "observation_count": 124,
-  "current_observation_count": 124,
-  "last_run_at": "2026-09-06T10:56:36Z",
+  "observation_count": 211,
+  "current_observation_count": 211,
+  "last_run_at": "2026-09-06T10:58:39Z",
   "last_run_status": "success",
   "last_collector": "LIVE-EUROSTAT-JVS"
 }
