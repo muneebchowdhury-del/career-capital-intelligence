@@ -12,7 +12,16 @@ TARGETS={
  'config/sources.json':(['sources.00.part','sources.01.part'],'bc06f647f401e2d90bc152a27b462e9065ae0ba9139054037f0dcee709372284'),
 }
 for target,(names,expected) in TARGETS.items():
-    data=b''.join((PARTS/n).read_bytes() for n in names)
+    chunks=[(PARTS/n).read_bytes() for n in names]
+    # The first HTML upload included a duplicated continuation after the known
+    # 12 KB split marker. Cut at the original split boundary; the unchanged
+    # expected SHA-256 below still proves the reconstructed file is exact.
+    if target=='docs/index.html':
+        marker=b'<select id="xMetric"></'
+        pos=chunks[0].find(marker)
+        if pos<0: raise SystemExit('HTML split marker not found')
+        chunks[0]=chunks[0][:pos+len(marker)]
+    data=b''.join(chunks)
     got=hashlib.sha256(data).hexdigest()
     print(f'{target}: {got}')
     if got!=expected: raise SystemExit(f'hash mismatch for {target}: expected {expected}, got {got}')
