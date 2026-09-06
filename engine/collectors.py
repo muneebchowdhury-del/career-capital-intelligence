@@ -70,7 +70,13 @@ def parse_eurostat_jsonstat(payload,cfg):
             allowed.append(r['dimension_key'])
     return [r for r in rows if r['dimension_key'] in allowed]
 def collect_signal(source,state):
-    cfg=source['config']; query=cfg.get('incrementalQuery') if state.get(source['id'],{}).get('last_success_at') else cfg.get('bootstrapQuery'); url=cfg['endpoint']+('?' + urlencode(query or {})); body,headers,final=safe_fetch(url,headers={'Accept':'application/json'}); payload=json.loads(body.decode('utf-8'))
+    cfg=source['config']; raw_query=cfg.get('incrementalQuery') if state.get(source['id'],{}).get('last_success_at') else cfg.get('bootstrapQuery'); query=dict(raw_query or {})
+    # Eurostat's current employment-indicator code for Job Vacancy Rate is JVR.
+    # Older seed configurations used JOBRATE; translate it at runtime so historical
+    # config files remain reproducible while the collector follows the current code list.
+    if cfg.get('adapter')=='eurostat_jsonstat_dimension_history' and str(query.get('indic_em','')).upper()=='JOBRATE':
+        query['indic_em']='JVR'
+    url=cfg['endpoint']+('?' + urlencode(query)); body,headers,final=safe_fetch(url,headers={'Accept':'application/json'}); payload=json.loads(body.decode('utf-8'))
     if cfg.get('adapter')=='eurostat_jsonstat_dimension_history':
         rows=parse_eurostat_jsonstat(payload,cfg)
         if not rows:
