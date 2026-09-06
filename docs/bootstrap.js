@@ -29,6 +29,36 @@
     if(!rows?.length){liveSignals.textContent='No structured signal observations yet. They appear after the first successful scheduled collector run.';return}
     for(const x of rows.slice(0,18)){const row=document.createElement('div');row.className='rawRow';const a=document.createElement('b'),b=document.createElement('span'),c=document.createElement('b'),d=document.createElement('span');a.textContent=x.metric_label||x.metric_key;b.textContent=`${x.geography||'—'} · ${x.dimension_label||x.dimension_key||'Total'}`;c.textContent=`${Number(x.value).toLocaleString(undefined,{maximumFractionDigits:2})} ${x.unit||''}`.trim();d.textContent=`${x.period} · fetched ${fmtDate(x.fetched_at)}`;row.append(a,b,c,d);liveSignals.appendChild(row)}
   }
+  function strategicSectors(rows){return (rows||[]).filter(x=>/^[A-Z]$/.test(x.dimension_key||'')).sort((a,b)=>Number(b.latest?.Germany?.value??-999)-Number(a.latest?.Germany?.value??-999))}
+  function addLaborRows(target,rows,metric){
+    target.textContent='';
+    const list=strategicSectors(rows).slice(0,8);
+    if(!list.length){target.textContent='No current sector observations.';return}
+    for(const x of list){
+      const de=x.latest?.Germany,eu=x.latest?.EU27,m=x.momentum_4q_change?.Germany,spread=x.germany_vs_eu_spread;
+      const row=document.createElement('div');row.className='rawRow';
+      const a=document.createElement('b'),b=document.createElement('span'),c=document.createElement('b'),d=document.createElement('span');
+      a.textContent=x.dimension_label||x.dimension_key;
+      b.textContent=`DE ${de?`${Number(de.value).toFixed(1)}% · ${de.period}`:'—'} · EU ${eu?`${Number(eu.value).toFixed(1)}% · ${eu.period}`:'—'}`;
+      c.textContent=metric==='vacancy'?`DE–EU ${spread==null?'—':`${spread>0?'+':''}${Number(spread).toFixed(1)} pp`}`:`YoY ${de?`${Number(de.value).toFixed(1)}%`:'—'}`;
+      d.textContent=`${metric==='vacancy'?'4Q vacancy change':'4Q growth-rate change'}: ${m==null?'—':`${m>0?'+':''}${Number(m).toFixed(1)} pp`}`;
+      row.append(a,b,c,d);target.appendChild(row);
+    }
+  }
+  function renderLabor(labor,db){
+    const table=document.querySelector('.tablePanel');if(!table||!labor)return;
+    const section=document.createElement('section');section.className='sectionGrid';section.id='laborIntelligenceSection';
+    const vacancy=document.createElement('div');vacancy.className='panel';
+    const vh=document.createElement('h2');vh.textContent='Labor demand pressure';
+    const vs=document.createElement('div');vs.className='sub';vs.textContent='Official job vacancy rates by sector · Germany vs EU · evidence only, not a ranking input.';
+    const vlist=document.createElement('div');vlist.className='rawList';vlist.style.marginTop='12px';addLaborRows(vlist,labor.sectors,'vacancy');vacancy.append(vh,vs,vlist);
+    const cost=document.createElement('div');cost.className='panel';
+    const ch=document.createElement('h2');ch.textContent='Labor cost pressure';
+    const cs=document.createElement('div');cs.className='sub';cs.textContent='Nominal hourly labor-cost growth by sector · separate NACE mapping · evidence only.';
+    const clist=document.createElement('div');clist.className='rawList';clist.style.marginTop='12px';addLaborRows(clist,labor.labor_cost_sectors,'cost');cost.append(ch,cs,clist);
+    section.append(vacancy,cost);table.parentNode.insertBefore(section,table);
+    const note=document.createElement('div');note.className='info';note.style.margin='0 0 18px';const mapped=(labor.node_signals||[]).length;note.textContent=`Labor intelligence: ${labor.sector_count||0} vacancy sectors, ${labor.labor_cost_sector_count||0} labor-cost sectors, ${mapped} opportunity nodes mapped. These signals are observational evidence only; rankings remain unchanged until the scoring methodology is explicitly validated.`;section.parentNode.insertBefore(note,table);
+  }
   const db=await getJSON('./data/latest.json');renderHero(db);if(syncChip)syncChip.textContent='Data: static live snapshot';window.startCapitalDashboard(db);
   try{
     const st=await getJSON('./data/status.json');
@@ -37,13 +67,14 @@
     if(reviewQueueChip)reviewQueueChip.textContent=`Review queue: ${st.pending_review??0}`;
     if(discoveryChip)discoveryChip.textContent=`New discoveries: ${st.new_discovered_items??0}`;
     if(snapshotCountChip)snapshotCountChip.textContent=`Snapshots: ${st.snapshot_count??0}`;
-    if(sourceCountChip)sourceCountChip.textContent=`Evidence sources: ${(db.sources||[]).length}`;
+    if(sourceCountChip)sourceCountChip.textContent=`Evidence sources: ${st.source_count??(db.sources||[]).length}`;
     if(syncChip)syncChip.textContent='Data: Git-backed static live';
   }catch(e){if(statusEl)statusEl.textContent='Static data status unavailable: '+e.message}
   try{
     const rows=await getJSON('./data/signals-latest.json');renderSignals(rows);
     const st=await getJSON('./data/signal-status.json');if(signalStatus)signalStatus.textContent=`${st.observation_count||0} stored raw observation(s), ${st.current_observation_count||0} current. Latest collector: ${st.last_collector||'—'} · ${st.last_run_status||'—'}.`;if(signalCountChip)signalCountChip.textContent=`Signal observations: ${st.observation_count||0}`;if(signalRunChip)signalRunChip.textContent=`Signal refresh: ${fmtDate(st.last_run_at)}`;
   }catch(e){if(liveSignals)liveSignals.textContent='Structured signal files have not been generated yet.';if(signalStatus)signalStatus.textContent=e.message}
+  try{renderLabor(await getJSON('./data/labor-intelligence.json'),db)}catch(e){console.warn('Labor intelligence unavailable:',e)}
   let hist=[];
   try{hist=await getJSON('./data/history-index.json');historyFrom.textContent='';historyTo.textContent='';if(!hist.length){historySummary.textContent='No snapshots yet.';historyCompare.disabled=true}else{hist.forEach(x=>{option(historyFrom,x);option(historyTo,x)});historyTo.value=hist[0].id;historyFrom.value=(hist[1]||hist[0]).id;historyCompare.disabled=hist.length<2;historySummary.textContent=hist.length<2?'One snapshot exists. A later validated dataset will create comparison history.':'Choose two snapshots and compare validated changes.'}}catch(e){historySummary.textContent='History unavailable: '+e.message;historyCompare.disabled=true}
   if(historyCompare)historyCompare.onclick=async()=>{if(!historyFrom.value||!historyTo.value)return;historyCompare.disabled=true;historySummary.textContent='Comparing…';try{const [a,b]=await Promise.all([getJSON(`./data/history/${encodeURIComponent(historyFrom.value)}.json`),getJSON(`./data/history/${encodeURIComponent(historyTo.value)}.json`)]);renderDiff(compareSnapshots(a,b))}catch(e){historySummary.textContent='Could not compare snapshots: '+e.message}finally{historyCompare.disabled=false}};
