@@ -71,7 +71,13 @@ def parse_eurostat_jsonstat(payload,cfg):
     return [r for r in rows if r['dimension_key'] in allowed]
 def collect_signal(source,state):
     cfg=source['config']; query=cfg.get('incrementalQuery') if state.get(source['id'],{}).get('last_success_at') else cfg.get('bootstrapQuery'); url=cfg['endpoint']+('?' + urlencode(query or {})); body,headers,final=safe_fetch(url,headers={'Accept':'application/json'}); payload=json.loads(body.decode('utf-8'))
-    if cfg.get('adapter')=='eurostat_jsonstat_dimension_history': return parse_eurostat_jsonstat(payload,cfg),{'final_url':final,'etag':headers.get('ETag'),'last_modified':headers.get('Last-Modified')}
+    if cfg.get('adapter')=='eurostat_jsonstat_dimension_history':
+        rows=parse_eurostat_jsonstat(payload,cfg)
+        if not rows:
+            values=payload.get('value')
+            value_count=len(values) if isinstance(values,(list,dict)) else None
+            raise ValueError(f"Eurostat returned zero rows; ids={payload.get('id')!r}; size={payload.get('size')!r}; value_count={value_count!r}; label={payload.get('label')!r}")
+        return rows,{'final_url':final,'etag':headers.get('ETag'),'last_modified':headers.get('Last-Modified')}
     raise ValueError(f"unknown signal adapter {cfg.get('adapter')}")
 def collect_watch(source,state):
     cfg=source['config']; prev=state.get(source['id'],{}); hdr={}
