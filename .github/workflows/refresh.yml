@@ -1,0 +1,74 @@
+name: Refresh intelligence data
+on:
+  workflow_dispatch:
+    inputs:
+      run_all:
+        description: Run every enabled source regardless of cadence
+        type: boolean
+        default: false
+  schedule:
+    - cron: '17 4 * * *'
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: intelligence-refresh
+  cancel-in-progress: false
+jobs:
+  refresh-and-deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
+      - name: Build current state
+        run: |
+          python scripts/build_site.py
+          python scripts/build_standalone.py
+      - name: Test before refresh
+        run: python -m unittest discover -s tests -v
+      - name: Refresh due sources
+        run: |
+          if [ "${{ inputs.run_all }}" = "true" ]; then
+            python scripts/refresh.py --all
+          else
+            python scripts/refresh.py
+          fi
+      - name: Build static site data and local SQLite
+        run: |
+          python scripts/build_site.py
+          python scripts/build_standalone.py
+      - name: Test generated state
+        run: |
+          python -m unittest discover -s tests -v
+          node --check docs/app-core.js
+          node --check docs/bootstrap.js
+      - name: Commit refreshed evidence store
+        shell: bash
+        run: |
+          git config user.name "capital-intel-bot"
+          git config user.email "capital-intel-bot@users.noreply.github.com"
+          git add data docs config
+          if git diff --cached --quiet; then
+            echo "No repository changes."
+          else
+            git commit -m "data: automated intelligence refresh"
+            git push
+          fi
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Upload current dashboard
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: docs
+      - name: Deploy current dashboard
+        id: deployment
+        uses: actions/deploy-pages@v4
