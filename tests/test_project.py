@@ -12,12 +12,18 @@ class ProjectTests(unittest.TestCase):
         missing=refs-ids
         self.assertEqual(missing,set(),f'missing DOM ids: {missing}')
     def test_generated_json_exists_and_valid(self):
-        for rel in ['docs/data/latest.json','docs/data/status.json','docs/data/signals-latest.json','docs/data/signal-status.json','docs/data/history-index.json']:
+        for rel in ['docs/data/latest.json','docs/data/status.json','docs/data/signals-latest.json','docs/data/signal-status.json','docs/data/history-index.json','docs/data/labor-intelligence.json']:
             p=ROOT/rel;self.assertTrue(p.exists(),rel);json.loads(p.read_text())
     def test_latest_has_nodes(self):
         d=json.loads((ROOT/'docs/data/latest.json').read_text());self.assertGreaterEqual(len(d['nodes']),16);self.assertGreaterEqual(len(d['sources']),20)
     def test_source_registry(self):
-        d=json.loads((ROOT/'config/sources.json').read_text());ids=[x['id'] for x in d['sources']];self.assertEqual(len(ids),len(set(ids)));self.assertTrue(any(x['kind']=='signal' for x in d['sources']));self.assertTrue(any(x['kind']=='discovery' for x in d['sources']))
+        ids=[]; kinds=[]
+        for rel in ['config/sources.json','config/labor-sources.json']:
+            d=json.loads((ROOT/rel).read_text()); ids.extend(x['id'] for x in d['sources']); kinds.extend(x['kind'] for x in d['sources'])
+        self.assertEqual(len(ids),len(set(ids)));self.assertIn('signal',kinds);self.assertIn('discovery',kinds)
+    def test_labor_output_is_evidence_only(self):
+        d=json.loads((ROOT/'docs/data/labor-intelligence.json').read_text())
+        self.assertIn('sectors',d);self.assertIn('node_signals',d);self.assertIn('do not automatically change opportunity scores',d['methodology']['ranking_use'])
     def test_workflows_zero_cost(self):
         text='\n'.join(p.read_text() for p in (ROOT/'.github/workflows').glob('*.yml'))
         self.assertIn('actions/checkout@v6',text);self.assertIn('actions/setup-python@v7',text);self.assertNotIn('wrangler',text.lower());self.assertNotIn('aws',text.lower())
