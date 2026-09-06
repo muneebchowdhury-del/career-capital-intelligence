@@ -16,6 +16,16 @@ class RefreshTests(unittest.TestCase):
             return ([{'source_id':'GOOD','metric_key':'m','metric_label':'M','geography':'DE','dimension_key':'J','dimension_label':'Info','period':'2026-Q1','value':1.0,'unit':'%','source_url':'https://example.com'}],{})
         row=refresh.execute_refresh(sources,self.store,{},run_all=True,collectors={'signal':fake})
         self.assertEqual(row['status'],'partial');self.assertEqual(row['summary']['success'],1);self.assertEqual(row['summary']['failed'],1);self.assertEqual(len(self.store.current_observations()),1)
+    def test_manual_sources_are_skipped_by_automation_but_explicitly_targetable(self):
+        sources=[{'id':'auto','kind':'signal','name':'Auto','enabled':True,'cadenceDays':1,'config':{}},{'id':'manual','kind':'signal','name':'Manual','enabled':True,'cadenceDays':1,'config':{}}]
+        calls=[]
+        def fake(src,state):
+            calls.append(src['id'])
+            return ([{'source_id':src['id'],'metric_key':'m','metric_label':'M','geography':'DE','dimension_key':'J','dimension_label':'Info','period':'2026-Q1','value':1.0,'unit':'%','source_url':'https://example.com'}],{})
+        row=refresh.execute_refresh(sources,self.store,{},run_all=True,collectors={'signal':fake},manual_ids={'manual'})
+        self.assertEqual(calls,['auto']);self.assertEqual(row['summary']['manual_skipped'],1);self.assertEqual(row['summary']['failed'],0)
+        calls.clear();row2=refresh.execute_refresh(sources,self.store,{},selected=['manual'],collectors={'signal':fake},manual_ids={'manual'})
+        self.assertEqual(calls,['manual']);self.assertEqual(row2['summary']['success'],1)
     def test_discovery_baseline_then_review(self):
         src={'id':'d','kind':'discovery','name':'D','enabled':True,'cadenceDays':1,'config':{}}
         calls=[[{'url':'https://example.com/one','title':'One'}],[{'url':'https://example.com/one','title':'One'},{'url':'https://example.com/two','title':'Two'}]]
