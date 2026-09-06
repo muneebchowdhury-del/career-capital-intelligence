@@ -1,0 +1,40 @@
+name: Assemble staged readable sources
+on:
+  push:
+    branches: [staging-v5]
+    paths:
+      - 'upload_parts/**'
+      - 'scripts/assemble_upload.py'
+      - '.github/workflows/assemble-staging.yml'
+permissions:
+  contents: write
+jobs:
+  assemble-test-clean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: staging-v5
+          fetch-depth: 0
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
+      - name: Assemble and verify exact source hashes
+        run: python scripts/assemble_upload.py
+      - name: Build generated state
+        run: |
+          python scripts/build_site.py
+          python scripts/build_standalone.py
+      - name: Run full project tests
+        run: |
+          python -m unittest discover -s tests -v
+          node --check docs/app-core.js
+          node --check docs/bootstrap.js
+      - name: Commit clean assembled staging tree
+        run: |
+          git config user.name "capital-intel-bootstrap"
+          git config user.email "capital-intel-bootstrap@users.noreply.github.com"
+          git add -A
+          git commit -m "feat: assemble verified zero-cost dashboard source"
+          git push origin staging-v5
