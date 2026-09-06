@@ -13,6 +13,7 @@ concurrency:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -30,6 +31,21 @@ jobs:
           python -m unittest discover -s tests -v
           node --check docs/app-core.js
           node --check docs/bootstrap.js
+      - name: Install browser smoke-test runtime
+        run: |
+          npm install --no-save playwright@1.55.0
+          npx playwright install --with-deps chromium
+      - name: Browser-test built dashboard
+        shell: bash
+        run: |
+          python -m http.server 4173 --directory docs >/tmp/dashboard-http.log 2>&1 &
+          server_pid=$!
+          trap 'kill $server_pid || true' EXIT
+          for i in {1..20}; do
+            if curl -fsS http://127.0.0.1:4173/ >/dev/null; then break; fi
+            sleep 1
+          done
+          node tests/ui-smoke.js http://127.0.0.1:4173/
       - name: Configure Pages
         uses: actions/configure-pages@v5
         with:
@@ -41,3 +57,16 @@ jobs:
       - name: Deploy Pages
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: Browser-test live Pages deployment
+        shell: bash
+        env:
+          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+        run: |
+          for i in {1..6}; do
+            if node tests/ui-smoke.js "$PAGE_URL"; then
+              exit 0
+            fi
+            sleep 10
+          done
+          echo "Live Pages browser smoke test failed after retries." >&2
+          exit 1
