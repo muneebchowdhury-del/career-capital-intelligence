@@ -1,0 +1,18 @@
+{
+  "manual_review_only": [
+    "watch:S1",
+    "watch:S2",
+    "watch:S3",
+    "watch:S4",
+    "watch:S5",
+    "watch:S11",
+    "watch:S12",
+    "watch:S17",
+    "watch:S19",
+    "watch:S20",
+    "watch:S22",
+    "discover:D1-IEA-investment",
+    "discover:D3-Gartner-newsroom"
+  ],
+  "reason": "These authoritative sources returned persistent HTTP 403 or timeout responses from GitHub-hosted runner IPs during the 2026-09-06 live smoke test. They remain evidence sources but are excluded from unattended automated health and refresh until a zero-cost reliable fetch path exists."
+}
