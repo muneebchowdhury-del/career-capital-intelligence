@@ -1,0 +1,264 @@
+{
+  "signal:EUROSTAT-JVS-DE": {
+    "last_checked_at": "2026-09-06T10:48:00Z",
+    "final_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/jvs_q_r21?lang=EN&geo=DE&freq=Q&indic_em=JOBRATE&sizeclas=TOTAL&s_adj=NSA&lastTimePeriod=12",
+    "last_success_at": "2026-09-06T10:48:01Z",
+    "last_error": null,
+    "last_result": {
+      "rows": 0,
+      "new": 0
+    }
+  },
+  "signal:EUROSTAT-JVS-EU": {
+    "last_checked_at": "2026-09-06T10:48:01Z",
+    "final_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/jvs_q_r21?lang=EN&geo=EU27_2020&freq=Q&indic_em=JOBRATE&sizeclas=TOTAL&s_adj=NSA&lastTimePeriod=12",
+    "last_success_at": "2026-09-06T10:48:02Z",
+    "last_error": null,
+    "last_result": {
+      "rows": 0,
+      "new": 0
+    }
+  },
+  "watch:S1": {
+    "last_checked_at": "2026-09-06T10:48:02Z",
+    "last_error": "HTTPError: HTTP Error 403: Forbidden"
+  },
+  "watch:S2": {
+    "last_checked_at": "2026-09-06T10:48:03Z",
+    "last_error": "HTTPError: HTTP Error 403: Forbidden"
+  },
+  "watch:S3": {
+    "last_checked_at": "2026-09-06T10:48:05Z",
+    "last_error": "TimeoutError: The read operation timed out"
+  },
+  "watch:S4": {
+    "last_checked_at": "2026-09-06T10:48:46Z",
+    "last_error": "HTTPError: HTTP Error 403: Forbidden"
+  },
+  "watch:S5": {
+    "last_checked_at": "2026-09-06T10:48:47Z",
+    "last_error": "HTTPError: HTTP Error 403: Forbidden"
+  },
+  "watch:S6": {
+    "last_checked_at": "2026-09-06T10:48:48Z",
+    "fingerprint": "e9b89bfb94c2080a27ee5e31fe22a7843a7b3c2fdc2c5373c7cb9b220ba0fdd4",
+    "text_chars": 4159,
+    "final_url": "https://www.semiconductors.org/global-annual-semiconductor-sales-increase-25-6-to-791-7-billion-in-2025/",
+    "last_success_at": "2026-09-06T10:48:48Z",
+    "last_error": null,
+    "last_result": {
+      "changed": false,
+      "not_modified": false
+    }
+  },
+  "watch:S7": {
+    "last_checked_at": "2026-09-06T10:48:48Z",
+    "fingerprint": "52a845e2d0cbcf9d0c0640c4b32b61bdb1ddd8a6a0e27e73647a4f5a5e782ff4",
+    "text_chars": 11714,
+    "final_url": "https://www.sipri.org/media/press-release/2026/global-military-spending-rise-continues-european-and-asian-expenditures-surge",
+    "etag": "\"1788441278-gzip\"",
+    "last_modified": "Thu, 03 Sep 2026 13:14:38 GMT",
+    "last_success_at": "2026-09-06T10:48:52Z",
+    "last_error": null,
+    "last_result": {
+      "changed": false,
+      "not_modified": false
+    }
+  },
+  "watch:S8": {
+    "last_checked_at": "2026-09-06T10:48:52Z",
+    "fingerprint": "37f2e6d6d55cb7954a307873f0e11c7f84ab1a7d4d03d2f0eaa908bd1aec30c8",
+    "text_chars": 1855,
+    "final_url": "https://dealroom.co/reports/defence-security-and-resilience-in-europe-2026",
+    "last_success_at": "2026-09-06T10:48:52Z",
+    "last_error": null,
+    "last_result": {
+      "changed": false,
+      "not_modified": false
+    }
+  },
+  "watch:S9": {
+    "last_checked_at": "2026-09-06T10:48:52Z",
+    "fingerprint": "caa919f76ffd3afdfdd4cb65ad38e4a2f038ea34e33948b6b5d0d4d2d08c6226",
+    "text_chars": 11159,
+    "final_url": "https://ifr.org/worldrobotics/report-2025",
+    "last_modified": "Sun, 06 Sep 2026 10:48:53 GMT",
+    "last_success_at": "2026-09-06T10:48:53Z",
+    "last_error": null,
+    "last_result": {
+      "changed": false,
+      "not_modified": false
+    }
+  },
+  "watch:S10": {
+    "last_checked_at": "2026-09-06T10:48:53Z",
+    "fingerprint": "2c3a4eef0c559cc853a153a247ebffd961e2113d0ca395eb447b27a044198b33",
+    "text_chars": 18531,
+    "final_url": "https://ifr.org/ifr-press-releases/en/news/",
+    "last_modified": "Sun, 06 Sep 2026 10:48:54 GMT",
+    "last_success_at": "2026-09-06T10:48:54Z",
+    "last_error": null,
+    "last_result": {
+      "changed": false,
+      "not_modified": false
+    }
+  },
+  "watch:S11": {
+    "last_checked_at": "2026-09-06T10:48:54Z",
+    "last_error": "HTTPError: HTTP Error 403: Forbidden"
+  },
+  "watch:S12": {
+    "last_checked_at": "2026-09-06T10:48:55Z",
+    "last_error": "TimeoutError: The read operation timed out"
+  },
+  "watch:S13": {
+    "last_checked_at": "2026-09-06T10:49:36Z",
+    "fingerprint": "500790d119fbe442d38160fd66d8140ba308f8815ed1c485da36ca9dc32d40eb",
+    "text_chars": 11746,
+    "final_url": "https://kpmg.com/xx/en/media/press-releases/2026/07/vc-investment-already-at-five-year-high-of-billions.html",
+    "etag": "\"2e186-65acc02d2d6dd-gzip\"",
+    "last_modified": "Sun, 06 Sep 2026 08:08:47 GMT",
+    "last_success_at": "2026-09-06T10:49:37Z",
+    "last_error": null,
+    "last_result": {
+      "changed": false,
+      "not_modified": false
+    }
+  },
+  "watch:S14": {
+    "last_checked_at": "2026-09-06T10:49:37Z",
+    "fingerprint": "b988e20fd5f8d2bb624c24e3a5048211f74aa291328ca8a4fcd1a2a5e5e02a75",
+    "text_chars": 12480,
+    "final_url": "https://kpmg.com/cy/en/insights/2026/09/pulse-of-fintech.html",
+    "etag": "\"37e8a-65acb4a7a990a-gzip\"",
+    "last_modified": "Sun, 06 Sep 2026 07:17:14 GMT",
+    "last_success_at": "2026-09-06T10:49:38Z",
+    "last_error": null,
+    "last_result": {
+      "changed": false,
+      "not_modified": false
+    }
+  },
+  "watch:S15": {
+    "last_checked_at": "2026-09-06T10:49:38Z",
+    "fingerprint": "4c67752c332abdb334a5612c04d61adb97133966469e6d3c68a65c8233733843",
+    "text_chars": 12526,
+    "final_url": "https://www.ey.com/en_us/newsroom/2026/06/ey-2026-biotech-beyond-borders-report-a-fundamentally-strong-biotech-industry-seeks-balance-amid-continued-uncertainty",
+    "last_success_at": "2026-09-06T10:49:38Z",
+    "last_error": null,
+    "last_result": {
+      "changed": false,
+      "not_modified": false
+    }
+  },
+  "watch:S16": {
+    "last_checked_at": "2026-09-06T10:49:38Z",
+    "fingerprint": "fc170c5adc6ec604e4a4f943c24f19ccbd60a7d18bddde8b887ceddd964c9982",
+    "text_chars": 6356,
+    "final_url": "https://www.svb.com/trends-insights/reports/healthcare-investments-and-exits/",
+    "last_success_at": "2026-09-06T10:49:38Z",
+    "last_error": null,
+    "last_result": {
+      "changed": false,
+      "not_modified": false
+    }
+  },
+  "watch:S17": {
+    "last_checked_at": "2026-09-06T10:49:38Z",
+    "last_error": "HTTPError: HTTP Error 403: Forbidden"
+  },
+  "watch:S18": {
+    "last_checked_at": "2026-09-06T10:49:40Z",
+    "fingerprint": "e85c64b9100d7cffa9fe0bba41a3ab8cce111c8b4b6ca2b747435a6e3643ce35",
+    "text_chars": 2044,
+    "final_url": "https://dealroom.co/reports/the-european-deep-tech-report-2026",
+    "last_success_at": "2026-09-06T10:49:41Z",
+    "last_error": null,
+    "last_result": {
+      "changed": false,
+      "not_modified": false
+    }
+  },
+  "watch:S19": {
+    "last_checked_at": "2026-09-06T10:49:41Z",
+    "last_error": "HTTPError: HTTP Error 403: Forbidden"
+  },
+  "watch:S20": {
+    "last_checked_at": "2026-09-06T10:49:42Z",
+    "last_error": "HTTPError: HTTP Error 403: Forbidden"
+  },
+  "watch:S21": {
+    "last_checked_at": "2026-09-06T10:49:43Z",
+    "fingerprint": "5004d3ec35ccafbe9a4dc311b89c6487c23e541dafab48a6aa1a0206f580b075",
+    "text_chars": 2857,
+    "final_url": "https://www.sipri.org/publications/2025/sipri-fact-sheets/trends-world-military-expenditure-2024",
+    "etag": "\"1788441774-gzip\"",
+    "last_modified": "Thu, 03 Sep 2026 13:22:54 GMT",
+    "last_success_at": "2026-09-06T10:49:44Z",
+    "last_error": null,
+    "last_result": {
+      "changed": false,
+      "not_modified": false
+    }
+  },
+  "watch:S22": {
+    "last_checked_at": "2026-09-06T10:49:44Z",
+    "last_error": "HTTPError: HTTP Error 403: Forbidden"
+  },
+  "watch:S23": {
+    "last_checked_at": "2026-09-06T10:49:45Z",
+    "fingerprint": "85bd230d2c901cf9fe6d03b821a22067c7657d6148f8f56a2ef19876fffaa254",
+    "text_chars": 4041,
+    "final_url": "https://www.semiconductors.org/global-semiconductor-sales-increase-11-month-to-month-in-april/",
+    "last_success_at": "2026-09-06T10:49:45Z",
+    "last_error": null,
+    "last_result": {
+      "changed": false,
+      "not_modified": false
+    }
+  },
+  "watch:S24": {
+    "last_checked_at": "2026-09-06T10:49:45Z",
+    "fingerprint": "daea9609a7a1e1419f5f8849855e56b116b485992f40eb720a88475c54c4d9c9",
+    "text_chars": 3148,
+    "final_url": "https://www.semiconductors.org/global-semiconductor-sales-increase-6-4-month-to-month-in-july/",
+    "last_success_at": "2026-09-06T10:49:46Z",
+    "last_error": null,
+    "last_result": {
+      "changed": false,
+      "not_modified": false
+    }
+  },
+  "discover:D1-IEA-investment": {
+    "last_checked_at": "2026-09-06T10:49:46Z",
+    "last_error": "HTTPError: HTTP Error 403: Forbidden"
+  },
+  "discover:D2-SIPRI-milex": {
+    "last_checked_at": "2026-09-06T10:49:47Z",
+    "final_url": "https://www.sipri.org/databases/milex",
+    "etag": "\"1788430545-gzip\"",
+    "last_modified": "Thu, 03 Sep 2026 10:15:45 GMT",
+    "last_success_at": "2026-09-06T10:49:50Z",
+    "last_error": null,
+    "last_result": {
+      "found": 8,
+      "new": 7,
+      "baseline": true
+    }
+  },
+  "discover:D3-Gartner-newsroom": {
+    "last_checked_at": "2026-09-06T10:49:50Z",
+    "last_error": "HTTPError: HTTP Error 403: Forbidden"
+  },
+  "discover:D4-SIA-market": {
+    "last_checked_at": "2026-09-06T10:49:51Z",
+    "final_url": "https://www.semiconductors.org/news-events/latest-news/",
+    "last_success_at": "2026-09-06T10:49:51Z",
+    "last_error": null,
+    "last_result": {
+      "found": 7,
+      "new": 7,
+      "baseline": true
+    }
+  }
+}
