@@ -1,4 +1,83 @@
 {
   "version": "1.0",
-  "sources": []
+  "sources": [
+    {
+      "id": "signal:EUROSTAT-LCI-DE",
+      "kind": "signal",
+      "name": "Eurostat Labour Cost Index — Germany",
+      "enabled": true,
+      "cadenceDays": 7,
+      "config": {
+        "adapter": "eurostat_jsonstat_dimension_history",
+        "sourceId": "LIVE-EUROSTAT-LCI",
+        "sourceName": "Eurostat Labour Cost Index",
+        "sourceUrl": "https://ec.europa.eu/eurostat/databrowser/view/lc_lci_r2_q/default/table?lang=en",
+        "endpoint": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/lc_lci_r2_q",
+        "metricKey": "labor_cost_yoy",
+        "metricLabel": "Nominal hourly labour cost YoY",
+        "unit": "%",
+        "geography": "Germany",
+        "seriesDimension": "nace_r2",
+        "timeDimension": "time",
+        "maxSeries": 40,
+        "bootstrapQuery": {
+          "lang": "EN",
+          "geo": "DE",
+          "freq": "Q",
+          "unit": "PCH_SM",
+          "lcstruct": "D1_D4_MD5",
+          "s_adj": "CA",
+          "lastTimePeriod": "12"
+        },
+        "incrementalQuery": {
+          "lang": "EN",
+          "geo": "DE",
+          "freq": "Q",
+          "unit": "PCH_SM",
+          "lcstruct": "D1_D4_MD5",
+          "s_adj": "CA",
+          "lastTimePeriod": "4"
+        }
+      }
+    },
+    {
+      "id": "signal:EUROSTAT-LCI-EU",
+      "kind": "signal",
+      "name": "Eurostat Labour Cost Index — EU27",
+      "enabled": true,
+      "cadenceDays": 7,
+      "config": {
+        "adapter": "eurostat_jsonstat_dimension_history",
+        "sourceId": "LIVE-EUROSTAT-LCI",
+        "sourceName": "Eurostat Labour Cost Index",
+        "sourceUrl": "https://ec.europa.eu/eurostat/databrowser/view/lc_lci_r2_q/default/table?lang=en",
+        "endpoint": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/lc_lci_r2_q",
+        "metricKey": "labor_cost_yoy",
+        "metricLabel": "Nominal hourly labour cost YoY",
+        "unit": "%",
+        "geography": "EU27",
+        "seriesDimension": "nace_r2",
+        "timeDimension": "time",
+        "maxSeries": 40,
+        "bootstrapQuery": {
+          "lang": "EN",
+          "geo": "EU27_2020",
+          "freq": "Q",
+          "unit": "PCH_SM",
+          "lcstruct": "D1_D4_MD5",
+          "s_adj": "CA",
+          "lastTimePeriod": "12"
+        },
+        "incrementalQuery": {
+          "lang": "EN",
+          "geo": "EU27_2020",
+          "freq": "Q",
+          "unit": "PCH_SM",
+          "lcstruct": "D1_D4_MD5",
+          "s_adj": "CA",
+          "lastTimePeriod": "4"
+        }
+      }
+    }
+  ]
 }
