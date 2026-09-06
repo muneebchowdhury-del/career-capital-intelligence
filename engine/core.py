@@ -6,6 +6,7 @@ from urllib.parse import urlparse
 
 MAX_BODY_BYTES = 5_000_000
 SAFE_PATTERN_RE = re.compile(r"^[\w\s\-–—./:$%+()'&,.*]{1,180}$", re.UNICODE)
+SOURCE_REGISTRY_FILES = ('sources.json', 'labor-sources.json')
 
 
 def utcnow_iso() -> str:
@@ -60,6 +61,26 @@ def iter_jsonl(path: Path):
                 yield json.loads(line)
             except json.JSONDecodeError as e:
                 raise ValueError(f"Invalid JSONL at {path}:{i}: {e}") from e
+
+
+def load_source_registry(root: Path) -> list[dict]:
+    root = Path(root)
+    out = []
+    seen = set()
+    for name in SOURCE_REGISTRY_FILES:
+        payload = load_json(root / 'config' / name, {}) or {}
+        rows = payload.get('sources', [])
+        if not isinstance(rows, list):
+            raise ValueError(f'{name}: sources must be a list')
+        for src in rows:
+            if not isinstance(src, dict) or not src.get('id'):
+                raise ValueError(f'{name}: invalid source entry')
+            sid = src['id']
+            if sid in seen:
+                raise ValueError(f'duplicate source id across registries: {sid}')
+            seen.add(sid)
+            out.append(src)
+    return out
 
 
 def safe_pattern_match(pattern: str, text: str) -> bool:
