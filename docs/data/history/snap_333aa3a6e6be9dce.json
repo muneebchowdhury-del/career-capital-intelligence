@@ -1,0 +1,2921 @@
+{
+  "updated": "2026-09-05",
+  "methodology": {
+    "note": "V3.1 keeps raw capital/activity observations separate from strategic scores, adds geography and time-horizon context, evidence-derived confidence, driver-based scenarios, rank robustness, live hero anchors, immutable history, change-only publishing, and a review-gated source-discovery workflow. Cross-sector money measures remain intentionally non-comparable.",
+    "defaultWeights": {
+      "capital": 12,
+      "capitalQuality": 6,
+      "momentum": 10,
+      "durability": 11,
+      "scarcity": 9,
+      "income": 8,
+      "aiResilience": 8,
+      "businessValue": 9,
+      "entrepreneurship": 6,
+      "defensibility": 6,
+      "accessibility": 4,
+      "proofability": 3,
+      "valueCapture": 6,
+      "transferability": 4,
+      "optionality": 2,
+      "hypeRisk": 6,
+      "crowdingRisk": 6
+    },
+    "formulas": {
+      "Overall Opportunity": "Weighted average of positive dimensions minus a hype-risk penalty. User adjustable.",
+      "Market Attractiveness": "Capital, momentum, durability, business value, defensibility, value capture, entrepreneurship and confidence, with hype penalty.",
+      "Career Attractiveness": "Income, scarcity, AI resilience, business value, transferability, optionality, accessibility, value capture and durability.",
+      "Personal Fit": "If no preference dimensions are activated, Personal Fit equals Career Attractiveness. Active preferences contribute a weighted intensity-match component; untouched sliders contribute zero information.",
+      "Context adjustment": "Selected objective is blended with geography (10%) and selected time-horizon thesis (15%); the underlying objective remains 75%.",
+      "Confidence": "Calculated from source quality, source count, source diversity, recency and evidence directness for the exact opportunity node.",
+      "Robustness": "Monte Carlo simulation perturbs evidence-based scores according to confidence; Overall Opportunity also perturbs user weights. Output is Top-5 probability, median rank and 10–90% rank range."
+    },
+    "rawCapitalRule": "Raw capital observations are displayed with their flow type and status. They are not summed or ranked directly across unlike categories such as government expenditure, technology spending, industry sales, VC/M&A, or cumulative infrastructure requirements."
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "name": "Gartner — Worldwide AI Spending 2026",
+      "date": "2026-05-19",
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2026-05-19-gartner-forecasts-worldwide-ai-spending-to-grow-47-percent-in-2026",
+      "note": "AI infrastructure $1.431T; AI services $585.5B; AI software $453.2B in 2026.",
+      "category": "Market research",
+      "qualityScore": 88,
+      "directness": "Forecast + vendor/market model"
+    },
+    {
+      "id": "S2",
+      "name": "IEA — Key Questions on Energy and AI",
+      "date": "2026",
+      "url": "https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary",
+      "note": "Capex of five major tech companies exceeded $400B in 2025 and is expected to rise 75% in 2026.",
+      "category": "Intergovernmental",
+      "qualityScore": 95,
+      "directness": "Observed corporate capex + forecast"
+    },
+    {
+      "id": "S3",
+      "name": "McKinsey — $7T data-center build-out",
+      "date": "2026-03-27",
+      "url": "https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/the-7-trillion-dollar-data-center-build-out-how-industrials-can-capture-their-share",
+      "note": "Global data-center spending could reach about $7T through 2030; power and thermal equipment are constraints.",
+      "category": "Consulting research",
+      "qualityScore": 82,
+      "directness": "Scenario / cumulative investment estimate"
+    },
+    {
+      "id": "S4",
+      "name": "Gartner — IT Spending 2026",
+      "date": "2026-07-27",
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2026-07-27-gartner-forecasts-worldwide-it-spending-to-grow-14-point-2-percent-in-2026-totaling-6-point-37-trillion",
+      "note": "Worldwide IT spending forecast $6.37T in 2026; data centers and IaaS among major growth drivers.",
+      "category": "Market research",
+      "qualityScore": 88,
+      "directness": "Market-spend forecast"
+    },
+    {
+      "id": "S5",
+      "name": "Gartner — Information Security 2026",
+      "date": "2026-02-05",
+      "url": "https://www.gartner.com/en/documents/7408930",
+      "note": "Information-security spending expected to reach $244B in 2026, +11.6%.",
+      "category": "Market research",
+      "qualityScore": 88,
+      "directness": "Market-spend forecast"
+    },
+    {
+      "id": "S6",
+      "name": "SIA — Global Semiconductor Sales 2025 / 2026 outlook",
+      "date": "2026-02-06",
+      "url": "https://www.semiconductors.org/global-annual-semiconductor-sales-increase-25-6-to-791-7-billion-in-2025/",
+      "note": "Global semiconductor sales were $630.5B in 2024 and $791.7B in 2025 (+25.6%); SIA said 2026 sales were projected to reach roughly $1T.",
+      "category": "Industry association",
+      "qualityScore": 92,
+      "directness": "Observed sales + industry forecast"
+    },
+    {
+      "id": "S7",
+      "name": "SIPRI — World Military Expenditure 2025",
+      "date": "2026-04-27",
+      "url": "https://www.sipri.org/media/press-release/2026/global-military-spending-rise-continues-european-and-asian-expenditures-surge",
+      "note": "World military expenditure $2.887T in 2025, +2.9% real; Europe +14%.",
+      "category": "Independent institute",
+      "qualityScore": 96,
+      "directness": "Observed government expenditure"
+    },
+    {
+      "id": "S8",
+      "name": "Dealroom/NATO Innovation Fund — European Defence, Security & Resilience",
+      "date": "2026-02-10",
+      "url": "https://dealroom.co/reports/defence-security-and-resilience-in-europe-2026",
+      "note": "European defence/security/resilience startups raised record $8.7B VC in 2025, +55%.",
+      "category": "Market-data platform",
+      "qualityScore": 84,
+      "directness": "Observed venture funding"
+    },
+    {
+      "id": "S9",
+      "name": "IFR — World Robotics 2025",
+      "date": "2025-09-25",
+      "url": "https://ifr.org/worldrobotics/report-2025",
+      "note": "542,000 industrial robots installed globally in 2024, more than double ten years earlier.",
+      "category": "Industry federation",
+      "qualityScore": 92,
+      "directness": "Observed installations"
+    },
+    {
+      "id": "S10",
+      "name": "IFR — US Robot Industry 2026 update",
+      "date": "2026-06-18",
+      "url": "https://ifr.org/ifr-press-releases/en/news/",
+      "note": "US industrial robot installations rose 11% year over year to 38,000 in 2025.",
+      "category": "Industry federation",
+      "qualityScore": 92,
+      "directness": "Observed installations"
+    },
+    {
+      "id": "S11",
+      "name": "IEA — World Energy Investment 2026",
+      "date": "2026-05-28",
+      "url": "https://www.iea.org/reports/world-energy-investment-2026",
+      "note": "Global energy investment expected at record $3.4T in 2026, +5%; about $2.2T into clean energy.",
+      "category": "Intergovernmental",
+      "qualityScore": 97,
+      "directness": "Investment estimate / forecast"
+    },
+    {
+      "id": "S12",
+      "name": "McKinsey — Global Infrastructure Report 2026",
+      "date": "2026-03-23",
+      "url": "https://www.mckinsey.com/industries/private-capital/our-insights/global-private-markets-report/infrastructure",
+      "note": "$106T global infrastructure investment need through 2040; record ~$200B infrastructure fundraising in 2025.",
+      "category": "Consulting research",
+      "qualityScore": 82,
+      "directness": "Long-run infrastructure requirement + fundraising"
+    },
+    {
+      "id": "S13",
+      "name": "KPMG — Venture Pulse Q2 2026",
+      "date": "2026-07-23",
+      "url": "https://kpmg.com/xx/en/media/press-releases/2026/07/vc-investment-already-at-five-year-high-of-billions.html",
+      "note": "Global VC $227.4B in Q2 2026; $560.4B year-to-date at mid-year, driven by mega AI rounds.",
+      "category": "Professional services",
+      "qualityScore": 82,
+      "directness": "Observed / reported venture investment"
+    },
+    {
+      "id": "S14",
+      "name": "KPMG — Pulse of Fintech H1 2026",
+      "date": "2026-09",
+      "url": "https://kpmg.com/cy/en/insights/2026/09/pulse-of-fintech.html",
+      "note": "Global fintech investment $103.1B in H1 2026 vs $72.2B H2 2025; VC $31.5B.",
+      "category": "Professional services",
+      "qualityScore": 84,
+      "directness": "Observed / reported fintech investment"
+    },
+    {
+      "id": "S15",
+      "name": "EY — Biotech Beyond Borders 2026",
+      "date": "2026-06-09",
+      "url": "https://www.ey.com/en_us/newsroom/2026/06/ey-2026-biotech-beyond-borders-report-a-fundamentally-strong-biotech-industry-seeks-balance-amid-continued-uncertainty",
+      "note": "Biotech financing $68.5B in 2025, +11%; Q1 2026 M&A value $36B.",
+      "category": "Professional services",
+      "qualityScore": 82,
+      "directness": "Observed / reported biotech financing"
+    },
+    {
+      "id": "S16",
+      "name": "SVB — H2 2026 Healthcare Industry Trends",
+      "date": "2026-H2",
+      "url": "https://www.svb.com/trends-insights/reports/healthcare-investments-and-exits/",
+      "note": "Biopharma VC funding $12.6B in H1 2026; 25 private acquisitions in H1.",
+      "category": "Financial institution research",
+      "qualityScore": 78,
+      "directness": "Observed / reported healthcare financing"
+    },
+    {
+      "id": "S17",
+      "name": "WEF — Future of Jobs Report 2025",
+      "date": "2025-01",
+      "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/",
+      "note": "AI/big data and networks/cybersecurity are the fastest-growing skills; robotics and energy systems are major transformation drivers.",
+      "category": "Multistakeholder institution",
+      "qualityScore": 80,
+      "directness": "Employer survey / structural labor trends"
+    },
+    {
+      "id": "S18",
+      "name": "Dealroom — European Deep Tech Report 2026",
+      "date": "2026-03-24",
+      "url": "https://dealroom.co/reports/the-european-deep-tech-report-2026",
+      "note": "Deep tech reached 32% of European VC in 2025; Europe $20B (+21%), US $144B (+92%).",
+      "category": "Market-data platform",
+      "qualityScore": 84,
+      "directness": "Observed venture funding"
+    },
+    {
+      "id": "S19",
+      "name": "Gartner — AI-optimized IaaS 2026",
+      "date": "2026-08-10",
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2026-08-10-gartner-forecasts-worldwide-artificial-intelligence-optimized-iaas-spending-to-grow-96-percent-in-2026",
+      "note": "AI-optimized IaaS spending forecast $42B in 2026, +96%.",
+      "category": "Market research",
+      "qualityScore": 88,
+      "directness": "Market-spend forecast"
+    },
+    {
+      "id": "S20",
+      "name": "Gartner — Agentic AI and Enterprise Software",
+      "date": "2026-07-01",
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2026-07-01-gartner-says-us-dollars-234-billion-in-enterprise-application-software-spend-is-at-risk-from-agentic-artificial-intelligence",
+      "note": "Up to $234B of enterprise application spend exposed to agentic arbitrage by 2030.",
+      "category": "Market research",
+      "qualityScore": 84,
+      "directness": "Scenario / forecast"
+    },
+    {
+      "id": "S21",
+      "name": "SIPRI — World Military Expenditure 2024",
+      "date": "2025-04",
+      "url": "https://www.sipri.org/publications/2025/sipri-fact-sheets/trends-world-military-expenditure-2024",
+      "note": "World military expenditure reached $2.718T in 2024, +9.4% in real terms.",
+      "category": "Independent institute",
+      "qualityScore": 96,
+      "directness": "Observed government expenditure"
+    },
+    {
+      "id": "S22",
+      "name": "IEA — World Energy Investment 2025",
+      "date": "2025-06-05",
+      "url": "https://www.iea.org/reports/world-energy-investment-2025/executive-summary",
+      "note": "Global energy investment was set to reach $3.3T in 2025, +2% in real terms on 2024; about $2.2T to clean energy.",
+      "category": "Intergovernmental",
+      "qualityScore": 97,
+      "directness": "Investment estimate / forecast"
+    },
+    {
+      "id": "S23",
+      "name": "SIA — WSTS Spring 2026 semiconductor forecast",
+      "date": "2026-06-05",
+      "url": "https://www.semiconductors.org/global-semiconductor-sales-increase-11-month-to-month-in-april/",
+      "note": "SIA endorsed the WSTS Spring 2026 forecast projecting annual global semiconductor sales above $1.5T in 2026 and $1.9T in 2027.",
+      "category": "Industry association / market data",
+      "qualityScore": 92,
+      "directness": 95
+    },
+    {
+      "id": "S24",
+      "name": "SIA — July 2026 global semiconductor sales",
+      "date": "2026-09-04",
+      "url": "https://www.semiconductors.org/global-semiconductor-sales-increase-6-4-month-to-month-in-july/",
+      "note": "SIA reported $146.8B in July 2026 global semiconductor sales, up 135.1% year over year; year-to-date sales through July exceeded the prior full-year record.",
+      "category": "Industry association / market data",
+      "qualityScore": 92,
+      "directness": 98
+    }
+  ],
+  "nodes": [
+    {
+      "id": "ai-infra",
+      "name": "AI Infrastructure & Inference Systems",
+      "sector": "AI / Compute",
+      "thesis": "The strongest pure-tech capital wave: the bottleneck shifts from model novelty toward reliable, efficient inference, serving, orchestration and cost control.",
+      "evidence": "$1.43T 2026 AI-infrastructure spend; major tech capex is accelerating and enterprise AI usage is moving into production.",
+      "sources": [
+        "S1",
+        "S2",
+        "S19"
+      ],
+      "scores": {
+        "capital": 98,
+        "momentum": 99,
+        "durability": 90,
+        "scarcity": 90,
+        "income": 98,
+        "aiResilience": 95,
+        "businessValue": 97,
+        "entrepreneurship": 84,
+        "defensibility": 90,
+        "accessibility": 53,
+        "valueCapture": 94,
+        "transferability": 94,
+        "optionality": 97,
+        "hypeRisk": 70,
+        "confidence": 89,
+        "capitalQuality": 90,
+        "crowdingRisk": 78,
+        "proofability": 75
+      },
+      "chars": {
+        "techDepth": 96,
+        "business": 58,
+        "math": 78,
+        "hardware": 62,
+        "regulation": 28,
+        "longTraining": 74,
+        "entrepreneurship": 74
+      },
+      "meta": {
+        "timeToEntry": "18–36 mo",
+        "difficulty": "Very high",
+        "ceiling": "Exceptional",
+        "ownership": "High",
+        "entry": "Software/cloud → distributed ML systems",
+        "signal": "Accelerating",
+        "horizon": "3–10y"
+      },
+      "skills": [
+        "distributed systems",
+        "ML systems",
+        "performance engineering",
+        "networking",
+        "GPU/accelerator fundamentals",
+        "systems observability",
+        "AI economics"
+      ],
+      "tools": [
+        "Python",
+        "C++/Rust",
+        "Linux",
+        "CUDA/Triton concepts",
+        "Kubernetes",
+        "Ray/vLLM",
+        "PyTorch",
+        "NCCL concepts",
+        "Prometheus/OpenTelemetry",
+        "AWS/GCP/Azure"
+      ],
+      "path": [
+        [
+          "Foundation",
+          "Master Linux, networking, Python/C++, cloud primitives and distributed-systems fundamentals."
+        ],
+        [
+          "Practitioner",
+          "Deploy and benchmark inference stacks; build observability, batching, caching and cost/latency experiments."
+        ],
+        [
+          "Specialist",
+          "Own multi-GPU serving, reliability and performance; understand hardware/software co-design and economics."
+        ],
+        [
+          "Leverage",
+          "Move into principal architecture, platform leadership, infra consulting, developer infrastructure or product ownership."
+        ]
+      ],
+      "roles": [
+        "ML Systems Engineer",
+        "Inference Engineer",
+        "AI Platform Engineer",
+        "Distributed Systems Engineer",
+        "Principal AI Infrastructure Architect"
+      ],
+      "counter": "Hyperscaler concentration and rapid model-efficiency gains could compress infrastructure margins; tooling layers can commoditize quickly.",
+      "changeMind": "Downgrade if hyperscaler AI capex contracts for multiple years, inference demand grows slower than efficiency gains, and accelerator scarcity disappears without creating new workload demand.",
+      "valueChain": "Accelerators → networking → orchestration → inference runtime → observability → enterprise workloads",
+      "geo": {
+        "Global": "Very strong",
+        "US": "Exceptional",
+        "Europe": "Strong",
+        "Germany": "Strong"
+      },
+      "geoScores": {
+        "Global": 86,
+        "US": 95,
+        "Europe": 76,
+        "Germany": 76
+      },
+      "horizonScores": {
+        "1-2y": 99,
+        "3-5y": 97,
+        "5-10y": 91,
+        "10-15y": 83
+      },
+      "driverExposure": {
+        "aiDemand": 1.0,
+        "agenticAdoption": 0.55,
+        "powerConstraint": -0.2
+      },
+      "capitalObservations": [
+        {
+          "series": "AI infrastructure spending",
+          "period": "2025",
+          "value": 975.581,
+          "unit": "USD bn",
+          "flowType": "Technology spend",
+          "status": "forecast/estimate",
+          "source": "S1"
+        },
+        {
+          "series": "AI infrastructure spending",
+          "period": "2026",
+          "value": 1431.509,
+          "unit": "USD bn",
+          "flowType": "Technology spend",
+          "status": "forecast",
+          "source": "S1"
+        },
+        {
+          "series": "AI infrastructure spending",
+          "period": "2027",
+          "value": 1890.31,
+          "unit": "USD bn",
+          "flowType": "Technology spend",
+          "status": "forecast",
+          "source": "S1"
+        }
+      ],
+      "confidenceBreakdown": {
+        "sourceQuality": 90,
+        "sourceCount": 3,
+        "sourceDiversity": 75,
+        "recency": 100,
+        "directness": 94,
+        "calculatedConfidence": 89
+      },
+      "uncertaintyPoints": 3.5,
+      "hierarchy": {
+        "structuralWave": "AI",
+        "sector": "AI / Compute",
+        "valueChainPosition": "Compute / infrastructure layer",
+        "specialization": "AI Infrastructure & Inference Systems"
+      }
+    },
+    {
+      "id": "dc-power",
+      "name": "Data Centers, Power & Thermal Systems",
+      "sector": "Digital Infrastructure",
+      "thesis": "AI's physical bottleneck. Power delivery, cooling, electrical equipment and high-density data-center design can capture value even if model vendors change.",
+      "evidence": ">$650B 2026 data-center spending; nearly $7T cumulative data-center investment may be required through 2030; power/thermal equipment are cited constraints.",
+      "sources": [
+        "S3",
+        "S4",
+        "S12"
+      ],
+      "scores": {
+        "capital": 97,
+        "momentum": 96,
+        "durability": 97,
+        "scarcity": 92,
+        "income": 93,
+        "aiResilience": 99,
+        "businessValue": 99,
+        "entrepreneurship": 87,
+        "defensibility": 94,
+        "accessibility": 45,
+        "valueCapture": 95,
+        "transferability": 84,
+        "optionality": 90,
+        "hypeRisk": 34,
+        "confidence": 84,
+        "capitalQuality": 97,
+        "crowdingRisk": 35,
+        "proofability": 45
+      },
+      "chars": {
+        "techDepth": 84,
+        "business": 66,
+        "math": 60,
+        "hardware": 96,
+        "regulation": 55,
+        "longTraining": 78,
+        "entrepreneurship": 82
+      },
+      "meta": {
+        "timeToEntry": "2–5y",
+        "difficulty": "High",
+        "ceiling": "Very high",
+        "ownership": "Very high",
+        "entry": "Electrical/mechanical/infra + digital systems",
+        "signal": "Accelerating",
+        "horizon": "5–15y"
+      },
+      "skills": [
+        "electrical power",
+        "thermal engineering",
+        "data-center architecture",
+        "capacity planning",
+        "controls",
+        "reliability",
+        "project economics"
+      ],
+      "tools": [
+        "ETAP/PowerFactory concepts",
+        "BMS/DCIM",
+        "SCADA",
+        "Python",
+        "digital twins",
+        "CAD/BIM concepts",
+        "power-quality tooling",
+        "capacity models"
+      ],
+      "path": [
+        [
+          "Foundation",
+          "Build power, thermal, controls and data-center architecture fundamentals."
+        ],
+        [
+          "Practitioner",
+          "Model rack density, cooling, redundancy, energy efficiency and capacity trade-offs."
+        ],
+        [
+          "Specialist",
+          "Own high-density AI-facility design or critical equipment/product domains."
+        ],
+        [
+          "Leverage",
+          "Lead infrastructure programs, equipment businesses, advisory, project development or investment platforms."
+        ]
+      ],
+      "roles": [
+        "Data Center Engineer",
+        "Critical Facilities Engineer",
+        "Power Systems Architect",
+        "Thermal Systems Lead",
+        "Digital Infrastructure Principal"
+      ],
+      "counter": "Project pipelines can be overbuilt; permitting, grid delays and financing costs can strand planned capacity.",
+      "changeMind": "Downgrade if AI utilization materially disappoints, power-density growth stalls, and data-center vacancy rises persistently across major regions.",
+      "valueChain": "Grid interconnect → transformers/switchgear → UPS/power electronics → cooling → facility → compute",
+      "geo": {
+        "Global": "Exceptional",
+        "US": "Exceptional",
+        "Europe": "Very strong",
+        "Germany": "Very strong"
+      },
+      "geoScores": {
+        "Global": 95,
+        "US": 95,
+        "Europe": 86,
+        "Germany": 86
+      },
+      "horizonScores": {
+        "1-2y": 96,
+        "3-5y": 99,
+        "5-10y": 98,
+        "10-15y": 91
+      },
+      "driverExposure": {
+        "aiDemand": 0.72,
+        "powerConstraint": 1.0,
+        "industrialReshoring": 0.15
+      },
+      "capitalObservations": [
+        {
+          "series": "Global data-center buildout requirement",
+          "period": "to 2030",
+          "value": 7000,
+          "unit": "USD bn cumulative",
+          "flowType": "Cumulative infrastructure requirement",
+          "status": "scenario estimate",
+          "source": "S3",
+          "proxy": true
+        }
+      ],
+      "confidenceBreakdown": {
+        "sourceQuality": 84,
+        "sourceCount": 3,
+        "sourceDiversity": 75,
+        "recency": 100,
+        "directness": 82,
+        "calculatedConfidence": 84
+      },
+      "uncertaintyPoints": 4.2,
+      "hierarchy": {
+        "structuralWave": "Digital Infrastructure",
+        "sector": "Digital Infrastructure",
+        "valueChainPosition": "Physical infrastructure / enabling layer",
+        "specialization": "Data Centers, Power & Thermal Systems"
+      }
+    },
+    {
+      "id": "energy-grid",
+      "name": "Grid, Power Systems & Electrification",
+      "sector": "Energy",
+      "thesis": "A structural infrastructure supercycle: electricity demand, grid congestion, energy security, storage and electrification make power-system expertise unusually durable.",
+      "evidence": "$3.4T global energy investment expected in 2026 (+5%); ~$2.2T into clean energy. Energy/power alone represents a large share of future infrastructure need.",
+      "sources": [
+        "S11",
+        "S12"
+      ],
+      "scores": {
+        "capital": 100,
+        "momentum": 78,
+        "durability": 100,
+        "scarcity": 91,
+        "income": 90,
+        "aiResilience": 99,
+        "businessValue": 99,
+        "entrepreneurship": 81,
+        "defensibility": 96,
+        "accessibility": 43,
+        "valueCapture": 91,
+        "transferability": 82,
+        "optionality": 88,
+        "hypeRisk": 22,
+        "confidence": 84,
+        "capitalQuality": 98,
+        "crowdingRisk": 30,
+        "proofability": 40
+      },
+      "chars": {
+        "techDepth": 84,
+        "business": 63,
+        "math": 72,
+        "hardware": 92,
+        "regulation": 72,
+        "longTraining": 82,
+        "entrepreneurship": 70
+      },
+      "meta": {
+        "timeToEntry": "3–5y",
+        "difficulty": "High",
+        "ceiling": "Very high",
+        "ownership": "High",
+        "entry": "Electrical/energy engineering + software/data",
+        "signal": "Structural",
+        "horizon": "10–15y"
+      },
+      "skills": [
+        "power systems",
+        "grid economics",
+        "power electronics",
+        "storage",
+        "forecasting",
+        "optimization",
+        "regulatory markets"
+      ],
+      "tools": [
+        "Python",
+        "MATLAB/Simulink",
+        "PowerFactory/PSSE concepts",
+        "SCADA/EMS",
+        "optimization solvers",
+        "time-series tooling",
+        "GIS"
+      ],
+      "path": [
+        [
+          "Foundation",
+          "Learn circuits, power systems, energy markets and grid operations."
+        ],
+        [
+          "Practitioner",
+          "Build forecasting/optimization projects around load, storage or network congestion."
+        ],
+        [
+          "Specialist",
+          "Own a scarce bottleneck: interconnection, grid software, power electronics, storage optimization or protection."
+        ],
+        [
+          "Leverage",
+          "Move into principal engineering, energy-tech product leadership, project development, advisory or infrastructure ownership."
+        ]
+      ],
+      "roles": [
+        "Power Systems Engineer",
+        "Grid Optimization Engineer",
+        "Energy Systems Architect",
+        "Storage Optimization Lead",
+        "Energy Infrastructure Principal"
+      ],
+      "counter": "Returns depend heavily on regulation, permitting and project execution; some subsectors are low-margin despite huge spending.",
+      "changeMind": "Downgrade if electricity-demand growth structurally reverses and grid/energy capex plans are cancelled rather than delayed.",
+      "valueChain": "Generation → transmission → grid software → storage → distribution → electrified loads",
+      "geo": {
+        "Global": "Exceptional",
+        "US": "Very strong",
+        "Europe": "Exceptional",
+        "Germany": "Exceptional"
+      },
+      "geoScores": {
+        "Global": 95,
+        "US": 86,
+        "Europe": 95,
+        "Germany": 95
+      },
+      "horizonScores": {
+        "1-2y": 91,
+        "3-5y": 96,
+        "5-10y": 99,
+        "10-15y": 100
+      },
+      "driverExposure": {
+        "aiDemand": 0.28,
+        "powerConstraint": 1.0,
+        "geopoliticalRisk": 0.25,
+        "industrialReshoring": 0.35
+      },
+      "capitalObservations": [
+        {
+          "series": "Global energy investment",
+          "period": "2025",
+          "value": 3300,
+          "unit": "USD bn",
+          "flowType": "Infrastructure / energy investment",
+          "status": "estimate",
+          "source": "S22",
+          "proxy": true
+        },
+        {
+          "series": "Global energy investment",
+          "period": "2026",
+          "value": 3400,
+          "unit": "USD bn",
+          "flowType": "Infrastructure / energy investment",
+          "status": "forecast",
+          "source": "S11",
+          "proxy": true
+        }
+      ],
+      "confidenceBreakdown": {
+        "sourceQuality": 90,
+        "sourceCount": 2,
+        "sourceDiversity": 75,
+        "recency": 100,
+        "directness": 88,
+        "calculatedConfidence": 84
+      },
+      "uncertaintyPoints": 4.2,
+      "hierarchy": {
+        "structuralWave": "Energy",
+        "sector": "Energy",
+        "valueChainPosition": "Physical infrastructure / bottleneck layer",
+        "specialization": "Grid, Power Systems & Electrification"
+      }
+    },
+    {
+      "id": "cyber-ai",
+      "name": "AI Security, Identity & Cyber Resilience",
+      "sector": "Cybersecurity",
+      "thesis": "Security remains non-discretionary while AI creates new attack surfaces, machine identities, agent permissions and governance problems.",
+      "evidence": "$244B information-security spending in 2026 (+11.6%); AI cybersecurity spending is rising much faster within the broader market.",
+      "sources": [
+        "S1",
+        "S5",
+        "S17"
+      ],
+      "scores": {
+        "capital": 83,
+        "momentum": 87,
+        "durability": 98,
+        "scarcity": 96,
+        "income": 96,
+        "aiResilience": 98,
+        "businessValue": 99,
+        "entrepreneurship": 91,
+        "defensibility": 94,
+        "accessibility": 67,
+        "valueCapture": 92,
+        "transferability": 98,
+        "optionality": 96,
+        "hypeRisk": 35,
+        "confidence": 85,
+        "capitalQuality": 96,
+        "crowdingRisk": 48,
+        "proofability": 80
+      },
+      "chars": {
+        "techDepth": 88,
+        "business": 66,
+        "math": 55,
+        "hardware": 34,
+        "regulation": 72,
+        "longTraining": 62,
+        "entrepreneurship": 82
+      },
+      "meta": {
+        "timeToEntry": "12–30 mo",
+        "difficulty": "High",
+        "ceiling": "Exceptional",
+        "ownership": "High",
+        "entry": "IT/cloud/software → security architecture",
+        "signal": "Accelerating",
+        "horizon": "5–15y"
+      },
+      "skills": [
+        "identity/IAM",
+        "cloud security",
+        "application security",
+        "threat modeling",
+        "agent security",
+        "zero trust",
+        "security architecture",
+        "risk economics"
+      ],
+      "tools": [
+        "Linux",
+        "Python",
+        "IAM/OAuth/OIDC",
+        "AWS/Azure/GCP security",
+        "SIEM",
+        "EDR concepts",
+        "Kubernetes security",
+        "OPA/policy-as-code",
+        "LLM/agent threat testing"
+      ],
+      "path": [
+        [
+          "Foundation",
+          "Master networks, OS, identity, cloud and secure software fundamentals."
+        ],
+        [
+          "Practitioner",
+          "Build threat models and labs for cloud, APIs and AI agents; learn detection and response."
+        ],
+        [
+          "Specialist",
+          "Own machine identity, AI security, cloud security architecture or application security."
+        ],
+        [
+          "Leverage",
+          "Progress to security architect/CISO-track, specialist consulting, security product or founder roles."
+        ]
+      ],
+      "roles": [
+        "Cloud Security Engineer",
+        "AI Security Engineer",
+        "Identity Architect",
+        "Security Architect",
+        "Principal / Security Product Founder"
+      ],
+      "counter": "Security tools are crowded, procurement is consolidating and some operational work will be automated by AI.",
+      "changeMind": "Downgrade if security budgets become discretionary and AI meaningfully reduces net attack surface faster than it creates new complexity.",
+      "valueChain": "Identity → policy → application/cloud controls → AI/agent controls → detection/response → governance",
+      "geo": {
+        "Global": "Exceptional",
+        "US": "Exceptional",
+        "Europe": "Exceptional",
+        "Germany": "Very strong"
+      },
+      "geoScores": {
+        "Global": 95,
+        "US": 95,
+        "Europe": 95,
+        "Germany": 86
+      },
+      "horizonScores": {
+        "1-2y": 96,
+        "3-5y": 99,
+        "5-10y": 99,
+        "10-15y": 98
+      },
+      "driverExposure": {
+        "aiDemand": 0.3,
+        "agenticAdoption": 0.9,
+        "geopoliticalRisk": 0.6
+      },
+      "capitalObservations": [
+        {
+          "series": "AI cybersecurity spending",
+          "period": "2025",
+          "value": 25.92,
+          "unit": "USD bn",
+          "flowType": "Technology spend",
+          "status": "forecast/estimate",
+          "source": "S1"
+        },
+        {
+          "series": "AI cybersecurity spending",
+          "period": "2026",
+          "value": 51.347,
+          "unit": "USD bn",
+          "flowType": "Technology spend",
+          "status": "forecast",
+          "source": "S1"
+        },
+        {
+          "series": "AI cybersecurity spending",
+          "period": "2027",
+          "value": 85.997,
+          "unit": "USD bn",
+          "flowType": "Technology spend",
+          "status": "forecast",
+          "source": "S1"
+        }
+      ],
+      "confidenceBreakdown": {
+        "sourceQuality": 85,
+        "sourceCount": 3,
+        "sourceDiversity": 75,
+        "recency": 96,
+        "directness": 88,
+        "calculatedConfidence": 85
+      },
+      "uncertaintyPoints": 4.1,
+      "hierarchy": {
+        "structuralWave": "Cybersecurity",
+        "sector": "Cybersecurity",
+        "valueChainPosition": "Security / trust layer",
+        "specialization": "AI Security, Identity & Cyber Resilience"
+      }
+    },
+    {
+      "id": "enterprise-ai",
+      "name": "Enterprise AI Architecture & Agentic Automation",
+      "sector": "Enterprise Software",
+      "thesis": "The monetization layer: enterprises need AI connected to processes, data, controls and measurable economics—not isolated demos.",
+      "evidence": "2026 AI services $585.5B and AI software $453.2B; agentic AI is beginning to disrupt traditional enterprise application economics.",
+      "sources": [
+        "S1",
+        "S4",
+        "S20"
+      ],
+      "scores": {
+        "capital": 95,
+        "momentum": 97,
+        "durability": 89,
+        "scarcity": 84,
+        "income": 94,
+        "aiResilience": 85,
+        "businessValue": 100,
+        "entrepreneurship": 95,
+        "defensibility": 79,
+        "accessibility": 81,
+        "valueCapture": 94,
+        "transferability": 95,
+        "optionality": 99,
+        "hypeRisk": 72,
+        "confidence": 83,
+        "capitalQuality": 84,
+        "crowdingRisk": 88,
+        "proofability": 92
+      },
+      "chars": {
+        "techDepth": 72,
+        "business": 94,
+        "math": 42,
+        "hardware": 10,
+        "regulation": 57,
+        "longTraining": 48,
+        "entrepreneurship": 92
+      },
+      "meta": {
+        "timeToEntry": "9–24 mo",
+        "difficulty": "Medium-high",
+        "ceiling": "Exceptional",
+        "ownership": "Exceptional",
+        "entry": "Enterprise systems/business + AI/data",
+        "signal": "Accelerating",
+        "horizon": "3–10y"
+      },
+      "skills": [
+        "enterprise architecture",
+        "business process",
+        "LLM/agent systems",
+        "data integration",
+        "governance",
+        "TCO/ROI",
+        "change management",
+        "product strategy"
+      ],
+      "tools": [
+        "Python",
+        "APIs",
+        "SQL",
+        "vector/search concepts",
+        "agent frameworks",
+        "cloud AI platforms",
+        "workflow orchestration",
+        "enterprise integration",
+        "observability/evaluation"
+      ],
+      "path": [
+        [
+          "Foundation",
+          "Learn AI/LLM architecture, APIs, data, enterprise processes and value-case fundamentals."
+        ],
+        [
+          "Practitioner",
+          "Automate a real workflow with controls, evaluation, human-in-the-loop and measurable ROI."
+        ],
+        [
+          "Specialist",
+          "Own cross-system agent architecture, enterprise AI governance and production rollout."
+        ],
+        [
+          "Leverage",
+          "Move into principal architecture, transformation leadership, specialist consulting, vertical AI product or founder roles."
+        ]
+      ],
+      "roles": [
+        "Enterprise AI Engineer",
+        "AI Solution Architect",
+        "Agentic Automation Architect",
+        "AI Transformation Lead",
+        "Vertical AI Founder/Principal"
+      ],
+      "counter": "Generic implementation work can commoditize quickly and incumbent platforms can absorb standalone features.",
+      "changeMind": "Downgrade if enterprises fail to move agents into production or if implementation becomes near-zero-friction and value capture shifts entirely to platform vendors.",
+      "valueChain": "Models/platforms → data/integration → business process → governance → measurable outcomes",
+      "geo": {
+        "Global": "Exceptional",
+        "US": "Exceptional",
+        "Europe": "Exceptional",
+        "Germany": "Exceptional"
+      },
+      "geoScores": {
+        "Global": 95,
+        "US": 95,
+        "Europe": 95,
+        "Germany": 95
+      },
+      "horizonScores": {
+        "1-2y": 96,
+        "3-5y": 98,
+        "5-10y": 95,
+        "10-15y": 91
+      },
+      "driverExposure": {
+        "aiDemand": 0.55,
+        "agenticAdoption": 1.0
+      },
+      "capitalObservations": [
+        {
+          "series": "AI software spending",
+          "period": "2025",
+          "value": 282.897,
+          "unit": "USD bn",
+          "flowType": "Technology spend",
+          "status": "forecast/estimate",
+          "source": "S1",
+          "proxy": true
+        },
+        {
+          "series": "AI software spending",
+          "period": "2026",
+          "value": 453.209,
+          "unit": "USD bn",
+          "flowType": "Technology spend",
+          "status": "forecast",
+          "source": "S1",
+          "proxy": true
+        },
+        {
+          "series": "AI software spending",
+          "period": "2027",
+          "value": 638.431,
+          "unit": "USD bn",
+          "flowType": "Technology spend",
+          "status": "forecast",
+          "source": "S1",
+          "proxy": true
+        }
+      ],
+      "confidenceBreakdown": {
+        "sourceQuality": 87,
+        "sourceCount": 3,
+        "sourceDiversity": 60,
+        "recency": 100,
+        "directness": 82,
+        "calculatedConfidence": 83
+      },
+      "uncertaintyPoints": 4.4,
+      "hierarchy": {
+        "structuralWave": "Enterprise Software",
+        "sector": "Enterprise Software",
+        "valueChainPosition": "Application + architecture layer",
+        "specialization": "Enterprise AI Architecture & Agentic Automation"
+      }
+    },
+    {
+      "id": "semis",
+      "name": "AI Semiconductors, Memory & Advanced Packaging",
+      "sector": "Semiconductors",
+      "thesis": "Compute scarcity and strategic sovereignty make accelerators, HBM, packaging, chip design and manufacturing equipment high-barrier value pools.",
+      "evidence": "SIA reported $791.7B of global semiconductor sales in 2025. In June 2026, SIA endorsed the WSTS forecast for more than $1.5T of 2026 sales; by July, year-to-date sales had already exceeded the prior full-year record.",
+      "sources": [
+        "S6",
+        "S18",
+        "S23",
+        "S24"
+      ],
+      "scores": {
+        "capital": 99,
+        "momentum": 97,
+        "durability": 96,
+        "scarcity": 95,
+        "income": 99,
+        "aiResilience": 100,
+        "businessValue": 100,
+        "entrepreneurship": 72,
+        "defensibility": 99,
+        "accessibility": 29,
+        "valueCapture": 98,
+        "transferability": 79,
+        "optionality": 85,
+        "hypeRisk": 52,
+        "confidence": 92,
+        "capitalQuality": 96,
+        "crowdingRisk": 50,
+        "proofability": 35
+      },
+      "chars": {
+        "techDepth": 100,
+        "business": 45,
+        "math": 90,
+        "hardware": 100,
+        "regulation": 45,
+        "longTraining": 98,
+        "entrepreneurship": 54
+      },
+      "meta": {
+        "timeToEntry": "4–8y",
+        "difficulty": "Extreme",
+        "ceiling": "Exceptional",
+        "ownership": "High but capital-heavy",
+        "entry": "EE/CE/physics → chip systems",
+        "signal": "Accelerating",
+        "horizon": "10–15y"
+      },
+      "skills": [
+        "computer architecture",
+        "digital design",
+        "VLSI",
+        "memory systems",
+        "packaging",
+        "EDA",
+        "device/manufacturing fundamentals",
+        "performance modeling"
+      ],
+      "tools": [
+        "SystemVerilog",
+        "Verilog",
+        "C/C++",
+        "Python",
+        "EDA tools",
+        "SPICE concepts",
+        "FPGA",
+        "architecture simulators",
+        "Linux"
+      ],
+      "path": [
+        [
+          "Foundation",
+          "Build serious electrical/computer engineering, digital logic and architecture depth."
+        ],
+        [
+          "Practitioner",
+          "Design/verify FPGA or ASIC blocks; learn memory hierarchy and performance modeling."
+        ],
+        [
+          "Specialist",
+          "Own accelerator, memory, packaging, verification or EDA bottlenecks."
+        ],
+        [
+          "Leverage",
+          "Advance to principal/chief architect, semiconductor IP, EDA, fabless startup or strategic technical leadership."
+        ]
+      ],
+      "roles": [
+        "Design Verification Engineer",
+        "Computer Architect",
+        "ASIC/Accelerator Engineer",
+        "Packaging Engineer",
+        "Principal / Chief Architect"
+      ],
+      "counter": "The sector is cyclical, geopolitically exposed and extremely capital intensive; not all parts capture equal economics.",
+      "changeMind": "Downgrade if AI compute demand plateaus for years and capacity oversupply structurally destroys pricing across accelerators, memory and foundry layers.",
+      "valueChain": "EDA/IP → design → memory/packaging → foundry/equipment → systems",
+      "geo": {
+        "Global": "Exceptional",
+        "US": "Exceptional",
+        "Europe": "Strong",
+        "Germany": "Very strong in industrial/automotive niches"
+      },
+      "geoScores": {
+        "Global": 95,
+        "US": 95,
+        "Europe": 76,
+        "Germany": 86
+      },
+      "horizonScores": {
+        "1-2y": 97,
+        "3-5y": 96,
+        "5-10y": 95,
+        "10-15y": 93
+      },
+      "driverExposure": {
+        "aiDemand": 0.9,
+        "geopoliticalRisk": 0.55,
+        "industrialReshoring": 0.55,
+        "powerConstraint": -0.1
+      },
+      "capitalObservations": [
+        {
+          "series": "Global semiconductor sales",
+          "period": "2024",
+          "value": 630.5,
+          "unit": "USD bn",
+          "flowType": "Industry sales",
+          "status": "observed",
+          "source": "S6"
+        },
+        {
+          "series": "Global semiconductor sales",
+          "period": "2025",
+          "value": 791.7,
+          "unit": "USD bn",
+          "flowType": "Industry sales",
+          "status": "observed",
+          "source": "S6"
+        },
+        {
+          "series": "Global semiconductor sales",
+          "period": "2026",
+          "value": 1500.0,
+          "unit": "USD bn",
+          "flowType": "Industry sales",
+          "status": "forecast (> $1.5T)",
+          "source": "S23"
+        },
+        {
+          "series": "Global semiconductor sales",
+          "period": "Jul 2026",
+          "value": 146.8,
+          "unit": "USD bn",
+          "flowType": "Industry sales",
+          "status": "observed monthly (3-month moving average)",
+          "source": "S24"
+        }
+      ],
+      "confidenceBreakdown": {
+        "sourceQuality": 90,
+        "sourceCount": 4,
+        "sourceDiversity": 90,
+        "recency": 100,
+        "directness": 92,
+        "calculatedConfidence": 92
+      },
+      "uncertaintyPoints": 3.1,
+      "hierarchy": {
+        "structuralWave": "Semiconductors",
+        "sector": "Semiconductors",
+        "valueChainPosition": "Upstream compute / component layer",
+        "specialization": "AI Semiconductors, Memory & Advanced Packaging"
+      }
+    },
+    {
+      "id": "defense-autonomy",
+      "name": "Defense AI, Drones & Autonomous Systems",
+      "sector": "Defense / Aerospace",
+      "thesis": "European rearmament plus autonomy, sensing, cyber and software-defined systems are redirecting both public spending and venture capital.",
+      "evidence": "$2.887T global military spending in 2025; Europe +14%. European defense/security/resilience startup VC hit $8.7B in 2025 (+55%).",
+      "sources": [
+        "S7",
+        "S8",
+        "S18"
+      ],
+      "scores": {
+        "capital": 96,
+        "momentum": 96,
+        "durability": 98,
+        "scarcity": 92,
+        "income": 94,
+        "aiResilience": 99,
+        "businessValue": 99,
+        "entrepreneurship": 87,
+        "defensibility": 97,
+        "accessibility": 41,
+        "valueCapture": 95,
+        "transferability": 85,
+        "optionality": 90,
+        "hypeRisk": 37,
+        "confidence": 87,
+        "capitalQuality": 96,
+        "crowdingRisk": 45,
+        "proofability": 55
+      },
+      "chars": {
+        "techDepth": 91,
+        "business": 55,
+        "math": 76,
+        "hardware": 84,
+        "regulation": 86,
+        "longTraining": 80,
+        "entrepreneurship": 76
+      },
+      "meta": {
+        "timeToEntry": "2–5y",
+        "difficulty": "Very high",
+        "ceiling": "Very high",
+        "ownership": "Very high",
+        "entry": "AI/robotics/embedded/cyber + defense domain",
+        "signal": "Accelerating",
+        "horizon": "5–15y"
+      },
+      "skills": [
+        "autonomy",
+        "computer vision",
+        "embedded systems",
+        "sensor fusion",
+        "RF/EW concepts",
+        "secure comms",
+        "mission systems",
+        "defense procurement"
+      ],
+      "tools": [
+        "C++",
+        "Python",
+        "ROS2",
+        "PX4/ArduPilot concepts",
+        "CUDA",
+        "SLAM/CV stacks",
+        "embedded Linux",
+        "simulation",
+        "secure networking"
+      ],
+      "path": [
+        [
+          "Foundation",
+          "Build robotics/embedded/AI fundamentals and understand defense system constraints."
+        ],
+        [
+          "Practitioner",
+          "Ship perception, autonomy, simulation or secure-communications prototypes."
+        ],
+        [
+          "Specialist",
+          "Own mission-critical autonomy, sensor fusion, EW-adjacent software or resilient edge systems."
+        ],
+        [
+          "Leverage",
+          "Move into technical leadership, defense product, dual-use startup or mission-systems architecture."
+        ]
+      ],
+      "roles": [
+        "Autonomy Engineer",
+        "Perception Engineer",
+        "Mission Systems Engineer",
+        "Defense AI Architect",
+        "Dual-use Founder/Principal"
+      ],
+      "counter": "Procurement cycles, export controls and political priorities can be unpredictable; ethical and jurisdictional constraints matter.",
+      "changeMind": "Downgrade if European procurement plans reverse materially and autonomous/software-defined defense fails to gain budget share.",
+      "valueChain": "Sensors → edge compute → autonomy → communications → command systems → procurement/operations",
+      "geo": {
+        "Global": "Very strong",
+        "US": "Exceptional",
+        "Europe": "Exceptional",
+        "Germany": "Exceptional"
+      },
+      "geoScores": {
+        "Global": 86,
+        "US": 95,
+        "Europe": 95,
+        "Germany": 95
+      },
+      "horizonScores": {
+        "1-2y": 95,
+        "3-5y": 98,
+        "5-10y": 97,
+        "10-15y": 94
+      },
+      "driverExposure": {
+        "aiDemand": 0.2,
+        "geopoliticalRisk": 1.0,
+        "industrialReshoring": 0.5
+      },
+      "capitalObservations": [
+        {
+          "series": "World military expenditure",
+          "period": "2024",
+          "value": 2718,
+          "unit": "USD bn",
+          "flowType": "Government expenditure",
+          "status": "observed",
+          "source": "S21",
+          "proxy": true
+        },
+        {
+          "series": "World military expenditure",
+          "period": "2025",
+          "value": 2887,
+          "unit": "USD bn",
+          "flowType": "Government expenditure",
+          "status": "observed",
+          "source": "S7",
+          "proxy": true
+        },
+        {
+          "series": "European defence/security/resilience VC",
+          "period": "2024",
+          "value": 5.61,
+          "unit": "USD bn",
+          "flowType": "Venture capital",
+          "status": "derived from 2025 growth",
+          "source": "S8"
+        },
+        {
+          "series": "European defence/security/resilience VC",
+          "period": "2025",
+          "value": 8.7,
+          "unit": "USD bn",
+          "flowType": "Venture capital",
+          "status": "observed",
+          "source": "S8"
+        }
+      ],
+      "confidenceBreakdown": {
+        "sourceQuality": 88,
+        "sourceCount": 3,
+        "sourceDiversity": 75,
+        "recency": 100,
+        "directness": 88,
+        "calculatedConfidence": 87
+      },
+      "uncertaintyPoints": 3.8,
+      "hierarchy": {
+        "structuralWave": "Defense",
+        "sector": "Defense / Aerospace",
+        "valueChainPosition": "Mission systems / application + hardware layer",
+        "specialization": "Defense AI, Drones & Autonomous Systems"
+      }
+    },
+    {
+      "id": "robotics",
+      "name": "Robotics & Industrial Automation",
+      "sector": "Robotics / Manufacturing",
+      "thesis": "AI moves from digital work into the physical economy. The moat comes from integrating perception, controls, hardware, safety and real operations.",
+      "evidence": "542k industrial robots were installed globally in 2024—more than double a decade earlier; US installations rose 11% in 2025.",
+      "sources": [
+        "S9",
+        "S10",
+        "S17"
+      ],
+      "scores": {
+        "capital": 77,
+        "momentum": 82,
+        "durability": 96,
+        "scarcity": 91,
+        "income": 95,
+        "aiResilience": 99,
+        "businessValue": 98,
+        "entrepreneurship": 89,
+        "defensibility": 94,
+        "accessibility": 44,
+        "valueCapture": 94,
+        "transferability": 87,
+        "optionality": 93,
+        "hypeRisk": 43,
+        "confidence": 85,
+        "capitalQuality": 91,
+        "crowdingRisk": 57,
+        "proofability": 72
+      },
+      "chars": {
+        "techDepth": 95,
+        "business": 51,
+        "math": 83,
+        "hardware": 93,
+        "regulation": 46,
+        "longTraining": 87,
+        "entrepreneurship": 78
+      },
+      "meta": {
+        "timeToEntry": "3–5y",
+        "difficulty": "Very high",
+        "ceiling": "Exceptional",
+        "ownership": "Very high",
+        "entry": "Mechatronics/CS/controls + ML",
+        "signal": "Structural",
+        "horizon": "5–15y"
+      },
+      "skills": [
+        "controls",
+        "robot perception",
+        "SLAM",
+        "planning",
+        "embedded systems",
+        "safety",
+        "industrial integration",
+        "simulation"
+      ],
+      "tools": [
+        "C++",
+        "Python",
+        "ROS2",
+        "Gazebo/Isaac Sim concepts",
+        "PyTorch",
+        "OpenCV",
+        "real-time systems",
+        "PLC/industrial protocols",
+        "CAD basics"
+      ],
+      "path": [
+        [
+          "Foundation",
+          "Build mechanics/controls/programming and probability/linear algebra foundations."
+        ],
+        [
+          "Practitioner",
+          "Create a real or simulated robot stack: perception → planning → control."
+        ],
+        [
+          "Specialist",
+          "Own a hard layer such as perception, manipulation, autonomy, safety or factory integration."
+        ],
+        [
+          "Leverage",
+          "Lead robotics platforms, industrial automation programs, product companies or specialist integration businesses."
+        ]
+      ],
+      "roles": [
+        "Robotics Engineer",
+        "Controls Engineer",
+        "Perception/SLAM Engineer",
+        "Autonomy Architect",
+        "Robotics Product/Founder"
+      ],
+      "counter": "Hardware cycles are slow, unit economics can be difficult and humanoid hype may outrun deployment reality.",
+      "changeMind": "Downgrade if real-world deployment economics remain inferior to human labor across most target workflows for an extended period.",
+      "valueChain": "Sensors/actuators → embedded/controls → perception/planning → safety → workflow integration",
+      "geo": {
+        "Global": "Very strong",
+        "US": "Exceptional",
+        "Europe": "Very strong",
+        "Germany": "Exceptional in industrial automation"
+      },
+      "geoScores": {
+        "Global": 86,
+        "US": 95,
+        "Europe": 86,
+        "Germany": 95
+      },
+      "horizonScores": {
+        "1-2y": 87,
+        "3-5y": 94,
+        "5-10y": 99,
+        "10-15y": 100
+      },
+      "driverExposure": {
+        "aiDemand": 0.35,
+        "industrialReshoring": 0.9,
+        "geopoliticalRisk": 0.2
+      },
+      "capitalObservations": [
+        {
+          "series": "Industrial robots installed globally",
+          "period": "2024",
+          "value": 542000,
+          "unit": "installations",
+          "flowType": "Physical deployment activity",
+          "status": "observed",
+          "source": "S9"
+        }
+      ],
+      "confidenceBreakdown": {
+        "sourceQuality": 88,
+        "sourceCount": 3,
+        "sourceDiversity": 75,
+        "recency": 91,
+        "directness": 86,
+        "calculatedConfidence": 85
+      },
+      "uncertaintyPoints": 4.1,
+      "hierarchy": {
+        "structuralWave": "Robotics",
+        "sector": "Robotics / Manufacturing",
+        "valueChainPosition": "Physical automation / application layer",
+        "specialization": "Robotics & Industrial Automation"
+      }
+    },
+    {
+      "id": "data-infra",
+      "name": "AI Data Infrastructure, Retrieval & Governance",
+      "sector": "Data / AI",
+      "thesis": "AI increases the value of trusted, governed, searchable proprietary data. The durable work is architecture, quality, lineage, retrieval and operational data systems—not dashboards.",
+      "evidence": "AI-data spending is growing from a small base while enterprise AI and cloud budgets expand sharply; demand is reinforced by AI adoption and governance requirements.",
+      "sources": [
+        "S1",
+        "S4",
+        "S17"
+      ],
+      "scores": {
+        "capital": 87,
+        "momentum": 91,
+        "durability": 94,
+        "scarcity": 89,
+        "income": 95,
+        "aiResilience": 94,
+        "businessValue": 99,
+        "entrepreneurship": 94,
+        "defensibility": 88,
+        "accessibility": 73,
+        "valueCapture": 95,
+        "transferability": 99,
+        "optionality": 100,
+        "hypeRisk": 54,
+        "confidence": 83,
+        "capitalQuality": 92,
+        "crowdingRisk": 70,
+        "proofability": 90
+      },
+      "chars": {
+        "techDepth": 83,
+        "business": 67,
+        "math": 53,
+        "hardware": 15,
+        "regulation": 61,
+        "longTraining": 56,
+        "entrepreneurship": 86
+      },
+      "meta": {
+        "timeToEntry": "9–24 mo",
+        "difficulty": "High",
+        "ceiling": "Exceptional",
+        "ownership": "Exceptional",
+        "entry": "Data/software/cloud → AI data architecture",
+        "signal": "Accelerating",
+        "horizon": "5–15y"
+      },
+      "skills": [
+        "data modeling",
+        "distributed data systems",
+        "streaming",
+        "retrieval/search",
+        "data quality",
+        "lineage",
+        "governance",
+        "AI evaluation"
+      ],
+      "tools": [
+        "SQL",
+        "Python",
+        "Spark",
+        "Kafka",
+        "dbt",
+        "lakehouse platforms",
+        "vector/search engines",
+        "Airflow/Dagster",
+        "cloud data services",
+        "OpenTelemetry"
+      ],
+      "path": [
+        [
+          "Foundation",
+          "Master SQL, Python, data modeling, distributed systems and cloud basics."
+        ],
+        [
+          "Practitioner",
+          "Build batch + streaming pipelines, retrieval systems and quality/lineage controls."
+        ],
+        [
+          "Specialist",
+          "Own AI-ready data architecture, semantic/retrieval platforms or governed data products."
+        ],
+        [
+          "Leverage",
+          "Move into principal data architecture, platform products, specialist consulting or vertical data businesses."
+        ]
+      ],
+      "roles": [
+        "Data Platform Engineer",
+        "Search/Retrieval Engineer",
+        "Data Architect",
+        "AI Data Platform Lead",
+        "Data Infrastructure Founder/Principal"
+      ],
+      "counter": "Platform vendors can commoditize individual tooling; weak data programs often become governance-heavy without clear ROI.",
+      "changeMind": "Downgrade if enterprise AI ceases to depend materially on proprietary data quality, integration and governance.",
+      "valueChain": "Sources → pipelines/streaming → storage/modeling → search/retrieval → governance → AI/apps",
+      "geo": {
+        "Global": "Exceptional",
+        "US": "Exceptional",
+        "Europe": "Exceptional",
+        "Germany": "Exceptional"
+      },
+      "geoScores": {
+        "Global": 95,
+        "US": 95,
+        "Europe": 95,
+        "Germany": 95
+      },
+      "horizonScores": {
+        "1-2y": 95,
+        "3-5y": 98,
+        "5-10y": 97,
+        "10-15y": 94
+      },
+      "driverExposure": {
+        "aiDemand": 0.55,
+        "agenticAdoption": 0.95,
+        "geopoliticalRisk": 0.1
+      },
+      "capitalObservations": [
+        {
+          "series": "AI DS/ML platform spending",
+          "period": "2025",
+          "value": 21.292,
+          "unit": "USD bn",
+          "flowType": "Technology spend",
+          "status": "forecast/estimate",
+          "source": "S1",
+          "proxy": true
+        },
+        {
+          "series": "AI DS/ML platform spending",
+          "period": "2026",
+          "value": 29.928,
+          "unit": "USD bn",
+          "flowType": "Technology spend",
+          "status": "forecast",
+          "source": "S1",
+          "proxy": true
+        },
+        {
+          "series": "AI DS/ML platform spending",
+          "period": "2027",
+          "value": 42.639,
+          "unit": "USD bn",
+          "flowType": "Technology spend",
+          "status": "forecast",
+          "source": "S1",
+          "proxy": true
+        }
+      ],
+      "confidenceBreakdown": {
+        "sourceQuality": 85,
+        "sourceCount": 3,
+        "sourceDiversity": 75,
+        "recency": 96,
+        "directness": 77,
+        "calculatedConfidence": 83
+      },
+      "uncertaintyPoints": 4.4,
+      "hierarchy": {
+        "structuralWave": "Data",
+        "sector": "Data / AI",
+        "valueChainPosition": "Data / control plane layer",
+        "specialization": "AI Data Infrastructure, Retrieval & Governance"
+      }
+    },
+    {
+      "id": "cloud-dist",
+      "name": "Cloud, Distributed Systems & Platform Engineering",
+      "sector": "Cloud Infrastructure",
+      "thesis": "Cloud remains the operating substrate for AI and enterprise systems. Durable value sits in reliability, architecture, performance, cost and developer platforms.",
+      "evidence": "Global IT spend is forecast at $6.37T in 2026; AI-optimized IaaS alone is forecast at $42B, +96%.",
+      "sources": [
+        "S4",
+        "S19"
+      ],
+      "scores": {
+        "capital": 90,
+        "momentum": 87,
+        "durability": 95,
+        "scarcity": 93,
+        "income": 97,
+        "aiResilience": 97,
+        "businessValue": 99,
+        "entrepreneurship": 82,
+        "defensibility": 90,
+        "accessibility": 66,
+        "valueCapture": 91,
+        "transferability": 100,
+        "optionality": 98,
+        "hypeRisk": 48,
+        "confidence": 80,
+        "capitalQuality": 94,
+        "crowdingRisk": 65,
+        "proofability": 90
+      },
+      "chars": {
+        "techDepth": 92,
+        "business": 58,
+        "math": 52,
+        "hardware": 30,
+        "regulation": 36,
+        "longTraining": 66,
+        "entrepreneurship": 70
+      },
+      "meta": {
+        "timeToEntry": "12–30 mo",
+        "difficulty": "High",
+        "ceiling": "Exceptional",
+        "ownership": "High",
+        "entry": "Software/devops → platform/distributed systems",
+        "signal": "Structural",
+        "horizon": "5–15y"
+      },
+      "skills": [
+        "distributed systems",
+        "SRE",
+        "networking",
+        "containers",
+        "cloud architecture",
+        "performance",
+        "FinOps",
+        "developer platforms"
+      ],
+      "tools": [
+        "Linux",
+        "Go/Rust/Python",
+        "Kubernetes",
+        "Terraform/OpenTofu",
+        "AWS/Azure/GCP",
+        "service mesh",
+        "observability",
+        "Postgres/Redis",
+        "queues/streaming"
+      ],
+      "path": [
+        [
+          "Foundation",
+          "Master Linux, networks, one systems language, cloud and databases."
+        ],
+        [
+          "Practitioner",
+          "Operate production services; build IaC, observability, CI/CD and failure testing."
+        ],
+        [
+          "Specialist",
+          "Own reliability, distributed architecture, platform engineering or cloud economics at scale."
+        ],
+        [
+          "Leverage",
+          "Advance to principal engineering, platform leadership, infrastructure product or consulting."
+        ]
+      ],
+      "roles": [
+        "Platform Engineer",
+        "SRE",
+        "Distributed Systems Engineer",
+        "Cloud Architect",
+        "Principal Infrastructure Engineer"
+      ],
+      "counter": "Managed services and AI coding tools will commoditize routine infrastructure work; value concentrates at scale and complexity.",
+      "changeMind": "Downgrade if cloud complexity collapses materially and reliability/performance become largely autonomous commodities.",
+      "valueChain": "Compute/network/storage → cloud primitives → platform → developer experience → applications",
+      "geo": {
+        "Global": "Exceptional",
+        "US": "Exceptional",
+        "Europe": "Very strong",
+        "Germany": "Very strong"
+      },
+      "geoScores": {
+        "Global": 95,
+        "US": 95,
+        "Europe": 86,
+        "Germany": 86
+      },
+      "horizonScores": {
+        "1-2y": 93,
+        "3-5y": 95,
+        "5-10y": 93,
+        "10-15y": 90
+      },
+      "driverExposure": {
+        "aiDemand": 0.65,
+        "agenticAdoption": 0.65
+      },
+      "capitalObservations": [
+        {
+          "series": "AI-optimized IaaS spending",
+          "period": "2025",
+          "value": 21.43,
+          "unit": "USD bn",
+          "flowType": "Cloud spend",
+          "status": "derived from 2026 growth",
+          "source": "S19",
+          "proxy": true
+        },
+        {
+          "series": "AI-optimized IaaS spending",
+          "period": "2026",
+          "value": 42.0,
+          "unit": "USD bn",
+          "flowType": "Cloud spend",
+          "status": "forecast",
+          "source": "S19",
+          "proxy": true
+        },
+        {
+          "series": "AI-optimized IaaS spending",
+          "period": "2027",
+          "value": 66.0,
+          "unit": "USD bn",
+          "flowType": "Cloud spend",
+          "status": "forecast",
+          "source": "S19",
+          "proxy": true
+        }
+      ],
+      "confidenceBreakdown": {
+        "sourceQuality": 88,
+        "sourceCount": 2,
+        "sourceDiversity": 60,
+        "recency": 100,
+        "directness": 80,
+        "calculatedConfidence": 80
+      },
+      "uncertaintyPoints": 4.8,
+      "hierarchy": {
+        "structuralWave": "Cloud Infrastructure",
+        "sector": "Cloud Infrastructure",
+        "valueChainPosition": "Platform / infrastructure layer",
+        "specialization": "Cloud, Distributed Systems & Platform Engineering"
+      }
+    },
+    {
+      "id": "comp-bio",
+      "name": "Computational Biology & AI-enabled Biotech",
+      "sector": "Healthcare / Biotech",
+      "thesis": "A high-risk, high-moat intersection where AI can accelerate discovery, but true value requires biology, experimentation, regulation and clinical translation.",
+      "evidence": "Biotech financing reached $68.5B in 2025 (+11%); biopharma VC was $12.6B in H1 2026 and M&A activity is strengthening.",
+      "sources": [
+        "S15",
+        "S16"
+      ],
+      "scores": {
+        "capital": 73,
+        "momentum": 80,
+        "durability": 97,
+        "scarcity": 96,
+        "income": 98,
+        "aiResilience": 100,
+        "businessValue": 100,
+        "entrepreneurship": 95,
+        "defensibility": 99,
+        "accessibility": 23,
+        "valueCapture": 100,
+        "transferability": 58,
+        "optionality": 84,
+        "hypeRisk": 46,
+        "confidence": 81,
+        "capitalQuality": 89,
+        "crowdingRisk": 45,
+        "proofability": 35
+      },
+      "chars": {
+        "techDepth": 96,
+        "business": 45,
+        "math": 88,
+        "hardware": 28,
+        "regulation": 96,
+        "longTraining": 100,
+        "entrepreneurship": 78
+      },
+      "meta": {
+        "timeToEntry": "4–8y",
+        "difficulty": "Extreme",
+        "ceiling": "Exceptional",
+        "ownership": "Exceptional",
+        "entry": "Biology/chemistry + computation/ML",
+        "signal": "Selective acceleration",
+        "horizon": "10–15y"
+      },
+      "skills": [
+        "molecular biology",
+        "statistics",
+        "bioinformatics",
+        "ML",
+        "drug discovery",
+        "experimental design",
+        "clinical/regulatory basics",
+        "scientific computing"
+      ],
+      "tools": [
+        "Python/R",
+        "PyTorch/JAX",
+        "Bioconductor",
+        "sequence/structure tooling",
+        "SQL",
+        "workflow systems",
+        "cloud HPC",
+        "scientific data formats"
+      ],
+      "path": [
+        [
+          "Foundation",
+          "Build serious biology plus statistics/programming depth; do not treat biology as a dataset only."
+        ],
+        [
+          "Practitioner",
+          "Reproduce computational biology work and contribute to experimentally grounded projects."
+        ],
+        [
+          "Specialist",
+          "Own a high-value layer: protein/sequence modeling, multimodal biology, translational analytics or computational chemistry."
+        ],
+        [
+          "Leverage",
+          "Lead scientific platforms, biotech R&D, technology strategy, venture creation or IP-driven companies."
+        ]
+      ],
+      "roles": [
+        "Bioinformatics Scientist",
+        "Computational Biologist",
+        "ML Scientist — Biology",
+        "TechBio Platform Lead",
+        "Biotech Founder/Scientific Principal"
+      ],
+      "counter": "Science risk, clinical failure, regulation and long capital cycles are much harsher than software; AI-only differentiation is fragile.",
+      "changeMind": "Downgrade if computational methods fail to improve experimental/clinical productivity or capital markets structurally retreat from biotech innovation.",
+      "valueChain": "Biological data → models → experiments → preclinical/clinical → regulatory → commercialization",
+      "geo": {
+        "Global": "Very strong",
+        "US": "Exceptional",
+        "Europe": "Very strong",
+        "Germany": "Strong",
+        "Switzerland": "Exceptional"
+      },
+      "geoScores": {
+        "Global": 86,
+        "US": 95,
+        "Europe": 86,
+        "Germany": 76,
+        "Switzerland": 95
+      },
+      "horizonScores": {
+        "1-2y": 76,
+        "3-5y": 86,
+        "5-10y": 95,
+        "10-15y": 100
+      },
+      "driverExposure": {
+        "aiDemand": 0.18,
+        "biotechInnovation": 1.0
+      },
+      "capitalObservations": [
+        {
+          "series": "Biotech financing",
+          "period": "2024",
+          "value": 61.7,
+          "unit": "USD bn",
+          "flowType": "Financing",
+          "status": "derived from 2025 growth",
+          "source": "S15",
+          "proxy": true
+        },
+        {
+          "series": "Biotech financing",
+          "period": "2025",
+          "value": 68.5,
+          "unit": "USD bn",
+          "flowType": "Financing",
+          "status": "observed/reported",
+          "source": "S15",
+          "proxy": true
+        }
+      ],
+      "confidenceBreakdown": {
+        "sourceQuality": 80,
+        "sourceCount": 2,
+        "sourceDiversity": 75,
+        "recency": 100,
+        "directness": 88,
+        "calculatedConfidence": 81
+      },
+      "uncertaintyPoints": 4.7,
+      "hierarchy": {
+        "structuralWave": "Healthcare",
+        "sector": "Healthcare / Biotech",
+        "valueChainPosition": "R&D / IP creation layer",
+        "specialization": "Computational Biology & AI-enabled Biotech"
+      }
+    },
+    {
+      "id": "fintech",
+      "name": "Financial Infrastructure & Fintech",
+      "sector": "Finance / Software",
+      "thesis": "Payments, risk, compliance, treasury and market infrastructure remain valuable because they sit directly on money movement and regulation.",
+      "evidence": "$103.1B global fintech investment in H1 2026 vs $72.2B in H2 2025; VC was $31.5B and M&A drove much of the increase.",
+      "sources": [
+        "S14"
+      ],
+      "scores": {
+        "capital": 78,
+        "momentum": 86,
+        "durability": 91,
+        "scarcity": 80,
+        "income": 94,
+        "aiResilience": 86,
+        "businessValue": 98,
+        "entrepreneurship": 92,
+        "defensibility": 84,
+        "accessibility": 69,
+        "valueCapture": 93,
+        "transferability": 92,
+        "optionality": 95,
+        "hypeRisk": 47,
+        "confidence": 77,
+        "capitalQuality": 82,
+        "crowdingRisk": 62,
+        "proofability": 85
+      },
+      "chars": {
+        "techDepth": 75,
+        "business": 87,
+        "math": 62,
+        "hardware": 5,
+        "regulation": 90,
+        "longTraining": 54,
+        "entrepreneurship": 92
+      },
+      "meta": {
+        "timeToEntry": "12–30 mo",
+        "difficulty": "Medium-high",
+        "ceiling": "Exceptional",
+        "ownership": "Exceptional",
+        "entry": "Software/data + financial systems",
+        "signal": "Reaccelerating",
+        "horizon": "5–10y"
+      },
+      "skills": [
+        "payments",
+        "risk",
+        "ledger systems",
+        "compliance",
+        "fraud",
+        "treasury",
+        "financial regulation",
+        "unit economics"
+      ],
+      "tools": [
+        "Python/Java/Go",
+        "SQL",
+        "event streaming",
+        "cloud",
+        "payment APIs",
+        "ledger patterns",
+        "risk models",
+        "security/IAM"
+      ],
+      "path": [
+        [
+          "Foundation",
+          "Learn software/data systems plus financial statements, payments, credit/risk and regulation."
+        ],
+        [
+          "Practitioner",
+          "Build a ledger, payments/risk workflow or financial-data system with auditability."
+        ],
+        [
+          "Specialist",
+          "Own a money-adjacent bottleneck: payments infra, fraud, treasury, regtech, risk or market data."
+        ],
+        [
+          "Leverage",
+          "Move into product/architecture, fintech leadership, specialist consulting, founder or investment roles."
+        ]
+      ],
+      "roles": [
+        "Fintech Engineer",
+        "Payments Architect",
+        "Risk Platform Engineer",
+        "Financial Systems Product Lead",
+        "Fintech Founder/Principal"
+      ],
+      "counter": "Fintech is highly regulated, competitive and vulnerable to distribution advantages held by banks/platform incumbents.",
+      "changeMind": "Downgrade if funding remains concentrated in megadeals while new-category formation and durable unit economics deteriorate broadly.",
+      "valueChain": "Banking rails → payments/ledger → risk/compliance → product/distribution",
+      "geo": {
+        "Global": "Very strong",
+        "US": "Exceptional",
+        "Europe": "Very strong",
+        "Germany": "Strong"
+      },
+      "geoScores": {
+        "Global": 86,
+        "US": 95,
+        "Europe": 86,
+        "Germany": 76
+      },
+      "horizonScores": {
+        "1-2y": 85,
+        "3-5y": 88,
+        "5-10y": 89,
+        "10-15y": 87
+      },
+      "driverExposure": {
+        "agenticAdoption": 0.35,
+        "geopoliticalRisk": -0.1
+      },
+      "capitalObservations": [
+        {
+          "series": "Global fintech investment",
+          "period": "H2 2025",
+          "value": 72.2,
+          "unit": "USD bn",
+          "flowType": "VC + PE + M&A",
+          "status": "observed/reported",
+          "source": "S14"
+        },
+        {
+          "series": "Global fintech investment",
+          "period": "H1 2026",
+          "value": 103.1,
+          "unit": "USD bn",
+          "flowType": "VC + PE + M&A",
+          "status": "observed/reported",
+          "source": "S14"
+        }
+      ],
+      "confidenceBreakdown": {
+        "sourceQuality": 84,
+        "sourceCount": 1,
+        "sourceDiversity": 60,
+        "recency": 100,
+        "directness": 91,
+        "calculatedConfidence": 77
+      },
+      "uncertaintyPoints": 5.2,
+      "hierarchy": {
+        "structuralWave": "Finance",
+        "sector": "Finance / Software",
+        "valueChainPosition": "Financial infrastructure / application layer",
+        "specialization": "Financial Infrastructure & Fintech"
+      }
+    },
+    {
+      "id": "quant",
+      "name": "Quantitative Research & AI in Markets",
+      "sector": "Quant Finance",
+      "thesis": "One of the highest employee-compensation ceilings, driven by direct value capture from forecasting, execution and risk—but access is exceptionally selective.",
+      "evidence": "Career economics are stronger than transparent sector-flow data here; treat the capital-flow score as a proxy rather than a directly comparable market-spend metric.",
+      "sources": [
+        "S17"
+      ],
+      "scores": {
+        "capital": 69,
+        "momentum": 76,
+        "durability": 94,
+        "scarcity": 100,
+        "income": 100,
+        "aiResilience": 98,
+        "businessValue": 100,
+        "entrepreneurship": 64,
+        "defensibility": 100,
+        "accessibility": 14,
+        "valueCapture": 100,
+        "transferability": 80,
+        "optionality": 83,
+        "hypeRisk": 31,
+        "confidence": 65,
+        "capitalQuality": 94,
+        "crowdingRisk": 65,
+        "proofability": 42
+      },
+      "chars": {
+        "techDepth": 94,
+        "business": 42,
+        "math": 100,
+        "hardware": 16,
+        "regulation": 40,
+        "longTraining": 96,
+        "entrepreneurship": 42
+      },
+      "meta": {
+        "timeToEntry": "3–6y",
+        "difficulty": "Extreme",
+        "ceiling": "Extreme",
+        "ownership": "Medium-high",
+        "entry": "Math/stats/CS/physics → markets",
+        "signal": "Durable",
+        "horizon": "5–15y"
+      },
+      "skills": [
+        "probability",
+        "statistics",
+        "optimization",
+        "time series",
+        "market microstructure",
+        "algorithms",
+        "ML",
+        "research design"
+      ],
+      "tools": [
+        "Python",
+        "C++",
+        "NumPy/pandas",
+        "PyTorch/JAX",
+        "SQL",
+        "Linux",
+        "distributed research tooling",
+        "low-latency concepts"
+      ],
+      "path": [
+        [
+          "Foundation",
+          "Reach exceptional probability, statistics, algorithms and programming competence."
+        ],
+        [
+          "Practitioner",
+          "Run rigorous research on noisy time-series data; learn leakage, execution and transaction-cost realism."
+        ],
+        [
+          "Specialist",
+          "Develop alpha/risk/execution expertise or low-latency systems depth."
+        ],
+        [
+          "Leverage",
+          "Progress to senior researcher/PM, systematic platform leadership, prop trading or capital allocation."
+        ]
+      ],
+      "roles": [
+        "Quant Researcher",
+        "Quant Developer",
+        "Systematic Trader",
+        "Low-latency Engineer",
+        "Portfolio Manager"
+      ],
+      "counter": "Extremely selective, performance-driven and capacity constrained; success distribution is very unequal.",
+      "changeMind": "Downgrade if your realistic probability of entry remains low after serious evidence-based testing of math/research ability.",
+      "valueChain": "Research/data → signal/risk → execution → portfolio/capital allocation",
+      "geo": {
+        "Global": "Selective",
+        "US": "Exceptional",
+        "Europe": "Very strong",
+        "Germany": "Selective",
+        "UK": "Exceptional"
+      },
+      "geoScores": {
+        "Global": 56,
+        "US": 95,
+        "Europe": 86,
+        "Germany": 56,
+        "UK": 95
+      },
+      "horizonScores": {
+        "1-2y": 89,
+        "3-5y": 90,
+        "5-10y": 89,
+        "10-15y": 86
+      },
+      "driverExposure": {
+        "aiDemand": 0.2,
+        "agenticAdoption": 0.1
+      },
+      "capitalObservations": [],
+      "confidenceBreakdown": {
+        "sourceQuality": 80,
+        "sourceCount": 1,
+        "sourceDiversity": 60,
+        "recency": 87,
+        "directness": 48,
+        "calculatedConfidence": 65
+      },
+      "uncertaintyPoints": 6.9,
+      "hierarchy": {
+        "structuralWave": "Quant Finance",
+        "sector": "Quant Finance",
+        "valueChainPosition": "Capital allocation / decision layer",
+        "specialization": "Quantitative Research & AI in Markets"
+      }
+    },
+    {
+      "id": "advanced-mfg",
+      "name": "Advanced Manufacturing & Industrial Software",
+      "sector": "Industrial / Deep Tech",
+      "thesis": "Reshoring, automation and supply-chain resilience increase demand for software that touches real production, quality, maintenance and factory economics.",
+      "evidence": "Deep tech reached 32% of European VC in 2025; Europe attracted $20B (+21%) while US deep-tech funding reached $144B (+92%).",
+      "sources": [
+        "S18",
+        "S17"
+      ],
+      "scores": {
+        "capital": 80,
+        "momentum": 83,
+        "durability": 98,
+        "scarcity": 90,
+        "income": 92,
+        "aiResilience": 99,
+        "businessValue": 99,
+        "entrepreneurship": 88,
+        "defensibility": 96,
+        "accessibility": 52,
+        "valueCapture": 94,
+        "transferability": 90,
+        "optionality": 95,
+        "hypeRisk": 25,
+        "confidence": 77,
+        "capitalQuality": 94,
+        "crowdingRisk": 35,
+        "proofability": 75
+      },
+      "chars": {
+        "techDepth": 84,
+        "business": 69,
+        "math": 58,
+        "hardware": 72,
+        "regulation": 48,
+        "longTraining": 73,
+        "entrepreneurship": 84
+      },
+      "meta": {
+        "timeToEntry": "18–36 mo",
+        "difficulty": "High",
+        "ceiling": "Very high",
+        "ownership": "Very high",
+        "entry": "Industrial/engineering + software/data",
+        "signal": "Structural",
+        "horizon": "5–15y"
+      },
+      "skills": [
+        "manufacturing systems",
+        "industrial data",
+        "OT/IT integration",
+        "MES/MOM",
+        "predictive maintenance",
+        "quality",
+        "simulation",
+        "operations economics"
+      ],
+      "tools": [
+        "Python",
+        "SQL",
+        "OPC UA/MQTT concepts",
+        "PLC/SCADA concepts",
+        "industrial IoT",
+        "time-series DB",
+        "digital twins",
+        "cloud/edge",
+        "ERP/MES integration"
+      ],
+      "path": [
+        [
+          "Foundation",
+          "Learn manufacturing operations plus software/data architecture and industrial protocols."
+        ],
+        [
+          "Practitioner",
+          "Connect machines/OT data to analytics, quality, maintenance or production workflows."
+        ],
+        [
+          "Specialist",
+          "Own OT/IT architecture, industrial AI, digital twins or software-defined production systems."
+        ],
+        [
+          "Leverage",
+          "Lead factory transformation, industrial software products, specialist consulting or vertical SaaS/AI businesses."
+        ]
+      ],
+      "roles": [
+        "Industrial Data Engineer",
+        "OT/IT Architect",
+        "Industrial AI Engineer",
+        "Manufacturing Systems Architect",
+        "Industrial Tech Founder/Principal"
+      ],
+      "counter": "Industrial sales cycles are long and integration-heavy; legacy environments can slow product scaling.",
+      "changeMind": "Downgrade if reshoring/automation capex weakens structurally and industrial software remains unable to produce measurable productivity gains.",
+      "valueChain": "Machines/controls → OT data → MES/MOM → analytics/AI → ERP/supply chain → economics",
+      "geo": {
+        "Global": "Very strong",
+        "US": "Very strong",
+        "Europe": "Exceptional",
+        "Germany": "Exceptional"
+      },
+      "geoScores": {
+        "Global": 86,
+        "US": 86,
+        "Europe": 95,
+        "Germany": 95
+      },
+      "horizonScores": {
+        "1-2y": 87,
+        "3-5y": 93,
+        "5-10y": 97,
+        "10-15y": 98
+      },
+      "driverExposure": {
+        "industrialReshoring": 1.0,
+        "geopoliticalRisk": 0.45,
+        "powerConstraint": 0.2
+      },
+      "capitalObservations": [
+        {
+          "series": "European deep-tech VC",
+          "period": "2024",
+          "value": 16.53,
+          "unit": "USD bn",
+          "flowType": "Venture capital",
+          "status": "derived from 2025 growth",
+          "source": "S18",
+          "proxy": true
+        },
+        {
+          "series": "European deep-tech VC",
+          "period": "2025",
+          "value": 20.0,
+          "unit": "USD bn",
+          "flowType": "Venture capital",
+          "status": "observed/reported",
+          "source": "S18",
+          "proxy": true
+        }
+      ],
+      "confidenceBreakdown": {
+        "sourceQuality": 82,
+        "sourceCount": 2,
+        "sourceDiversity": 75,
+        "recency": 94,
+        "directness": 72,
+        "calculatedConfidence": 77
+      },
+      "uncertaintyPoints": 5.2,
+      "hierarchy": {
+        "structuralWave": "Industrial",
+        "sector": "Industrial / Deep Tech",
+        "valueChainPosition": "Industrial production / software layer",
+        "specialization": "Advanced Manufacturing & Industrial Software"
+      }
+    },
+    {
+      "id": "infra-finance",
+      "name": "Infrastructure Finance & Private Capital",
+      "sector": "Finance / Infrastructure",
+      "thesis": "The ownership layer of the infrastructure supercycle: those who can underwrite, structure, finance and operate scarce assets can capture value beyond salaries.",
+      "evidence": "Infrastructure fundraising reached a record ~$200B in 2025 (+58% YoY); an estimated $106T of infrastructure investment is needed through 2040.",
+      "sources": [
+        "S12"
+      ],
+      "scores": {
+        "capital": 88,
+        "momentum": 90,
+        "durability": 100,
+        "scarcity": 89,
+        "income": 99,
+        "aiResilience": 98,
+        "businessValue": 100,
+        "entrepreneurship": 97,
+        "defensibility": 94,
+        "accessibility": 24,
+        "valueCapture": 100,
+        "transferability": 88,
+        "optionality": 96,
+        "hypeRisk": 24,
+        "confidence": 74,
+        "capitalQuality": 95,
+        "crowdingRisk": 48,
+        "proofability": 35
+      },
+      "chars": {
+        "techDepth": 42,
+        "business": 100,
+        "math": 78,
+        "hardware": 28,
+        "regulation": 78,
+        "longTraining": 88,
+        "entrepreneurship": 92
+      },
+      "meta": {
+        "timeToEntry": "3–6y",
+        "difficulty": "Very high",
+        "ceiling": "Extreme",
+        "ownership": "Exceptional",
+        "entry": "Finance/engineering/strategy → infrastructure investing",
+        "signal": "Accelerating",
+        "horizon": "10–15y"
+      },
+      "skills": [
+        "project finance",
+        "valuation",
+        "capital structure",
+        "infrastructure economics",
+        "commercial diligence",
+        "contracts",
+        "regulation",
+        "asset operations"
+      ],
+      "tools": [
+        "Excel/financial modeling",
+        "Python optional",
+        "data rooms",
+        "project-finance models",
+        "scenario analysis",
+        "GIS/market data depending on vertical"
+      ],
+      "path": [
+        [
+          "Foundation",
+          "Master accounting, corporate finance, valuation and project-finance mechanics."
+        ],
+        [
+          "Practitioner",
+          "Build investment cases for energy, data centers or digital/transport infrastructure."
+        ],
+        [
+          "Specialist",
+          "Develop sector underwriting depth and transaction/operating experience."
+        ],
+        [
+          "Leverage",
+          "Move toward investment committee, fund leadership, development platforms, GP economics or direct ownership."
+        ]
+      ],
+      "roles": [
+        "Infrastructure Analyst",
+        "Project Finance Associate",
+        "Infrastructure Investor",
+        "Investment Director",
+        "Partner / Developer / Asset Owner"
+      ],
+      "counter": "Access is networked and competitive; returns can be damaged by leverage, cost overruns and regulatory shifts.",
+      "changeMind": "Downgrade if infrastructure fundraising and realized returns weaken persistently while required capex is increasingly financed at unattractive economics.",
+      "valueChain": "Capital raising → underwriting → financing → development/build → operations → asset ownership",
+      "geo": {
+        "Global": "Exceptional",
+        "US": "Exceptional",
+        "Europe": "Exceptional",
+        "Germany": "Very strong"
+      },
+      "geoScores": {
+        "Global": 95,
+        "US": 95,
+        "Europe": 95,
+        "Germany": 86
+      },
+      "horizonScores": {
+        "1-2y": 92,
+        "3-5y": 96,
+        "5-10y": 99,
+        "10-15y": 99
+      },
+      "driverExposure": {
+        "aiDemand": 0.25,
+        "powerConstraint": 0.55,
+        "geopoliticalRisk": 0.25,
+        "industrialReshoring": 0.45
+      },
+      "capitalObservations": [
+        {
+          "series": "Global infrastructure fundraising",
+          "period": "2025",
+          "value": 200,
+          "unit": "USD bn approx.",
+          "flowType": "Private-capital fundraising",
+          "status": "reported estimate",
+          "source": "S12"
+        },
+        {
+          "series": "Global infrastructure need",
+          "period": "to 2040",
+          "value": 106000,
+          "unit": "USD bn cumulative",
+          "flowType": "Cumulative infrastructure requirement",
+          "status": "scenario estimate",
+          "source": "S12"
+        }
+      ],
+      "confidenceBreakdown": {
+        "sourceQuality": 82,
+        "sourceCount": 1,
+        "sourceDiversity": 60,
+        "recency": 100,
+        "directness": 80,
+        "calculatedConfidence": 74
+      },
+      "uncertaintyPoints": 5.6,
+      "hierarchy": {
+        "structuralWave": "Finance",
+        "sector": "Finance / Infrastructure",
+        "valueChainPosition": "Capital allocation / ownership layer",
+        "specialization": "Infrastructure Finance & Private Capital"
+      }
+    },
+    {
+      "id": "critical-resilience",
+      "name": "Critical Infrastructure & Resilience Technology",
+      "sector": "Infrastructure / Security",
+      "thesis": "A quieter intersection of physical infrastructure, climate adaptation, cyber-physical resilience and public-sector modernization with long-duration demand.",
+      "evidence": "$106T infrastructure need through 2040; energy and digital infrastructure account for a large portion and private capital is increasing allocations.",
+      "sources": [
+        "S12",
+        "S11",
+        "S17"
+      ],
+      "scores": {
+        "capital": 85,
+        "momentum": 79,
+        "durability": 100,
+        "scarcity": 86,
+        "income": 89,
+        "aiResilience": 99,
+        "businessValue": 99,
+        "entrepreneurship": 84,
+        "defensibility": 95,
+        "accessibility": 60,
+        "valueCapture": 92,
+        "transferability": 94,
+        "optionality": 93,
+        "hypeRisk": 18,
+        "confidence": 85,
+        "capitalQuality": 97,
+        "crowdingRisk": 25,
+        "proofability": 65
+      },
+      "chars": {
+        "techDepth": 70,
+        "business": 72,
+        "math": 48,
+        "hardware": 58,
+        "regulation": 84,
+        "longTraining": 65,
+        "entrepreneurship": 78
+      },
+      "meta": {
+        "timeToEntry": "18–36 mo",
+        "difficulty": "High",
+        "ceiling": "Very high",
+        "ownership": "High",
+        "entry": "Infrastructure/IT/security/engineering → resilience",
+        "signal": "Underappreciated",
+        "horizon": "10–15y"
+      },
+      "skills": [
+        "resilience engineering",
+        "cyber-physical security",
+        "asset management",
+        "risk",
+        "infrastructure data",
+        "emergency planning",
+        "public procurement",
+        "systems engineering"
+      ],
+      "tools": [
+        "GIS",
+        "Python/SQL",
+        "asset-management platforms",
+        "IoT/OT concepts",
+        "risk modeling",
+        "digital twins",
+        "cloud/data platforms",
+        "security tooling"
+      ],
+      "path": [
+        [
+          "Foundation",
+          "Build systems, risk, infrastructure and data/security fundamentals."
+        ],
+        [
+          "Practitioner",
+          "Model failure modes and resilience for a real physical-digital system."
+        ],
+        [
+          "Specialist",
+          "Own a cross-domain bottleneck in utilities, water, transport, telecom or public infrastructure."
+        ],
+        [
+          "Leverage",
+          "Lead resilience programs, critical-infrastructure products, advisory or infrastructure operations."
+        ]
+      ],
+      "roles": [
+        "Resilience Engineer",
+        "Critical Infrastructure Analyst",
+        "Cyber-Physical Architect",
+        "Infrastructure Transformation Lead",
+        "Resilience Tech Founder/Principal"
+      ],
+      "counter": "Budgets can be fragmented and procurement slow; value may accrue to large incumbents rather than specialists.",
+      "changeMind": "Downgrade if infrastructure owners stop treating resilience as a funded priority despite rising physical/digital dependency.",
+      "valueChain": "Physical assets → sensing/data → risk/security → operations → public/private financing",
+      "geo": {
+        "Global": "Very strong",
+        "US": "Very strong",
+        "Europe": "Exceptional",
+        "Germany": "Exceptional"
+      },
+      "geoScores": {
+        "Global": 86,
+        "US": 86,
+        "Europe": 95,
+        "Germany": 95
+      },
+      "horizonScores": {
+        "1-2y": 89,
+        "3-5y": 95,
+        "5-10y": 99,
+        "10-15y": 100
+      },
+      "driverExposure": {
+        "powerConstraint": 0.65,
+        "geopoliticalRisk": 0.75,
+        "industrialReshoring": 0.35
+      },
+      "capitalObservations": [],
+      "confidenceBreakdown": {
+        "sourceQuality": 86,
+        "sourceCount": 3,
+        "sourceDiversity": 90,
+        "recency": 96,
+        "directness": 75,
+        "calculatedConfidence": 85
+      },
+      "uncertaintyPoints": 4.1,
+      "hierarchy": {
+        "structuralWave": "Infrastructure",
+        "sector": "Infrastructure / Security",
+        "valueChainPosition": "Infrastructure operations / resilience layer",
+        "specialization": "Critical Infrastructure & Resilience Technology"
+      }
+    }
+  ],
+  "version": "4.1",
+  "scenarioDrivers": {
+    "baseline": {
+      "aiDemand": 0,
+      "powerConstraint": 0,
+      "geopoliticalRisk": 0,
+      "agenticAdoption": 0,
+      "biotechInnovation": 0,
+      "industrialReshoring": 0
+    },
+    "aiCooling": {
+      "aiDemand": -35,
+      "powerConstraint": 5,
+      "geopoliticalRisk": 0,
+      "agenticAdoption": -15,
+      "biotechInnovation": 0,
+      "industrialReshoring": 0
+    },
+    "powerBottleneck": {
+      "aiDemand": -5,
+      "powerConstraint": 35,
+      "geopoliticalRisk": 0,
+      "agenticAdoption": 0,
+      "biotechInnovation": 0,
+      "industrialReshoring": 5
+    },
+    "geoFragment": {
+      "aiDemand": 0,
+      "powerConstraint": 8,
+      "geopoliticalRisk": 35,
+      "agenticAdoption": 0,
+      "biotechInnovation": 0,
+      "industrialReshoring": 28
+    },
+    "agentBoom": {
+      "aiDemand": 18,
+      "powerConstraint": 8,
+      "geopoliticalRisk": 0,
+      "agenticAdoption": 35,
+      "biotechInnovation": 0,
+      "industrialReshoring": 0
+    },
+    "biotechBreak": {
+      "aiDemand": 4,
+      "powerConstraint": 0,
+      "geopoliticalRisk": 0,
+      "agenticAdoption": 0,
+      "biotechInnovation": 40,
+      "industrialReshoring": 0
+    }
+  },
+  "driverLabels": {
+    "aiDemand": "AI / compute demand",
+    "powerConstraint": "Power & grid constraint",
+    "geopoliticalRisk": "Geopolitical / security pressure",
+    "agenticAdoption": "Agentic enterprise adoption",
+    "biotechInnovation": "Biotech innovation productivity",
+    "industrialReshoring": "Reshoring / industrial policy"
+  },
+  "horizonLabels": {
+    "1-2y": "Now / 1–2 years",
+    "3-5y": "3–5 years",
+    "5-10y": "5–10 years",
+    "10-15y": "10–15 years"
+  },
+  "liveMeta": {
+    "dataMode": "seed snapshot",
+    "lastPublishedAt": "2026-09-05T20:48:00+02:00",
+    "lastAutomatedRefresh": null,
+    "deployment": "v4.1 pre-production seed",
+    "note": "This snapshot seeds the live store. Once deployed, /api/dashboard serves the latest database snapshot without rebuilding the frontend.",
+    "schemaVersion": "4.1"
+  },
+  "heroAnchors": [
+    {
+      "label": "AI infrastructure spend, 2026",
+      "nodeId": "ai-infra",
+      "series": "AI infrastructure spending",
+      "period": "2026"
+    },
+    {
+      "label": "Energy investment, 2026",
+      "nodeId": "energy-grid",
+      "series": "Global energy investment",
+      "period": "2026"
+    },
+    {
+      "label": "Military spend, 2025",
+      "nodeId": "defense-autonomy",
+      "series": "World military expenditure",
+      "period": "2025"
+    },
+    {
+      "label": "Semiconductor sales forecast, 2026",
+      "nodeId": "semis",
+      "series": "Global semiconductor sales",
+      "period": "2026"
+    },
+    {
+      "label": "Fintech investment, H1 2026",
+      "nodeId": "fintech",
+      "series": "Global fintech investment",
+      "period": "H1 2026"
+    }
+  ]
+}

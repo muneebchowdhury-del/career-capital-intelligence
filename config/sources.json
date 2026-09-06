@@ -82,7 +82,7 @@
     {
       "id": "watch:S1",
       "kind": "report_watch",
-      "name": "Gartner — Worldwide AI Spending 2026",
+      "name": "Gartner \u2014 Worldwide AI Spending 2026",
       "enabled": true,
       "cadenceDays": 7,
       "config": {
@@ -94,7 +94,7 @@
     {
       "id": "watch:S2",
       "kind": "report_watch",
-      "name": "IEA — Key Questions on Energy and AI",
+      "name": "IEA \u2014 Key Questions on Energy and AI",
       "enabled": true,
       "cadenceDays": 30,
       "config": {
@@ -106,7 +106,7 @@
     {
       "id": "watch:S3",
       "kind": "report_watch",
-      "name": "McKinsey — $7T data-center build-out",
+      "name": "McKinsey \u2014 $7T data-center build-out",
       "enabled": true,
       "cadenceDays": 30,
       "config": {
@@ -118,7 +118,7 @@
     {
       "id": "watch:S4",
       "kind": "report_watch",
-      "name": "Gartner — IT Spending 2026",
+      "name": "Gartner \u2014 IT Spending 2026",
       "enabled": true,
       "cadenceDays": 7,
       "config": {
@@ -130,7 +130,7 @@
     {
       "id": "watch:S5",
       "kind": "report_watch",
-      "name": "Gartner — Information Security 2026",
+      "name": "Gartner \u2014 Information Security 2026",
       "enabled": true,
       "cadenceDays": 7,
       "config": {
@@ -142,7 +142,7 @@
     {
       "id": "watch:S6",
       "kind": "report_watch",
-      "name": "SIA — Global Semiconductor Sales 2025 / 2026 outlook",
+      "name": "SIA \u2014 Global Semiconductor Sales 2025 / 2026 outlook",
       "enabled": true,
       "cadenceDays": 7,
       "config": {
@@ -154,7 +154,7 @@
     {
       "id": "watch:S7",
       "kind": "report_watch",
-      "name": "SIPRI — World Military Expenditure 2025",
+      "name": "SIPRI \u2014 World Military Expenditure 2025",
       "enabled": true,
       "cadenceDays": 30,
       "config": {
@@ -166,7 +166,7 @@
     {
       "id": "watch:S8",
       "kind": "report_watch",
-      "name": "Dealroom/NATO Innovation Fund — European Defence, Security & Resilience",
+      "name": "Dealroom/NATO Innovation Fund \u2014 European Defence, Security & Resilience",
       "enabled": true,
       "cadenceDays": 7,
       "config": {
@@ -178,7 +178,7 @@
     {
       "id": "watch:S9",
       "kind": "report_watch",
-      "name": "IFR — World Robotics 2025",
+      "name": "IFR \u2014 World Robotics 2025",
       "enabled": true,
       "cadenceDays": 30,
       "config": {
@@ -190,7 +190,7 @@
     {
       "id": "watch:S10",
       "kind": "report_watch",
-      "name": "IFR — US Robot Industry 2026 update",
+      "name": "IFR \u2014 US Robot Industry 2026 update",
       "enabled": true,
       "cadenceDays": 30,
       "config": {
@@ -202,7 +202,7 @@
     {
       "id": "watch:S11",
       "kind": "report_watch",
-      "name": "IEA — World Energy Investment 2026",
+      "name": "IEA \u2014 World Energy Investment 2026",
       "enabled": true,
       "cadenceDays": 30,
       "config": {
@@ -214,7 +214,7 @@
     {
       "id": "watch:S12",
       "kind": "report_watch",
-      "name": "McKinsey — Global Infrastructure Report 2026",
+      "name": "McKinsey \u2014 Global Infrastructure Report 2026",
       "enabled": true,
       "cadenceDays": 30,
       "config": {
@@ -226,7 +226,7 @@
     {
       "id": "watch:S13",
       "kind": "report_watch",
-      "name": "KPMG — Venture Pulse Q2 2026",
+      "name": "KPMG \u2014 Venture Pulse Q2 2026",
       "enabled": true,
       "cadenceDays": 1,
       "config": {
@@ -238,7 +238,7 @@
     {
       "id": "watch:S14",
       "kind": "report_watch",
-      "name": "KPMG — Pulse of Fintech H1 2026",
+      "name": "KPMG \u2014 Pulse of Fintech H1 2026",
       "enabled": true,
       "cadenceDays": 1,
       "config": {
@@ -250,7 +250,7 @@
     {
       "id": "watch:S15",
       "kind": "report_watch",
-      "name": "EY — Biotech Beyond Borders 2026",
+      "name": "EY \u2014 Biotech Beyond Borders 2026",
       "enabled": true,
       "cadenceDays": 30,
       "config": {
@@ -262,7 +262,7 @@
     {
       "id": "watch:S16",
       "kind": "report_watch",
-      "name": "SVB — H2 2026 Healthcare Industry Trends",
+      "name": "SVB \u2014 H2 2026 Healthcare Industry Trends",
       "enabled": true,
       "cadenceDays": 30,
       "config": {
@@ -274,7 +274,7 @@
     {
       "id": "watch:S17",
       "kind": "report_watch",
-      "name": "WEF — Future of Jobs Report 2025",
+      "name": "WEF \u2014 Future of Jobs Report 2025",
       "enabled": true,
       "cadenceDays": 30,
       "config": {
@@ -286,7 +286,7 @@
     {
       "id": "watch:S18",
       "kind": "report_watch",
-      "name": "Dealroom — European Deep Tech Report 2026",
+      "name": "Dealroom \u2014 European Deep Tech Report 2026",
       "enabled": true,
       "cadenceDays": 7,
       "config": {
@@ -298,7 +298,7 @@
     {
       "id": "watch:S19",
       "kind": "report_watch",
-      "name": "Gartner — AI-optimized IaaS 2026",
+      "name": "Gartner \u2014 AI-optimized IaaS 2026",
       "enabled": true,
       "cadenceDays": 7,
       "config": {
@@ -310,7 +310,7 @@
     {
       "id": "watch:S20",
       "kind": "report_watch",
-      "name": "Gartner — Agentic AI and Enterprise Software",
+      "name": "Gartner \u2014 Agentic AI and Enterprise Software",
       "enabled": true,
       "cadenceDays": 7,
       "config": {
@@ -322,7 +322,7 @@
     {
       "id": "watch:S21",
       "kind": "report_watch",
-      "name": "SIPRI — World Military Expenditure 2024",
+      "name": "SIPRI \u2014 World Military Expenditure 2024",
       "enabled": true,
       "cadenceDays": 7,
       "config": {
@@ -334,7 +334,7 @@
     {
       "id": "watch:S22",
       "kind": "report_watch",
-      "name": "IEA — World Energy Investment 2025",
+      "name": "IEA \u2014 World Energy Investment 2025",
       "enabled": true,
       "cadenceDays": 7,
       "config": {
@@ -346,7 +346,7 @@
     {
       "id": "watch:S23",
       "kind": "report_watch",
-      "name": "SIA — WSTS Spring 2026 semiconductor forecast",
+      "name": "SIA \u2014 WSTS Spring 2026 semiconductor forecast",
       "enabled": true,
       "cadenceDays": 30,
       "config": {
@@ -358,7 +358,7 @@
     {
       "id": "watch:S24",
       "kind": "report_watch",
-      "name": "SIA — July 2026 semiconductor sales",
+      "name": "SIA \u2014 July 2026 semiconductor sales",
       "enabled": true,
       "cadenceDays": 7,
       "config": {
@@ -370,4 +370,96 @@
     {
       "id": "discover:D1-IEA-investment",
       "kind": "discovery",
-      "name": "IEA Investment topic
+      "name": "IEA Investment topic / flagship reports",
+      "enabled": true,
+      "cadenceDays": 7,
+      "config": {
+        "discoveryUrl": "https://www.iea.org/topics/investment",
+        "sameHost": true,
+        "maxItems": 60,
+        "includeAny": [
+          "World Energy Investment",
+          "Investment Data Explorer",
+          "energy investment"
+        ],
+        "excludeAny": [
+          "newsletter",
+          "podcast",
+          "event"
+        ],
+        "minTextChars": 200
+      }
+    },
+    {
+      "id": "discover:D2-SIPRI-milex",
+      "kind": "discovery",
+      "name": "SIPRI Military Expenditure releases",
+      "enabled": true,
+      "cadenceDays": 7,
+      "config": {
+        "discoveryUrl": "https://www.sipri.org/databases/milex",
+        "sameHost": true,
+        "maxItems": 60,
+        "includeAny": [
+          "military expenditure",
+          "Trends in World Military Expenditure",
+          "milex"
+        ],
+        "excludeAny": [
+          "privacy",
+          "contact"
+        ],
+        "minTextChars": 200
+      }
+    },
+    {
+      "id": "discover:D3-Gartner-newsroom",
+      "kind": "discovery",
+      "name": "Gartner technology spending / AI / security releases",
+      "enabled": true,
+      "cadenceDays": 3,
+      "config": {
+        "discoveryUrl": "https://www.gartner.com/en/newsroom",
+        "sameHost": true,
+        "maxItems": 100,
+        "includeAny": [
+          "AI Spending",
+          "IT Spending",
+          "AI-Optimized",
+          "Information Security",
+          "AI Platforms",
+          "Agentic AI",
+          "Cybersecurity"
+        ],
+        "excludeAny": [
+          "conference",
+          "webinar"
+        ],
+        "minTextChars": 200
+      }
+    },
+    {
+      "id": "discover:D4-SIA-market",
+      "kind": "discovery",
+      "name": "SIA semiconductor market-data releases",
+      "enabled": true,
+      "cadenceDays": 3,
+      "config": {
+        "discoveryUrl": "https://www.semiconductors.org/news-events/latest-news/",
+        "sameHost": true,
+        "maxItems": 100,
+        "includeAny": [
+          "Global Semiconductor Sales",
+          "State of the Industry",
+          "semiconductor.*forecast",
+          "Market Data"
+        ],
+        "excludeAny": [
+          "workforce",
+          "government affairs"
+        ],
+        "minTextChars": 200
+      }
+    }
+  ]
+}

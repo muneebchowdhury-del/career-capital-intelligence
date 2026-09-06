@@ -1,0 +1,8 @@
+{
+  "generated_at": "2026-09-06T10:24:53Z",
+  "sqlite": "build/intelligence.sqlite",
+  "canonical_store": "data/*.json + data/**/*.jsonl",
+  "observations": 0,
+  "reviews": 0,
+  "snapshots": 1
+}

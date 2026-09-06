@@ -1,0 +1,12 @@
+{
+  "mode": "zero-cost static live",
+  "generated_at": "2026-09-06T10:24:53Z",
+  "evidence_updated_at": "2026-09-05",
+  "version": "4.1",
+  "source_count": 30,
+  "snapshot_count": 1,
+  "pending_review": 0,
+  "new_discovered_items": 0,
+  "last_run": null,
+  "failed_sources": []
+}
