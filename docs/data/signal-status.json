@@ -1,7 +1,9 @@
 {
-  "observation_count": 211,
-  "current_observation_count": 211,
-  "last_run_at": "2026-09-06T11:02:10Z",
+  "observation_count": 784,
+  "current_observation_count": 784,
+  "last_run_at": "2026-09-06T11:45:43Z",
   "last_run_status": "success",
-  "last_collector": "LIVE-EUROSTAT-JVS"
+  "last_collector": "LIVE-EUROSTAT-LCI",
+  "labor_sector_count": 31,
+  "labor_mapped_node_count": 13
 }
