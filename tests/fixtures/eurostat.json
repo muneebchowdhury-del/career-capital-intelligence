@@ -1,0 +1,9 @@
+{
+  "id": ["nace_r2_1", "time"],
+  "size": [2, 3],
+  "value": [1.1, 1.2, 1.3, 2.1, 2.2, 2.3],
+  "dimension": {
+    "nace_r2_1": {"category": {"index": {"J": 0, "K": 1}, "label": {"J": "Information", "K": "Finance"}}},
+    "time": {"category": {"index": {"2025-Q3": 0, "2025-Q4": 1, "2026-Q1": 2}, "label": {"2025-Q3": "2025 Q3", "2025-Q4": "2025 Q4", "2026-Q1": "2026 Q1"}}}
+  }
+}
