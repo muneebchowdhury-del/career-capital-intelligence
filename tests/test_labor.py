@@ -20,9 +20,23 @@ class LaborIntelligenceTests(unittest.TestCase):
         self.assertEqual(out['node_signals'][0]['node_id'],'cloud-dist')
         self.assertEqual(out['node_signals'][0]['status'],'evidence_only')
 
-    def test_ignores_non_vacancy_metrics(self):
+    def test_keeps_nace_revisions_metric_specific(self):
+        rows=[
+            {'metric_key':'job_vacancy_rate','geography':'Germany','dimension_key':'K','dimension_label':'ICT services new NACE','period':'2026-Q1','value':2.7,'unit':'%'},
+            {'metric_key':'labor_cost_yoy','geography':'Germany','dimension_key':'J','dimension_label':'Information and communication old NACE','period':'2026-Q1','value':5.9,'unit':'%'},
+            {'metric_key':'labor_cost_yoy','geography':'Germany','dimension_key':'K','dimension_label':'Financial and insurance old NACE','period':'2026-Q1','value':1.9,'unit':'%'}
+        ]
+        out=derive_labor_intelligence(rows,{'ai-infra':{'vacancy_nace_keys':['K'],'labor_cost_nace_keys':['J'],'weight':0.7}})
+        node=out['node_signals'][0]
+        self.assertEqual(node['vacancy_evidence'][0]['dimension_label'],'ICT services new NACE')
+        self.assertEqual(node['labor_cost_evidence'][0]['dimension_label'],'Information and communication old NACE')
+        self.assertNotEqual(node['labor_cost_evidence'][0]['dimension_key'],'K')
+        self.assertEqual(out['labor_cost_sector_count'],2)
+
+    def test_ignores_unrecognized_metrics(self):
         out=derive_labor_intelligence([{'metric_key':'other','dimension_key':'K','period':'2026-Q1','value':1,'unit':'%'}],{})
         self.assertEqual(out['sector_count'],0)
+        self.assertEqual(out['labor_cost_sector_count'],0)
         self.assertEqual(out['mapped_node_count'],0)
 
 if __name__=='__main__': unittest.main()
