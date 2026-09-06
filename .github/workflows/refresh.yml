@@ -42,7 +42,7 @@ jobs:
       - name: Refresh due sources
         run: |
           if [ "${{ github.event_name }}" = "push" ]; then
-            python scripts/refresh.py --source signal:EUROSTAT-JVS-DE
+            python scripts/refresh.py --source signal:EUROSTAT-JVS-EU
           elif [ "${{ inputs.run_all }}" = "true" ]; then
             python scripts/refresh.py --all
           else
