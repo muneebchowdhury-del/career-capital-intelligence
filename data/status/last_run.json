@@ -1,12 +1,12 @@
 {
-  "run_id": "run_eb6bc3c343ec382a6d27cd53",
-  "started_at": "2026-09-06T10:48:00Z",
-  "completed_at": "2026-09-06T10:49:51Z",
-  "status": "partial",
+  "run_id": "run_36df0715bd05b4ee1c85fa1f",
+  "started_at": "2026-09-06T10:53:03Z",
+  "completed_at": "2026-09-06T10:53:04Z",
+  "status": "failed",
   "summary": {
-    "checked": 30,
-    "success": 17,
-    "failed": 13,
+    "checked": 1,
+    "success": 0,
+    "failed": 1,
     "new_observations": 0,
     "changed_pages": 0,
     "new_discoveries": 0,
@@ -14,56 +14,8 @@
   },
   "errors": [
     {
-      "source_id": "watch:S1",
-      "error": "HTTPError: HTTP Error 403: Forbidden"
-    },
-    {
-      "source_id": "watch:S2",
-      "error": "HTTPError: HTTP Error 403: Forbidden"
-    },
-    {
-      "source_id": "watch:S3",
-      "error": "TimeoutError: The read operation timed out"
-    },
-    {
-      "source_id": "watch:S4",
-      "error": "HTTPError: HTTP Error 403: Forbidden"
-    },
-    {
-      "source_id": "watch:S5",
-      "error": "HTTPError: HTTP Error 403: Forbidden"
-    },
-    {
-      "source_id": "watch:S11",
-      "error": "HTTPError: HTTP Error 403: Forbidden"
-    },
-    {
-      "source_id": "watch:S12",
-      "error": "TimeoutError: The read operation timed out"
-    },
-    {
-      "source_id": "watch:S17",
-      "error": "HTTPError: HTTP Error 403: Forbidden"
-    },
-    {
-      "source_id": "watch:S19",
-      "error": "HTTPError: HTTP Error 403: Forbidden"
-    },
-    {
-      "source_id": "watch:S20",
-      "error": "HTTPError: HTTP Error 403: Forbidden"
-    },
-    {
-      "source_id": "watch:S22",
-      "error": "HTTPError: HTTP Error 403: Forbidden"
-    },
-    {
-      "source_id": "discover:D1-IEA-investment",
-      "error": "HTTPError: HTTP Error 403: Forbidden"
-    },
-    {
-      "source_id": "discover:D3-Gartner-newsroom",
-      "error": "HTTPError: HTTP Error 403: Forbidden"
+      "source_id": "signal:EUROSTAT-JVS-DE",
+      "error": "ValueError: Eurostat returned zero rows; ids=['freq', 'nace_r2_1', 'sizeclas', 's_adj', 'indic_em', 'geo', 'time']; size=[1, 33, 1, 1, 0, 1, 4]; value_count=0; label='Job vacancy statistics by NACE Rev. 2.1 activity - quarterly data (from 2001 onwards)'"
     }
   ]
 }

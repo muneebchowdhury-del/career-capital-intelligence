@@ -1,9 +1,9 @@
 {
   "signal:EUROSTAT-JVS-DE": {
-    "last_checked_at": "2026-09-06T10:48:00Z",
+    "last_checked_at": "2026-09-06T10:53:03Z",
     "final_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/jvs_q_r21?lang=EN&geo=DE&freq=Q&indic_em=JOBRATE&sizeclas=TOTAL&s_adj=NSA&lastTimePeriod=12",
     "last_success_at": "2026-09-06T10:48:01Z",
-    "last_error": null,
+    "last_error": "ValueError: Eurostat returned zero rows; ids=['freq', 'nace_r2_1', 'sizeclas', 's_adj', 'indic_em', 'geo', 'time']; size=[1, 33, 1, 1, 0, 1, 4]; value_count=0; label='Job vacancy statistics by NACE Rev. 2.1 activity - quarterly data (from 2001 onwards)'",
     "last_result": {
       "rows": 0,
       "new": 0
