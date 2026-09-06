@@ -1,21 +1,16 @@
 {
-  "run_id": "run_36df0715bd05b4ee1c85fa1f",
-  "started_at": "2026-09-06T10:53:03Z",
-  "completed_at": "2026-09-06T10:53:04Z",
-  "status": "failed",
+  "run_id": "run_3ff23f2687cc4f380a13907f",
+  "started_at": "2026-09-06T10:56:34Z",
+  "completed_at": "2026-09-06T10:56:36Z",
+  "status": "success",
   "summary": {
     "checked": 1,
-    "success": 0,
-    "failed": 1,
-    "new_observations": 0,
+    "success": 1,
+    "failed": 0,
+    "new_observations": 124,
     "changed_pages": 0,
     "new_discoveries": 0,
     "skipped": 0
   },
-  "errors": [
-    {
-      "source_id": "signal:EUROSTAT-JVS-DE",
-      "error": "ValueError: Eurostat returned zero rows; ids=['freq', 'nace_r2_1', 'sizeclas', 's_adj', 'indic_em', 'geo', 'time']; size=[1, 33, 1, 1, 0, 1, 4]; value_count=0; label='Job vacancy statistics by NACE Rev. 2.1 activity - quarterly data (from 2001 onwards)'"
-    }
-  ]
+  "errors": []
 }

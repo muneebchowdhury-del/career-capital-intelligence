@@ -1,6 +1,6 @@
 {
   "mode": "zero-cost static live",
-  "generated_at": "2026-09-06T10:53:05Z",
+  "generated_at": "2026-09-06T10:56:36Z",
   "evidence_updated_at": "2026-09-05",
   "version": "4.1",
   "source_count": 30,
@@ -8,31 +8,22 @@
   "pending_review": 0,
   "new_discovered_items": 0,
   "last_run": {
-    "completed_at": "2026-09-06T10:53:04Z",
-    "errors": [
-      {
-        "error": "ValueError: Eurostat returned zero rows; ids=['freq', 'nace_r2_1', 'sizeclas', 's_adj', 'indic_em', 'geo', 'time']; size=[1, 33, 1, 1, 0, 1, 4]; value_count=0; label='Job vacancy statistics by NACE Rev. 2.1 activity - quarterly data (from 2001 onwards)'",
-        "source_id": "signal:EUROSTAT-JVS-DE"
-      }
-    ],
-    "run_id": "run_36df0715bd05b4ee1c85fa1f",
-    "started_at": "2026-09-06T10:53:03Z",
-    "status": "failed",
+    "completed_at": "2026-09-06T10:56:36Z",
+    "errors": [],
+    "run_id": "run_3ff23f2687cc4f380a13907f",
+    "started_at": "2026-09-06T10:56:34Z",
+    "status": "success",
     "summary": {
       "changed_pages": 0,
       "checked": 1,
-      "failed": 1,
+      "failed": 0,
       "new_discoveries": 0,
-      "new_observations": 0,
+      "new_observations": 124,
       "skipped": 0,
-      "success": 0
+      "success": 1
     }
   },
   "failed_sources": [
-    {
-      "source_id": "signal:EUROSTAT-JVS-DE",
-      "error": "ValueError: Eurostat returned zero rows; ids=['freq', 'nace_r2_1', 'sizeclas', 's_adj', 'indic_em', 'geo', 'time']; size=[1, 33, 1, 1, 0, 1, 4]; value_count=0; label='Job vacancy statistics by NACE Rev. 2.1 activity - quarterly data (from 2001 onwards)'"
-    },
     {
       "source_id": "watch:S1",
       "error": "HTTPError: HTTP Error 403: Forbidden"
