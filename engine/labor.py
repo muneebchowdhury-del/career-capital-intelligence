@@ -79,6 +79,7 @@ def _mapped_evidence(keys, by_key):
 def derive_labor_intelligence(rows: list[dict], node_map: dict | None=None) -> dict:
     vacancy=_derive_metric(rows,'job_vacancy_rate')
     labor_cost=_derive_metric(rows,'labor_cost_yoy')
+    occupation_mix=_derive_metric(rows,'ict_occupation_share')
     vacancy_by_key={s['dimension_key']:s for s in vacancy}
     cost_by_key={s['dimension_key']:s for s in labor_cost}
     node_signals=[]
@@ -104,19 +105,25 @@ def derive_labor_intelligence(rows: list[dict], node_map: dict | None=None) -> d
             'vacancy_persistence':'Average job vacancy rate over up to the latest five quarters.',
             'labor_cost_pressure':'Latest year-over-year change in nominal hourly labour costs by NACE sector.',
             'labor_cost_momentum':'Change in the year-over-year labour-cost growth rate from the oldest to newest observation within the latest five quarters; this is cost acceleration/deceleration, not hiring growth.',
-            'germany_vs_eu_spread':'Germany latest value minus EU27 latest value for the same metric and sector.',
+            'ict_occupation_mix':'Experimental Eurostat online-job-ad statistic: each value is an occupation share within ICT-specialist online job advertisements, not a share of all jobs and not total hiring volume.',
+            'ict_occupation_mix_change':'Change in an occupation share across up to the latest five quarters. A rising share means the occupation is becoming a larger part of observed ICT ads; it does not by itself prove absolute job growth.',
+            'oja_confidence':'Lower-confidence directional evidence because online-job-ad portal coverage, duplication, classification and representativeness can change over time.',
+            'germany_vs_eu_spread':'Germany latest value minus EU27 latest value for the same metric and sector or occupation.',
             'coding_guardrail':'Vacancy and labour-cost feeds use different NACE revisions. Their sector-code mappings are stored separately and are never joined by code alone.',
-            'node_mapping':'Opportunity nodes are linked to broad NACE sectors only where the relationship is defensible. Mapping is intentionally many-to-one and evidence-only.',
+            'node_mapping':'Opportunity nodes are linked to broad NACE sectors only where the relationship is defensible. OJA occupation mix is not mapped into node scores.',
             'ranking_use':'Evidence-only for now. These derived indicators do not automatically change opportunity scores.'
         },
         'sector_count':len(vacancy),
         'labor_cost_sector_count':len(labor_cost),
+        'occupation_mix_count':len(occupation_mix),
         'mapped_node_count':len(node_signals),
         'sectors':vacancy,
         'labor_cost_sectors':labor_cost,
+        'ict_occupation_mix':occupation_mix,
         'metrics':{
             'job_vacancy_rate':{'sector_count':len(vacancy),'sectors':vacancy},
-            'labor_cost_yoy':{'sector_count':len(labor_cost),'sectors':labor_cost}
+            'labor_cost_yoy':{'sector_count':len(labor_cost),'sectors':labor_cost},
+            'ict_occupation_share':{'occupation_count':len(occupation_mix),'experimental':True,'occupations':occupation_mix}
         },
         'node_signals':node_signals,
     }
