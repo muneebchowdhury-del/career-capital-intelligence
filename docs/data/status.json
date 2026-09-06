@@ -1,80 +1,97 @@
 {
   "mode": "zero-cost static live",
-  "generated_at": "2026-09-06T10:58:40Z",
+  "generated_at": "2026-09-06T11:02:11Z",
   "evidence_updated_at": "2026-09-05",
   "version": "4.1",
   "source_count": 30,
+  "automated_source_count": 17,
+  "manual_review_source_count": 13,
   "snapshot_count": 1,
   "pending_review": 0,
   "new_discovered_items": 0,
   "last_run": {
-    "completed_at": "2026-09-06T10:58:39Z",
+    "completed_at": "2026-09-06T11:02:10Z",
     "errors": [],
-    "run_id": "run_dc279261b65642ac7cfbeb31",
-    "started_at": "2026-09-06T10:58:38Z",
+    "run_id": "run_4c503f6d5ca7fcf9aae69613",
+    "started_at": "2026-09-06T11:01:54Z",
     "status": "success",
     "summary": {
       "changed_pages": 0,
-      "checked": 1,
+      "checked": 17,
       "failed": 0,
+      "manual_skipped": 13,
       "new_discoveries": 0,
-      "new_observations": 87,
+      "new_observations": 0,
       "skipped": 0,
-      "success": 1
+      "success": 17
     }
   },
-  "failed_sources": [
+  "failed_sources": [],
+  "manual_review_sources": [
     {
       "source_id": "watch:S1",
-      "error": "HTTPError: HTTP Error 403: Forbidden"
+      "name": "Gartner — Worldwide AI Spending 2026",
+      "last_error": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "source_id": "watch:S2",
-      "error": "HTTPError: HTTP Error 403: Forbidden"
+      "name": "IEA — Key Questions on Energy and AI",
+      "last_error": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "source_id": "watch:S3",
-      "error": "TimeoutError: The read operation timed out"
+      "name": "McKinsey — $7T data-center build-out",
+      "last_error": "TimeoutError: The read operation timed out"
     },
     {
       "source_id": "watch:S4",
-      "error": "HTTPError: HTTP Error 403: Forbidden"
+      "name": "Gartner — IT Spending 2026",
+      "last_error": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "source_id": "watch:S5",
-      "error": "HTTPError: HTTP Error 403: Forbidden"
+      "name": "Gartner — Information Security 2026",
+      "last_error": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "source_id": "watch:S11",
-      "error": "HTTPError: HTTP Error 403: Forbidden"
+      "name": "IEA — World Energy Investment 2026",
+      "last_error": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "source_id": "watch:S12",
-      "error": "TimeoutError: The read operation timed out"
+      "name": "McKinsey — Global Infrastructure Report 2026",
+      "last_error": "TimeoutError: The read operation timed out"
     },
     {
       "source_id": "watch:S17",
-      "error": "HTTPError: HTTP Error 403: Forbidden"
+      "name": "WEF — Future of Jobs Report 2025",
+      "last_error": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "source_id": "watch:S19",
-      "error": "HTTPError: HTTP Error 403: Forbidden"
+      "name": "Gartner — AI-optimized IaaS 2026",
+      "last_error": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "source_id": "watch:S20",
-      "error": "HTTPError: HTTP Error 403: Forbidden"
+      "name": "Gartner — Agentic AI and Enterprise Software",
+      "last_error": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "source_id": "watch:S22",
-      "error": "HTTPError: HTTP Error 403: Forbidden"
+      "name": "IEA — World Energy Investment 2025",
+      "last_error": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "source_id": "discover:D1-IEA-investment",
-      "error": "HTTPError: HTTP Error 403: Forbidden"
+      "name": "IEA Investment topic / flagship reports",
+      "last_error": "HTTPError: HTTP Error 403: Forbidden"
     },
     {
       "source_id": "discover:D3-Gartner-newsroom",
-      "error": "HTTPError: HTTP Error 403: Forbidden"
+      "name": "Gartner technology spending / AI / security releases",
+      "last_error": "HTTPError: HTTP Error 403: Forbidden"
     }
   ]
 }
