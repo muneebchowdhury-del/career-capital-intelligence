@@ -33,10 +33,27 @@ class LaborIntelligenceTests(unittest.TestCase):
         self.assertNotEqual(node['labor_cost_evidence'][0]['dimension_key'],'K')
         self.assertEqual(out['labor_cost_sector_count'],2)
 
+    def test_ict_occupation_mix_is_separate_and_experimental(self):
+        rows=[]
+        periods=['2025-Q2','2025-Q3','2025-Q4','2026-Q1','2026-Q2']
+        for geo,vals in [('Germany',[55.0,56.0,57.0,57.9,57.6]),('EU27',[50.0,50.5,51.0,51.4,51.8])]:
+            for p,v in zip(periods,vals):
+                rows.append({'metric_key':'ict_occupation_share','geography':geo,'dimension_key':'OC251','dimension_label':'Software and applications developers and analysts','period':p,'value':v,'unit':'%'})
+        out=derive_labor_intelligence(rows,{})
+        self.assertEqual(out['occupation_mix_count'],1)
+        occ=out['ict_occupation_mix'][0]
+        self.assertEqual(occ['latest']['Germany']['value'],57.6)
+        self.assertAlmostEqual(occ['momentum_4q_change']['Germany'],2.6)
+        self.assertAlmostEqual(occ['germany_vs_eu_spread'],5.8)
+        self.assertTrue(out['metrics']['ict_occupation_share']['experimental'])
+        self.assertIn('not total hiring volume',out['methodology']['ict_occupation_mix'])
+        self.assertEqual(out['mapped_node_count'],0)
+
     def test_ignores_unrecognized_metrics(self):
         out=derive_labor_intelligence([{'metric_key':'other','dimension_key':'K','period':'2026-Q1','value':1,'unit':'%'}],{})
         self.assertEqual(out['sector_count'],0)
         self.assertEqual(out['labor_cost_sector_count'],0)
+        self.assertEqual(out['occupation_mix_count'],0)
         self.assertEqual(out['mapped_node_count'],0)
 
 if __name__=='__main__': unittest.main()
