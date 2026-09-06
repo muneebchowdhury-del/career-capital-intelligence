@@ -1,0 +1,15 @@
+{
+  "ai-infra": {"nace_keys": ["K"], "weight": 0.7},
+  "cyber-ai": {"nace_keys": ["K"], "weight": 0.7},
+  "enterprise-ai": {"nace_keys": ["K", "N"], "weight": 0.65},
+  "data-infra": {"nace_keys": ["K", "N"], "weight": 0.7},
+  "cloud-dist": {"nace_keys": ["K"], "weight": 0.75},
+  "semis": {"nace_keys": ["C"], "weight": 0.45},
+  "robotics": {"nace_keys": ["C"], "weight": 0.55},
+  "advanced-mfg": {"nace_keys": ["C"], "weight": 0.7},
+  "energy-grid": {"nace_keys": ["D", "F"], "weight": 0.6},
+  "dc-power": {"nace_keys": ["D", "F", "K"], "weight": 0.5},
+  "fintech": {"nace_keys": ["L", "K"], "weight": 0.55},
+  "infra-finance": {"nace_keys": ["L", "F"], "weight": 0.45},
+  "critical-resilience": {"nace_keys": ["D", "E", "F", "H"], "weight": 0.45}
+}
