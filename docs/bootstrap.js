@@ -1,5 +1,31 @@
 (async function(){
   const $=id=>document.getElementById(id);
+  function installProfileControlsUX(){
+    const style=document.createElement('style');
+    style.textContent=`
+      .profileRow{grid-template-columns:44px 1fr minmax(100px,1.4fr) 42px 90px}
+      .profileRow.inactive{opacity:1}
+      .profileRow.inactive>label,.profileRow.inactive>input[type=range],.profileRow.inactive>output,.profileRow.inactive>select{opacity:.46}
+      .profileRow>label{cursor:pointer;user-select:none}
+      .profileRow input[type=checkbox]{appearance:none;-webkit-appearance:none;width:38px;height:22px;margin:0;border:1px solid #3b5368;border-radius:999px;background:#253544;position:relative;cursor:pointer;opacity:1;transition:.15s}
+      .profileRow input[type=checkbox]::after{content:"";position:absolute;width:16px;height:16px;left:2px;top:2px;border-radius:50%;background:#d9e6f1;transition:.15s}
+      .profileRow input[type=checkbox]:checked{background:#1688a6;border-color:#46d9ff;box-shadow:0 0 0 2px rgba(70,217,255,.12)}
+      .profileRow input[type=checkbox]:checked::after{transform:translateX(16px);background:#fff}
+      .profileRow input[type=checkbox]:focus-visible{outline:2px solid #46d9ff;outline-offset:2px}
+      .profileRow input[type=range]:disabled,.profileRow select:disabled{cursor:not-allowed}
+      @media(max-width:700px){.profileRow{grid-template-columns:44px 1fr 1fr 38px}.profileRow select{grid-column:2/5}}
+    `;
+    document.head.appendChild(style);
+    const root=$('profile');
+    if(!root)return;
+    root.addEventListener('click',e=>{
+      const label=e.target.closest('.profileRow>label');
+      if(!label)return;
+      const box=label.parentElement?.querySelector('input[type=checkbox]');
+      if(box)box.click();
+    });
+  }
+  installProfileControlsUX();
   const statusEl=$('liveStatus'),syncChip=$('syncStatusChip'),evidenceChip=$('evidenceUpdatedChip'),lastRefreshChip=$('lastRefreshChip'),reviewQueueChip=$('reviewQueueChip'),snapshotCountChip=$('snapshotCountChip'),discoveryChip=$('discoveryChip'),nodeCountChip=$('nodeCountChip'),sourceCountChip=$('sourceCountChip'),versionChip=$('versionChip'),heroMetrics=$('heroMetrics'),historyFrom=$('historyFrom'),historyTo=$('historyTo'),historySummary=$('historySummary'),historyCompare=$('historyCompare'),liveSignals=$('liveSignals'),signalStatus=$('signalStatus'),signalCountChip=$('signalCountChip'),signalRunChip=$('signalRunChip');
   async function getJSON(url){if(window.__STATIC_FILES&&Object.prototype.hasOwnProperty.call(window.__STATIC_FILES,url))return structuredClone(window.__STATIC_FILES[url]);const r=await fetch(url,{cache:'no-store'});if(!r.ok)throw new Error(`${url}: ${r.status}`);return r.json()}
   function fmtDate(x){if(!x)return'—';const d=new Date(x);return Number.isNaN(d.valueOf())?String(x):d.toLocaleString()}
