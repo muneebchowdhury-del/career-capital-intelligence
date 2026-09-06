@@ -1,5 +1,5 @@
 {
-  "version": "1.0",
+  "version": "1.1",
   "sources": [
     {
       "id": "signal:EUROSTAT-LCI-DE",
@@ -20,24 +20,8 @@
         "seriesDimension": "nace_r2",
         "timeDimension": "time",
         "maxSeries": 40,
-        "bootstrapQuery": {
-          "lang": "EN",
-          "geo": "DE",
-          "freq": "Q",
-          "unit": "PCH_SM",
-          "lcstruct": "D1_D4_MD5",
-          "s_adj": "CA",
-          "lastTimePeriod": "12"
-        },
-        "incrementalQuery": {
-          "lang": "EN",
-          "geo": "DE",
-          "freq": "Q",
-          "unit": "PCH_SM",
-          "lcstruct": "D1_D4_MD5",
-          "s_adj": "CA",
-          "lastTimePeriod": "4"
-        }
+        "bootstrapQuery": {"lang":"EN","geo":"DE","freq":"Q","unit":"PCH_SM","lcstruct":"D1_D4_MD5","s_adj":"CA","lastTimePeriod":"12"},
+        "incrementalQuery": {"lang":"EN","geo":"DE","freq":"Q","unit":"PCH_SM","lcstruct":"D1_D4_MD5","s_adj":"CA","lastTimePeriod":"4"}
       }
     },
     {
@@ -59,24 +43,56 @@
         "seriesDimension": "nace_r2",
         "timeDimension": "time",
         "maxSeries": 40,
-        "bootstrapQuery": {
-          "lang": "EN",
-          "geo": "EU27_2020",
-          "freq": "Q",
-          "unit": "PCH_SM",
-          "lcstruct": "D1_D4_MD5",
-          "s_adj": "CA",
-          "lastTimePeriod": "12"
-        },
-        "incrementalQuery": {
-          "lang": "EN",
-          "geo": "EU27_2020",
-          "freq": "Q",
-          "unit": "PCH_SM",
-          "lcstruct": "D1_D4_MD5",
-          "s_adj": "CA",
-          "lastTimePeriod": "4"
-        }
+        "bootstrapQuery": {"lang":"EN","geo":"EU27_2020","freq":"Q","unit":"PCH_SM","lcstruct":"D1_D4_MD5","s_adj":"CA","lastTimePeriod":"12"},
+        "incrementalQuery": {"lang":"EN","geo":"EU27_2020","freq":"Q","unit":"PCH_SM","lcstruct":"D1_D4_MD5","s_adj":"CA","lastTimePeriod":"4"}
+      }
+    },
+    {
+      "id": "signal:EUROSTAT-OJA-ICT-DE",
+      "kind": "signal",
+      "name": "Eurostat ICT online-job-ad occupation mix — Germany",
+      "enabled": true,
+      "cadenceDays": 7,
+      "config": {
+        "adapter": "eurostat_jsonstat_dimension_history",
+        "sourceId": "LIVE-EUROSTAT-OJA-ICT-MIX",
+        "sourceName": "Eurostat experimental ICT online job advertisements by occupation",
+        "sourceUrl": "https://ec.europa.eu/eurostat/databrowser/view/isoc_sk_oja2/default/table?lang=en",
+        "endpoint": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/isoc_sk_oja2",
+        "metricKey": "ict_occupation_share",
+        "metricLabel": "Share of ICT specialist online job ads by occupation",
+        "unit": "%",
+        "geography": "Germany",
+        "seriesDimension": "isco08",
+        "timeDimension": "time",
+        "maxSeries": 12,
+        "experimental": true,
+        "bootstrapQuery": {"lang":"EN","geo":"DE","freq":"Q","unit":"PC","lastTimePeriod":"12"},
+        "incrementalQuery": {"lang":"EN","geo":"DE","freq":"Q","unit":"PC","lastTimePeriod":"4"}
+      }
+    },
+    {
+      "id": "signal:EUROSTAT-OJA-ICT-EU",
+      "kind": "signal",
+      "name": "Eurostat ICT online-job-ad occupation mix — EU27",
+      "enabled": true,
+      "cadenceDays": 7,
+      "config": {
+        "adapter": "eurostat_jsonstat_dimension_history",
+        "sourceId": "LIVE-EUROSTAT-OJA-ICT-MIX",
+        "sourceName": "Eurostat experimental ICT online job advertisements by occupation",
+        "sourceUrl": "https://ec.europa.eu/eurostat/databrowser/view/isoc_sk_oja2/default/table?lang=en",
+        "endpoint": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/isoc_sk_oja2",
+        "metricKey": "ict_occupation_share",
+        "metricLabel": "Share of ICT specialist online job ads by occupation",
+        "unit": "%",
+        "geography": "EU27",
+        "seriesDimension": "isco08",
+        "timeDimension": "time",
+        "maxSeries": 12,
+        "experimental": true,
+        "bootstrapQuery": {"lang":"EN","geo":"EU27_2020","freq":"Q","unit":"PC","lastTimePeriod":"12"},
+        "incrementalQuery": {"lang":"EN","geo":"EU27_2020","freq":"Q","unit":"PC","lastTimePeriod":"4"}
       }
     }
   ]
