@@ -8,11 +8,15 @@ from engine.core import load_json,save_json,utcnow_iso,deterministic_id
 from engine.store import FileStore
 from engine.collectors import due,collect_signal,collect_watch,collect_discovery
 DEFAULT_COLLECTORS={'signal':collect_signal,'report_watch':collect_watch,'discovery':collect_discovery}
-def execute_refresh(sources,store,state,*,run_all=False,selected=None,now=None,collectors=None):
-    collectors=collectors or DEFAULT_COLLECTORS; selected=set(selected or []); now=now or datetime.now(timezone.utc); started=utcnow_iso(); run_id=deterministic_id(started,'refresh',prefix='run_'); summary={'checked':0,'success':0,'failed':0,'new_observations':0,'changed_pages':0,'new_discoveries':0,'skipped':0}; errors=[]
+def execute_refresh(sources,store,state,*,run_all=False,selected=None,now=None,collectors=None,manual_ids=None):
+    collectors=collectors or DEFAULT_COLLECTORS; selected=set(selected or []); manual_ids=set(manual_ids or []); now=now or datetime.now(timezone.utc); started=utcnow_iso(); run_id=deterministic_id(started,'refresh',prefix='run_'); summary={'checked':0,'success':0,'failed':0,'new_observations':0,'changed_pages':0,'new_discoveries':0,'skipped':0,'manual_skipped':0}; errors=[]
     for src in sources:
         if selected and src['id'] not in selected: continue
         if not src.get('enabled',True): summary['skipped']+=1; continue
+        # Manual/review-only sources remain targetable by an explicit --source command,
+        # but are excluded from normal scheduled runs and --all automation health.
+        if src['id'] in manual_ids and src['id'] not in selected:
+            summary['manual_skipped']+=1; continue
         if not run_all and not selected and not due(src,state,now): summary['skipped']+=1; continue
         summary['checked']+=1; st=state.setdefault(src['id'],{}); st['last_checked_at']=utcnow_iso()
         try:
@@ -38,5 +42,5 @@ def execute_refresh(sources,store,state,*,run_all=False,selected=None,now=None,c
         finally: store.save_state(state)
     completed=utcnow_iso(); status='success' if summary['failed']==0 else ('partial' if summary['success'] else 'failed'); row={'run_id':run_id,'started_at':started,'completed_at':completed,'status':status,'summary':summary,'errors':errors}; store.append_run(row); save_json(store.data/'status/last_run.json',row); return row
 def main():
-    ap=argparse.ArgumentParser(); ap.add_argument('--all',action='store_true'); ap.add_argument('--source',action='append',default=[]); ap.add_argument('--strict',action='store_true'); args=ap.parse_args(); registry=load_json(ROOT/'config/sources.json',{}) or {}; store=FileStore(ROOT); row=execute_refresh(registry.get('sources',[]),store,store.load_state(),run_all=args.all,selected=args.source); print(json.dumps(row,indent=2)); return 1 if args.strict and row['status']=='failed' else 0
+    ap=argparse.ArgumentParser(); ap.add_argument('--all',action='store_true'); ap.add_argument('--source',action='append',default=[]); ap.add_argument('--strict',action='store_true'); args=ap.parse_args(); registry=load_json(ROOT/'config/sources.json',{}) or {}; overrides=load_json(ROOT/'config/automation_overrides.json',{}) or {}; manual=set(overrides.get('manual_review_only',[])); store=FileStore(ROOT); row=execute_refresh(registry.get('sources',[]),store,store.load_state(),run_all=args.all,selected=args.source,manual_ids=manual); print(json.dumps(row,indent=2)); return 1 if args.strict and row['status']=='failed' else 0
 if __name__=='__main__': raise SystemExit(main())
