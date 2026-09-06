@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+build/*.sqlite
+build/*.db
+.pytest_cache/
+.DS_Store
