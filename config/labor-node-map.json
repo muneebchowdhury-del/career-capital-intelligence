@@ -1,15 +1,15 @@
 {
-  "ai-infra": {"nace_keys": ["K"], "weight": 0.7},
-  "cyber-ai": {"nace_keys": ["K"], "weight": 0.7},
-  "enterprise-ai": {"nace_keys": ["K", "N"], "weight": 0.65},
-  "data-infra": {"nace_keys": ["K", "N"], "weight": 0.7},
-  "cloud-dist": {"nace_keys": ["K"], "weight": 0.75},
-  "semis": {"nace_keys": ["C"], "weight": 0.45},
-  "robotics": {"nace_keys": ["C"], "weight": 0.55},
-  "advanced-mfg": {"nace_keys": ["C"], "weight": 0.7},
-  "energy-grid": {"nace_keys": ["D", "F"], "weight": 0.6},
-  "dc-power": {"nace_keys": ["D", "F", "K"], "weight": 0.5},
-  "fintech": {"nace_keys": ["L", "K"], "weight": 0.55},
-  "infra-finance": {"nace_keys": ["L", "F"], "weight": 0.45},
-  "critical-resilience": {"nace_keys": ["D", "E", "F", "H"], "weight": 0.45}
+  "ai-infra": {"vacancy_nace_keys": ["K"], "labor_cost_nace_keys": ["J"], "weight": 0.7},
+  "cyber-ai": {"vacancy_nace_keys": ["K"], "labor_cost_nace_keys": ["J"], "weight": 0.7},
+  "enterprise-ai": {"vacancy_nace_keys": ["K", "N"], "labor_cost_nace_keys": ["J", "M"], "weight": 0.65},
+  "data-infra": {"vacancy_nace_keys": ["K", "N"], "labor_cost_nace_keys": ["J", "M"], "weight": 0.7},
+  "cloud-dist": {"vacancy_nace_keys": ["K"], "labor_cost_nace_keys": ["J"], "weight": 0.75},
+  "semis": {"vacancy_nace_keys": ["C"], "labor_cost_nace_keys": ["C"], "weight": 0.45},
+  "robotics": {"vacancy_nace_keys": ["C"], "labor_cost_nace_keys": ["C"], "weight": 0.55},
+  "advanced-mfg": {"vacancy_nace_keys": ["C"], "labor_cost_nace_keys": ["C"], "weight": 0.7},
+  "energy-grid": {"vacancy_nace_keys": ["D", "F"], "labor_cost_nace_keys": ["D", "F"], "weight": 0.6},
+  "dc-power": {"vacancy_nace_keys": ["D", "F", "K"], "labor_cost_nace_keys": ["D", "F", "J"], "weight": 0.5},
+  "fintech": {"vacancy_nace_keys": ["L", "K"], "labor_cost_nace_keys": ["K", "J"], "weight": 0.55},
+  "infra-finance": {"vacancy_nace_keys": ["L", "F"], "labor_cost_nace_keys": ["K", "F"], "weight": 0.45},
+  "critical-resilience": {"vacancy_nace_keys": ["D", "E", "F", "H"], "labor_cost_nace_keys": ["D", "E", "F", "H"], "weight": 0.45}
 }
