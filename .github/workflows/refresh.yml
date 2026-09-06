@@ -8,6 +8,10 @@ on:
         default: false
   schedule:
     - cron: '17 4 * * *'
+  push:
+    branches: [main]
+    paths:
+      - '.github/labor-cost-smoke-trigger'
 permissions:
   contents: write
   pages: write
@@ -37,7 +41,9 @@ jobs:
         run: python -m unittest discover -s tests -v
       - name: Refresh due sources
         run: |
-          if [ "${{ inputs.run_all }}" = "true" ]; then
+          if [ "${{ github.event_name }}" = "push" ]; then
+            python scripts/refresh.py --source signal:EUROSTAT-LCI-DE --source signal:EUROSTAT-LCI-EU --strict
+          elif [ "${{ inputs.run_all }}" = "true" ]; then
             python scripts/refresh.py --all
           else
             python scripts/refresh.py
