@@ -1,0 +1,373 @@
+{
+  "version": "1.0",
+  "sources": [
+    {
+      "id": "signal:EUROSTAT-JVS-DE",
+      "kind": "signal",
+      "name": "Eurostat Job Vacancy Statistics",
+      "enabled": true,
+      "cadenceDays": 7,
+      "config": {
+        "adapter": "eurostat_jsonstat_dimension_history",
+        "sourceId": "LIVE-EUROSTAT-JVS",
+        "sourceName": "Eurostat Job Vacancy Statistics",
+        "sourceUrl": "https://ec.europa.eu/eurostat/databrowser/view/jvs_q_r21/default/table?lang=en",
+        "endpoint": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/jvs_q_r21",
+        "metricKey": "job_vacancy_rate",
+        "metricLabel": "Job vacancy rate",
+        "unit": "%",
+        "geography": "Germany",
+        "seriesDimension": "nace_r2_1",
+        "timeDimension": "time",
+        "maxSeries": 40,
+        "bootstrapQuery": {
+          "lang": "EN",
+          "geo": "DE",
+          "freq": "Q",
+          "indic_em": "JOBRATE",
+          "sizeclas": "TOTAL",
+          "s_adj": "NSA",
+          "lastTimePeriod": "12"
+        },
+        "incrementalQuery": {
+          "lang": "EN",
+          "geo": "DE",
+          "freq": "Q",
+          "indic_em": "JOBRATE",
+          "sizeclas": "TOTAL",
+          "s_adj": "NSA",
+          "lastTimePeriod": "4"
+        }
+      }
+    },
+    {
+      "id": "signal:EUROSTAT-JVS-EU",
+      "kind": "signal",
+      "name": "Eurostat Job Vacancy Statistics",
+      "enabled": true,
+      "cadenceDays": 7,
+      "config": {
+        "adapter": "eurostat_jsonstat_dimension_history",
+        "sourceId": "LIVE-EUROSTAT-JVS",
+        "sourceName": "Eurostat Job Vacancy Statistics",
+        "sourceUrl": "https://ec.europa.eu/eurostat/databrowser/view/jvs_q_r21/default/table?lang=en",
+        "endpoint": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/jvs_q_r21",
+        "metricKey": "job_vacancy_rate",
+        "metricLabel": "Job vacancy rate",
+        "unit": "%",
+        "geography": "EU27",
+        "seriesDimension": "nace_r2_1",
+        "timeDimension": "time",
+        "maxSeries": 40,
+        "bootstrapQuery": {
+          "lang": "EN",
+          "geo": "EU27_2020",
+          "freq": "Q",
+          "indic_em": "JOBRATE",
+          "sizeclas": "TOTAL",
+          "s_adj": "NSA",
+          "lastTimePeriod": "12"
+        },
+        "incrementalQuery": {
+          "lang": "EN",
+          "geo": "EU27_2020",
+          "freq": "Q",
+          "indic_em": "JOBRATE",
+          "sizeclas": "TOTAL",
+          "s_adj": "NSA",
+          "lastTimePeriod": "4"
+        }
+      }
+    },
+    {
+      "id": "watch:S1",
+      "kind": "report_watch",
+      "name": "Gartner — Worldwide AI Spending 2026",
+      "enabled": true,
+      "cadenceDays": 7,
+      "config": {
+        "evidenceSourceId": "S1",
+        "sourceUrl": "https://www.gartner.com/en/newsroom/press-releases/2026-05-19-gartner-forecasts-worldwide-ai-spending-to-grow-47-percent-in-2026",
+        "minTextChars": 300
+      }
+    },
+    {
+      "id": "watch:S2",
+      "kind": "report_watch",
+      "name": "IEA — Key Questions on Energy and AI",
+      "enabled": true,
+      "cadenceDays": 30,
+      "config": {
+        "evidenceSourceId": "S2",
+        "sourceUrl": "https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary",
+        "minTextChars": 300
+      }
+    },
+    {
+      "id": "watch:S3",
+      "kind": "report_watch",
+      "name": "McKinsey — $7T data-center build-out",
+      "enabled": true,
+      "cadenceDays": 30,
+      "config": {
+        "evidenceSourceId": "S3",
+        "sourceUrl": "https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/the-7-trillion-dollar-data-center-build-out-how-industrials-can-capture-their-share",
+        "minTextChars": 300
+      }
+    },
+    {
+      "id": "watch:S4",
+      "kind": "report_watch",
+      "name": "Gartner — IT Spending 2026",
+      "enabled": true,
+      "cadenceDays": 7,
+      "config": {
+        "evidenceSourceId": "S4",
+        "sourceUrl": "https://www.gartner.com/en/newsroom/press-releases/2026-07-27-gartner-forecasts-worldwide-it-spending-to-grow-14-point-2-percent-in-2026-totaling-6-point-37-trillion",
+        "minTextChars": 300
+      }
+    },
+    {
+      "id": "watch:S5",
+      "kind": "report_watch",
+      "name": "Gartner — Information Security 2026",
+      "enabled": true,
+      "cadenceDays": 7,
+      "config": {
+        "evidenceSourceId": "S5",
+        "sourceUrl": "https://www.gartner.com/en/documents/7408930",
+        "minTextChars": 300
+      }
+    },
+    {
+      "id": "watch:S6",
+      "kind": "report_watch",
+      "name": "SIA — Global Semiconductor Sales 2025 / 2026 outlook",
+      "enabled": true,
+      "cadenceDays": 7,
+      "config": {
+        "evidenceSourceId": "S6",
+        "sourceUrl": "https://www.semiconductors.org/global-annual-semiconductor-sales-increase-25-6-to-791-7-billion-in-2025/",
+        "minTextChars": 300
+      }
+    },
+    {
+      "id": "watch:S7",
+      "kind": "report_watch",
+      "name": "SIPRI — World Military Expenditure 2025",
+      "enabled": true,
+      "cadenceDays": 30,
+      "config": {
+        "evidenceSourceId": "S7",
+        "sourceUrl": "https://www.sipri.org/media/press-release/2026/global-military-spending-rise-continues-european-and-asian-expenditures-surge",
+        "minTextChars": 300
+      }
+    },
+    {
+      "id": "watch:S8",
+      "kind": "report_watch",
+      "name": "Dealroom/NATO Innovation Fund — European Defence, Security & Resilience",
+      "enabled": true,
+      "cadenceDays": 7,
+      "config": {
+        "evidenceSourceId": "S8",
+        "sourceUrl": "https://dealroom.co/reports/defence-security-and-resilience-in-europe-2026",
+        "minTextChars": 300
+      }
+    },
+    {
+      "id": "watch:S9",
+      "kind": "report_watch",
+      "name": "IFR — World Robotics 2025",
+      "enabled": true,
+      "cadenceDays": 30,
+      "config": {
+        "evidenceSourceId": "S9",
+        "sourceUrl": "https://ifr.org/worldrobotics/report-2025",
+        "minTextChars": 300
+      }
+    },
+    {
+      "id": "watch:S10",
+      "kind": "report_watch",
+      "name": "IFR — US Robot Industry 2026 update",
+      "enabled": true,
+      "cadenceDays": 30,
+      "config": {
+        "evidenceSourceId": "S10",
+        "sourceUrl": "https://ifr.org/ifr-press-releases/en/news/",
+        "minTextChars": 300
+      }
+    },
+    {
+      "id": "watch:S11",
+      "kind": "report_watch",
+      "name": "IEA — World Energy Investment 2026",
+      "enabled": true,
+      "cadenceDays": 30,
+      "config": {
+        "evidenceSourceId": "S11",
+        "sourceUrl": "https://www.iea.org/reports/world-energy-investment-2026",
+        "minTextChars": 300
+      }
+    },
+    {
+      "id": "watch:S12",
+      "kind": "report_watch",
+      "name": "McKinsey — Global Infrastructure Report 2026",
+      "enabled": true,
+      "cadenceDays": 30,
+      "config": {
+        "evidenceSourceId": "S12",
+        "sourceUrl": "https://www.mckinsey.com/industries/private-capital/our-insights/global-private-markets-report/infrastructure",
+        "minTextChars": 300
+      }
+    },
+    {
+      "id": "watch:S13",
+      "kind": "report_watch",
+      "name": "KPMG — Venture Pulse Q2 2026",
+      "enabled": true,
+      "cadenceDays": 1,
+      "config": {
+        "evidenceSourceId": "S13",
+        "sourceUrl": "https://kpmg.com/xx/en/media/press-releases/2026/07/vc-investment-already-at-five-year-high-of-billions.html",
+        "minTextChars": 300
+      }
+    },
+    {
+      "id": "watch:S14",
+      "kind": "report_watch",
+      "name": "KPMG — Pulse of Fintech H1 2026",
+      "enabled": true,
+      "cadenceDays": 1,
+      "config": {
+        "evidenceSourceId": "S14",
+        "sourceUrl": "https://kpmg.com/cy/en/insights/2026/09/pulse-of-fintech.html",
+        "minTextChars": 300
+      }
+    },
+    {
+      "id": "watch:S15",
+      "kind": "report_watch",
+      "name": "EY — Biotech Beyond Borders 2026",
+      "enabled": true,
+      "cadenceDays": 30,
+      "config": {
+        "evidenceSourceId": "S15",
+        "sourceUrl": "https://www.ey.com/en_us/newsroom/2026/06/ey-2026-biotech-beyond-borders-report-a-fundamentally-strong-biotech-industry-seeks-balance-amid-continued-uncertainty",
+        "minTextChars": 300
+      }
+    },
+    {
+      "id": "watch:S16",
+      "kind": "report_watch",
+      "name": "SVB — H2 2026 Healthcare Industry Trends",
+      "enabled": true,
+      "cadenceDays": 30,
+      "config": {
+        "evidenceSourceId": "S16",
+        "sourceUrl": "https://www.svb.com/trends-insights/reports/healthcare-investments-and-exits/",
+        "minTextChars": 300
+      }
+    },
+    {
+      "id": "watch:S17",
+      "kind": "report_watch",
+      "name": "WEF — Future of Jobs Report 2025",
+      "enabled": true,
+      "cadenceDays": 30,
+      "config": {
+        "evidenceSourceId": "S17",
+        "sourceUrl": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/",
+        "minTextChars": 300
+      }
+    },
+    {
+      "id": "watch:S18",
+      "kind": "report_watch",
+      "name": "Dealroom — European Deep Tech Report 2026",
+      "enabled": true,
+      "cadenceDays": 7,
+      "config": {
+        "evidenceSourceId": "S18",
+        "sourceUrl": "https://dealroom.co/reports/the-european-deep-tech-report-2026",
+        "minTextChars": 300
+      }
+    },
+    {
+      "id": "watch:S19",
+      "kind": "report_watch",
+      "name": "Gartner — AI-optimized IaaS 2026",
+      "enabled": true,
+      "cadenceDays": 7,
+      "config": {
+        "evidenceSourceId": "S19",
+        "sourceUrl": "https://www.gartner.com/en/newsroom/press-releases/2026-08-10-gartner-forecasts-worldwide-artificial-intelligence-optimized-iaas-spending-to-grow-96-percent-in-2026",
+        "minTextChars": 300
+      }
+    },
+    {
+      "id": "watch:S20",
+      "kind": "report_watch",
+      "name": "Gartner — Agentic AI and Enterprise Software",
+      "enabled": true,
+      "cadenceDays": 7,
+      "config": {
+        "evidenceSourceId": "S20",
+        "sourceUrl": "https://www.gartner.com/en/newsroom/press-releases/2026-07-01-gartner-says-us-dollars-234-billion-in-enterprise-application-software-spend-is-at-risk-from-agentic-artificial-intelligence",
+        "minTextChars": 300
+      }
+    },
+    {
+      "id": "watch:S21",
+      "kind": "report_watch",
+      "name": "SIPRI — World Military Expenditure 2024",
+      "enabled": true,
+      "cadenceDays": 7,
+      "config": {
+        "evidenceSourceId": "S21",
+        "sourceUrl": "https://www.sipri.org/publications/2025/sipri-fact-sheets/trends-world-military-expenditure-2024",
+        "minTextChars": 300
+      }
+    },
+    {
+      "id": "watch:S22",
+      "kind": "report_watch",
+      "name": "IEA — World Energy Investment 2025",
+      "enabled": true,
+      "cadenceDays": 7,
+      "config": {
+        "evidenceSourceId": "S22",
+        "sourceUrl": "https://www.iea.org/reports/world-energy-investment-2025/executive-summary",
+        "minTextChars": 300
+      }
+    },
+    {
+      "id": "watch:S23",
+      "kind": "report_watch",
+      "name": "SIA — WSTS Spring 2026 semiconductor forecast",
+      "enabled": true,
+      "cadenceDays": 30,
+      "config": {
+        "evidenceSourceId": "S23",
+        "sourceUrl": "https://www.semiconductors.org/global-semiconductor-sales-increase-11-month-to-month-in-april/",
+        "minTextChars": 300
+      }
+    },
+    {
+      "id": "watch:S24",
+      "kind": "report_watch",
+      "name": "SIA — July 2026 semiconductor sales",
+      "enabled": true,
+      "cadenceDays": 7,
+      "config": {
+        "evidenceSourceId": "S24",
+        "sourceUrl": "https://www.semiconductors.org/global-semiconductor-sales-increase-6-4-month-to-month-in-july/",
+        "minTextChars": 300
+      }
+    },
+    {
+      "id": "discover:D1-IEA-investment",
+      "kind": "discovery",
+      "name": "IEA Investment topic
