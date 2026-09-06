@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 from __future__ import annotations
-import hashlib, shutil
+import hashlib, json, shutil
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 PARTS=ROOT/'upload_parts'
@@ -13,25 +13,25 @@ TARGETS={
 }
 for target,(names,expected) in TARGETS.items():
     chunks=[(PARTS/n).read_bytes() for n in names]
-    # The first HTML upload included a duplicated continuation after the known
-    # 12 KB split marker. Cut at the original split boundary; the unchanged
-    # expected SHA-256 below still proves the reconstructed file is exact.
     if target=='docs/index.html':
         marker=b'<select id="xMetric"></'
         pos=chunks[0].find(marker)
         if pos<0: raise SystemExit('HTML split marker not found')
         chunks[0]=chunks[0][:pos+len(marker)]
     data=b''.join(chunks)
+    if target=='config/sources.json':
+        # The connector preserves JSON semantics but materializes unicode
+        # escapes as characters. Normalize back to the repository's stable,
+        # deterministic ASCII-escaped pretty JSON representation.
+        data=json.dumps(json.loads(data.decode('utf-8')),ensure_ascii=True,indent=2).encode('utf-8')
     got=hashlib.sha256(data).hexdigest()
     print(f'{target}: {got}')
     if got!=expected: raise SystemExit(f'hash mismatch for {target}: expected {expected}, got {got}')
     out=ROOT/target;out.parent.mkdir(parents=True,exist_ok=True);out.write_bytes(data)
 (ROOT/'docs/.nojekyll').write_text('',encoding='utf-8')
-# Remove abandoned archive bootstrap and transparent upload staging files.
 for p in [ROOT/'project.tar.gz',ROOT/'.github/workflows/bootstrap.yml']:
     if p.exists(): p.unlink()
 if PARTS.exists(): shutil.rmtree(PARTS)
-# Remove this one-time mechanism from the clean project after it has done its job.
 for p in [ROOT/'.github/workflows/assemble-staging.yml',ROOT/'scripts/assemble_upload.py']:
     if p.exists(): p.unlink()
 print('Assembly and hash verification complete.')
