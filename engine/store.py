@@ -1,7 +1,7 @@
 from __future__ import annotations
 import json, sqlite3
 from pathlib import Path
-from .core import append_jsonl, canonical_json, deterministic_id, iter_jsonl, load_json, save_json, utcnow_iso
+from .core import append_jsonl, canonical_json, deterministic_id, iter_jsonl, load_json, save_json, utcnow_iso, load_source_registry
 
 class FileStore:
     def __init__(self, root: Path):
@@ -89,8 +89,7 @@ CREATE TABLE snapshots(snapshot_id TEXT PRIMARY KEY,content_hash TEXT,created_at
         for x in iter_jsonl(p): con.execute('INSERT OR IGNORE INTO discoveries VALUES (?,?,?,?,?,?)',(x.get('id'),x.get('source_id'),x.get('url'),x.get('title'),1 if x.get('baseline') else 0,x.get('found_at')))
     for x in store.reviews(): con.execute('INSERT INTO reviews VALUES (?,?,?,?,?,?,?,?,?,?)',(x['id'],x.get('source_id'),x.get('kind'),x.get('title'),x.get('url'),x.get('status'),x.get('created_at'),x.get('resolved_at'),x.get('resolution_note'),json.dumps(x.get('details',{}),ensure_ascii=False)))
     for sid,payload in store.load_state().items(): con.execute('INSERT INTO source_state VALUES (?,?)',(sid,json.dumps(payload,ensure_ascii=False,sort_keys=True)))
-    registry=load_json(root/'config/sources.json',{}) or {}
-    for x in registry.get('sources',[]): con.execute('INSERT INTO source_registry VALUES (?,?,?,?,?,?)',(x.get('id'),x.get('kind'),x.get('name'),1 if x.get('enabled',True) else 0,float(x.get('cadenceDays',7)),json.dumps(x.get('config',{}),ensure_ascii=False,sort_keys=True)))
+    for x in load_source_registry(root): con.execute('INSERT INTO source_registry VALUES (?,?,?,?,?,?)',(x.get('id'),x.get('kind'),x.get('name'),1 if x.get('enabled',True) else 0,float(x.get('cadenceDays',7)),json.dumps(x.get('config',{}),ensure_ascii=False,sort_keys=True)))
     if store.run_path.exists():
         for x in iter_jsonl(store.run_path): con.execute('INSERT OR REPLACE INTO runs VALUES (?,?,?,?,?,?)',(x.get('run_id'),x.get('started_at'),x.get('completed_at'),x.get('status'),json.dumps(x.get('summary',{}),ensure_ascii=False,sort_keys=True),json.dumps(x.get('errors',[]),ensure_ascii=False,sort_keys=True)))
     snap_idx=load_json(root/'data/snapshots/index.json',[]) or []
