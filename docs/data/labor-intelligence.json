@@ -5,13 +5,17 @@
     "vacancy_persistence": "Average job vacancy rate over up to the latest five quarters.",
     "labor_cost_pressure": "Latest year-over-year change in nominal hourly labour costs by NACE sector.",
     "labor_cost_momentum": "Change in the year-over-year labour-cost growth rate from the oldest to newest observation within the latest five quarters; this is cost acceleration/deceleration, not hiring growth.",
-    "germany_vs_eu_spread": "Germany latest value minus EU27 latest value for the same metric and sector.",
+    "ict_occupation_mix": "Experimental Eurostat online-job-ad statistic: each value is an occupation share within ICT-specialist online job advertisements, not a share of all jobs and not total hiring volume.",
+    "ict_occupation_mix_change": "Change in an occupation share across up to the latest five quarters. A rising share means the occupation is becoming a larger part of observed ICT ads; it does not by itself prove absolute job growth.",
+    "oja_confidence": "Lower-confidence directional evidence because online-job-ad portal coverage, duplication, classification and representativeness can change over time.",
+    "germany_vs_eu_spread": "Germany latest value minus EU27 latest value for the same metric and sector or occupation.",
     "coding_guardrail": "Vacancy and labour-cost feeds use different NACE revisions. Their sector-code mappings are stored separately and are never joined by code alone.",
-    "node_mapping": "Opportunity nodes are linked to broad NACE sectors only where the relationship is defensible. Mapping is intentionally many-to-one and evidence-only.",
+    "node_mapping": "Opportunity nodes are linked to broad NACE sectors only where the relationship is defensible. OJA occupation mix is not mapped into node scores.",
     "ranking_use": "Evidence-only for now. These derived indicators do not automatically change opportunity scores."
   },
   "sector_count": 31,
   "labor_cost_sector_count": 26,
+  "occupation_mix_count": 7,
   "mapped_node_count": 13,
   "sectors": [
     {
@@ -1622,6 +1626,211 @@
       "coverage_quarters": {
         "EU27": 11,
         "Germany": 11
+      }
+    }
+  ],
+  "ict_occupation_mix": [
+    {
+      "dimension_key": "OC251",
+      "dimension_label": "Software and applications developers and analysts",
+      "latest": {
+        "EU27": {
+          "period": "2026-Q2",
+          "value": 53.0,
+          "unit": "%"
+        },
+        "Germany": {
+          "period": "2026-Q2",
+          "value": 57.6,
+          "unit": "%"
+        }
+      },
+      "momentum_4q_change": {
+        "EU27": -3.2,
+        "Germany": -2.0
+      },
+      "persistence_5q_avg": {
+        "EU27": 54.58,
+        "Germany": 58.18
+      },
+      "germany_vs_eu_spread": 4.6,
+      "coverage_quarters": {
+        "EU27": 12,
+        "Germany": 12
+      }
+    },
+    {
+      "dimension_key": "OC252",
+      "dimension_label": "Database and network professionals",
+      "latest": {
+        "EU27": {
+          "period": "2026-Q2",
+          "value": 10.3,
+          "unit": "%"
+        },
+        "Germany": {
+          "period": "2026-Q2",
+          "value": 13.9,
+          "unit": "%"
+        }
+      },
+      "momentum_4q_change": {
+        "EU27": 0.6,
+        "Germany": 1.4
+      },
+      "persistence_5q_avg": {
+        "EU27": 10.22,
+        "Germany": 13.58
+      },
+      "germany_vs_eu_spread": 3.6,
+      "coverage_quarters": {
+        "EU27": 12,
+        "Germany": 12
+      }
+    },
+    {
+      "dimension_key": "OC742",
+      "dimension_label": "Electronics and telecommunications installers and repairers",
+      "latest": {
+        "EU27": {
+          "period": "2026-Q2",
+          "value": 9.8,
+          "unit": "%"
+        },
+        "Germany": {
+          "period": "2026-Q2",
+          "value": 13.4,
+          "unit": "%"
+        }
+      },
+      "momentum_4q_change": {
+        "EU27": 1.9,
+        "Germany": 0.9
+      },
+      "persistence_5q_avg": {
+        "EU27": 8.96,
+        "Germany": 13.12
+      },
+      "germany_vs_eu_spread": 3.6,
+      "coverage_quarters": {
+        "EU27": 12,
+        "Germany": 12
+      }
+    },
+    {
+      "dimension_key": "OC351",
+      "dimension_label": "Information and communications technology operations and user support technicians",
+      "latest": {
+        "EU27": {
+          "period": "2026-Q2",
+          "value": 10.3,
+          "unit": "%"
+        },
+        "Germany": {
+          "period": "2026-Q2",
+          "value": 8.5,
+          "unit": "%"
+        }
+      },
+      "momentum_4q_change": {
+        "EU27": -0.3,
+        "Germany": -0.5
+      },
+      "persistence_5q_avg": {
+        "EU27": 10.38,
+        "Germany": 8.66
+      },
+      "germany_vs_eu_spread": -1.8,
+      "coverage_quarters": {
+        "EU27": 12,
+        "Germany": 12
+      }
+    },
+    {
+      "dimension_key": "OTH_ICT",
+      "dimension_label": "Other information and communications technology specialists (OC2152, OC2153, OC2166, OC2356, OC2434, OC3114)",
+      "latest": {
+        "EU27": {
+          "period": "2026-Q2",
+          "value": 9.8,
+          "unit": "%"
+        },
+        "Germany": {
+          "period": "2026-Q2",
+          "value": 4.9,
+          "unit": "%"
+        }
+      },
+      "momentum_4q_change": {
+        "EU27": 0.7,
+        "Germany": 0.1
+      },
+      "persistence_5q_avg": {
+        "EU27": 9.36,
+        "Germany": 4.84
+      },
+      "germany_vs_eu_spread": -4.9,
+      "coverage_quarters": {
+        "EU27": 12,
+        "Germany": 12
+      }
+    },
+    {
+      "dimension_key": "OC133",
+      "dimension_label": "Information and communications technology service managers",
+      "latest": {
+        "EU27": {
+          "period": "2026-Q2",
+          "value": 3.5,
+          "unit": "%"
+        },
+        "Germany": {
+          "period": "2026-Q2",
+          "value": 1.5,
+          "unit": "%"
+        }
+      },
+      "momentum_4q_change": {
+        "EU27": 0.1,
+        "Germany": 0.1
+      },
+      "persistence_5q_avg": {
+        "EU27": 3.46,
+        "Germany": 1.42
+      },
+      "germany_vs_eu_spread": -2.0,
+      "coverage_quarters": {
+        "EU27": 12,
+        "Germany": 12
+      }
+    },
+    {
+      "dimension_key": "OC352",
+      "dimension_label": "Telecommunications and broadcasting technicians",
+      "latest": {
+        "EU27": {
+          "period": "2026-Q2",
+          "value": 3.2,
+          "unit": "%"
+        },
+        "Germany": {
+          "period": "2026-Q2",
+          "value": 0.2,
+          "unit": "%"
+        }
+      },
+      "momentum_4q_change": {
+        "EU27": 0.1,
+        "Germany": 0.0
+      },
+      "persistence_5q_avg": {
+        "EU27": 3.02,
+        "Germany": 0.2
+      },
+      "germany_vs_eu_spread": -3.0,
+      "coverage_quarters": {
+        "EU27": 12,
+        "Germany": 12
       }
     }
   ],
@@ -3240,6 +3449,215 @@
           "coverage_quarters": {
             "EU27": 11,
             "Germany": 11
+          }
+        }
+      ]
+    },
+    "ict_occupation_share": {
+      "occupation_count": 7,
+      "experimental": true,
+      "occupations": [
+        {
+          "dimension_key": "OC251",
+          "dimension_label": "Software and applications developers and analysts",
+          "latest": {
+            "EU27": {
+              "period": "2026-Q2",
+              "value": 53.0,
+              "unit": "%"
+            },
+            "Germany": {
+              "period": "2026-Q2",
+              "value": 57.6,
+              "unit": "%"
+            }
+          },
+          "momentum_4q_change": {
+            "EU27": -3.2,
+            "Germany": -2.0
+          },
+          "persistence_5q_avg": {
+            "EU27": 54.58,
+            "Germany": 58.18
+          },
+          "germany_vs_eu_spread": 4.6,
+          "coverage_quarters": {
+            "EU27": 12,
+            "Germany": 12
+          }
+        },
+        {
+          "dimension_key": "OC252",
+          "dimension_label": "Database and network professionals",
+          "latest": {
+            "EU27": {
+              "period": "2026-Q2",
+              "value": 10.3,
+              "unit": "%"
+            },
+            "Germany": {
+              "period": "2026-Q2",
+              "value": 13.9,
+              "unit": "%"
+            }
+          },
+          "momentum_4q_change": {
+            "EU27": 0.6,
+            "Germany": 1.4
+          },
+          "persistence_5q_avg": {
+            "EU27": 10.22,
+            "Germany": 13.58
+          },
+          "germany_vs_eu_spread": 3.6,
+          "coverage_quarters": {
+            "EU27": 12,
+            "Germany": 12
+          }
+        },
+        {
+          "dimension_key": "OC742",
+          "dimension_label": "Electronics and telecommunications installers and repairers",
+          "latest": {
+            "EU27": {
+              "period": "2026-Q2",
+              "value": 9.8,
+              "unit": "%"
+            },
+            "Germany": {
+              "period": "2026-Q2",
+              "value": 13.4,
+              "unit": "%"
+            }
+          },
+          "momentum_4q_change": {
+            "EU27": 1.9,
+            "Germany": 0.9
+          },
+          "persistence_5q_avg": {
+            "EU27": 8.96,
+            "Germany": 13.12
+          },
+          "germany_vs_eu_spread": 3.6,
+          "coverage_quarters": {
+            "EU27": 12,
+            "Germany": 12
+          }
+        },
+        {
+          "dimension_key": "OC351",
+          "dimension_label": "Information and communications technology operations and user support technicians",
+          "latest": {
+            "EU27": {
+              "period": "2026-Q2",
+              "value": 10.3,
+              "unit": "%"
+            },
+            "Germany": {
+              "period": "2026-Q2",
+              "value": 8.5,
+              "unit": "%"
+            }
+          },
+          "momentum_4q_change": {
+            "EU27": -0.3,
+            "Germany": -0.5
+          },
+          "persistence_5q_avg": {
+            "EU27": 10.38,
+            "Germany": 8.66
+          },
+          "germany_vs_eu_spread": -1.8,
+          "coverage_quarters": {
+            "EU27": 12,
+            "Germany": 12
+          }
+        },
+        {
+          "dimension_key": "OTH_ICT",
+          "dimension_label": "Other information and communications technology specialists (OC2152, OC2153, OC2166, OC2356, OC2434, OC3114)",
+          "latest": {
+            "EU27": {
+              "period": "2026-Q2",
+              "value": 9.8,
+              "unit": "%"
+            },
+            "Germany": {
+              "period": "2026-Q2",
+              "value": 4.9,
+              "unit": "%"
+            }
+          },
+          "momentum_4q_change": {
+            "EU27": 0.7,
+            "Germany": 0.1
+          },
+          "persistence_5q_avg": {
+            "EU27": 9.36,
+            "Germany": 4.84
+          },
+          "germany_vs_eu_spread": -4.9,
+          "coverage_quarters": {
+            "EU27": 12,
+            "Germany": 12
+          }
+        },
+        {
+          "dimension_key": "OC133",
+          "dimension_label": "Information and communications technology service managers",
+          "latest": {
+            "EU27": {
+              "period": "2026-Q2",
+              "value": 3.5,
+              "unit": "%"
+            },
+            "Germany": {
+              "period": "2026-Q2",
+              "value": 1.5,
+              "unit": "%"
+            }
+          },
+          "momentum_4q_change": {
+            "EU27": 0.1,
+            "Germany": 0.1
+          },
+          "persistence_5q_avg": {
+            "EU27": 3.46,
+            "Germany": 1.42
+          },
+          "germany_vs_eu_spread": -2.0,
+          "coverage_quarters": {
+            "EU27": 12,
+            "Germany": 12
+          }
+        },
+        {
+          "dimension_key": "OC352",
+          "dimension_label": "Telecommunications and broadcasting technicians",
+          "latest": {
+            "EU27": {
+              "period": "2026-Q2",
+              "value": 3.2,
+              "unit": "%"
+            },
+            "Germany": {
+              "period": "2026-Q2",
+              "value": 0.2,
+              "unit": "%"
+            }
+          },
+          "momentum_4q_change": {
+            "EU27": 0.1,
+            "Germany": 0.0
+          },
+          "persistence_5q_avg": {
+            "EU27": 3.02,
+            "Germany": 0.2
+          },
+          "germany_vs_eu_spread": -3.0,
+          "coverage_quarters": {
+            "EU27": 12,
+            "Germany": 12
           }
         }
       ]
@@ -4977,5 +5395,5 @@
       "status": "evidence_only"
     }
   ],
-  "generated_at": "2026-09-06T11:56:28Z"
+  "generated_at": "2026-09-07T09:26:32Z"
 }
