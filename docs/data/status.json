@@ -1,6 +1,6 @@
 {
   "mode": "zero-cost static live",
-  "generated_at": "2026-09-08T08:55:04Z",
+  "generated_at": "2026-09-09T09:00:40Z",
   "evidence_updated_at": "2026-09-05",
   "version": "4.1",
   "source_count": 34,
@@ -10,10 +10,10 @@
   "pending_review": 0,
   "new_discovered_items": 0,
   "last_run": {
-    "completed_at": "2026-09-08T08:55:03Z",
+    "completed_at": "2026-09-09T09:00:39Z",
     "errors": [],
-    "run_id": "run_0e6b27f0ab780f49c9414200",
-    "started_at": "2026-09-08T08:55:03Z",
+    "run_id": "run_14444c39bdec6211b9ba44f6",
+    "started_at": "2026-09-09T09:00:39Z",
     "status": "success",
     "summary": {
       "changed_pages": 0,
