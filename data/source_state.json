@@ -1,8 +1,8 @@
 {
   "signal:EUROSTAT-JVS-DE": {
-    "last_checked_at": "2026-09-06T11:01:54Z",
+    "last_checked_at": "2026-09-14T09:57:21Z",
     "final_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/jvs_q_r21?lang=EN&geo=DE&freq=Q&indic_em=JVR&sizeclas=TOTAL&s_adj=NSA&lastTimePeriod=4",
-    "last_success_at": "2026-09-06T11:01:55Z",
+    "last_success_at": "2026-09-14T09:57:22Z",
     "last_error": null,
     "last_result": {
       "rows": 124,
@@ -10,9 +10,9 @@
     }
   },
   "signal:EUROSTAT-JVS-EU": {
-    "last_checked_at": "2026-09-06T11:01:55Z",
+    "last_checked_at": "2026-09-14T09:57:22Z",
     "final_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/jvs_q_r21?lang=EN&geo=EU27_2020&freq=Q&indic_em=JVR&sizeclas=TOTAL&s_adj=NSA&lastTimePeriod=4",
-    "last_success_at": "2026-09-06T11:01:55Z",
+    "last_success_at": "2026-09-14T09:57:22Z",
     "last_error": null,
     "last_result": {
       "rows": 87,
@@ -40,11 +40,11 @@
     "last_error": "HTTPError: HTTP Error 403: Forbidden"
   },
   "watch:S6": {
-    "last_checked_at": "2026-09-06T11:01:55Z",
+    "last_checked_at": "2026-09-14T09:57:22Z",
     "fingerprint": "e9b89bfb94c2080a27ee5e31fe22a7843a7b3c2fdc2c5373c7cb9b220ba0fdd4",
     "text_chars": 4159,
     "final_url": "https://www.semiconductors.org/global-annual-semiconductor-sales-increase-25-6-to-791-7-billion-in-2025/",
-    "last_success_at": "2026-09-06T11:01:56Z",
+    "last_success_at": "2026-09-14T09:57:22Z",
     "last_error": null,
     "last_result": {
       "changed": false,
@@ -66,12 +66,12 @@
     }
   },
   "watch:S8": {
-    "last_checked_at": "2026-09-06T11:01:57Z",
+    "last_checked_at": "2026-09-14T09:57:22Z",
     "fingerprint": "37f2e6d6d55cb7954a307873f0e11c7f84ab1a7d4d03d2f0eaa908bd1aec30c8",
     "text_chars": 1855,
     "final_url": "https://dealroom.co/reports/defence-security-and-resilience-in-europe-2026",
     "last_success_at": "2026-09-06T11:01:58Z",
-    "last_error": null,
+    "last_error": "HTTPError: HTTP Error 403: Forbidden",
     "last_result": {
       "changed": false,
       "not_modified": false
@@ -112,13 +112,13 @@
     "last_error": "TimeoutError: The read operation timed out"
   },
   "watch:S13": {
-    "last_checked_at": "2026-09-13T09:36:03Z",
+    "last_checked_at": "2026-09-14T09:57:23Z",
     "fingerprint": "500790d119fbe442d38160fd66d8140ba308f8815ed1c485da36ca9dc32d40eb",
     "text_chars": 11746,
     "final_url": "https://kpmg.com/xx/en/media/press-releases/2026/07/vc-investment-already-at-five-year-high-of-billions.html",
-    "etag": "W/\"2e186-65b586d14b30b-gzip\"",
-    "last_modified": "Sun, 13 Sep 2026 07:40:05 GMT",
-    "last_success_at": "2026-09-13T09:36:04Z",
+    "etag": "W/\"2e186-65b6e76027171-gzip\"",
+    "last_modified": "Mon, 14 Sep 2026 09:57:24 GMT",
+    "last_success_at": "2026-09-14T09:57:24Z",
     "last_error": null,
     "last_result": {
       "changed": false,
@@ -126,13 +126,13 @@
     }
   },
   "watch:S14": {
-    "last_checked_at": "2026-09-13T09:36:04Z",
+    "last_checked_at": "2026-09-14T09:57:24Z",
     "fingerprint": "b988e20fd5f8d2bb624c24e3a5048211f74aa291328ca8a4fcd1a2a5e5e02a75",
     "text_chars": 12480,
     "final_url": "https://kpmg.com/cy/en/insights/2026/09/pulse-of-fintech.html",
-    "etag": "W/\"37e8a-65b5a0c10eb25-gzip\"",
-    "last_modified": "Sun, 13 Sep 2026 09:36:07 GMT",
-    "last_success_at": "2026-09-13T09:36:08Z",
+    "etag": "W/\"37e8a-65b6e765773a9-gzip\"",
+    "last_modified": "Mon, 14 Sep 2026 09:57:30 GMT",
+    "last_success_at": "2026-09-14T09:57:30Z",
     "last_error": null,
     "last_result": {
       "changed": false,
@@ -168,12 +168,12 @@
     "last_error": "HTTPError: HTTP Error 403: Forbidden"
   },
   "watch:S18": {
-    "last_checked_at": "2026-09-06T11:02:03Z",
+    "last_checked_at": "2026-09-14T09:57:30Z",
     "fingerprint": "e85c64b9100d7cffa9fe0bba41a3ab8cce111c8b4b6ca2b747435a6e3643ce35",
     "text_chars": 2044,
     "final_url": "https://dealroom.co/reports/the-european-deep-tech-report-2026",
     "last_success_at": "2026-09-06T11:02:04Z",
-    "last_error": null,
+    "last_error": "HTTPError: HTTP Error 403: Forbidden",
     "last_result": {
       "changed": false,
       "not_modified": false
@@ -188,13 +188,13 @@
     "last_error": "HTTPError: HTTP Error 403: Forbidden"
   },
   "watch:S21": {
-    "last_checked_at": "2026-09-06T11:02:04Z",
+    "last_checked_at": "2026-09-14T09:57:31Z",
     "fingerprint": "5004d3ec35ccafbe9a4dc311b89c6487c23e541dafab48a6aa1a0206f580b075",
     "text_chars": 2857,
     "final_url": "https://www.sipri.org/publications/2025/sipri-fact-sheets/trends-world-military-expenditure-2024",
-    "etag": "\"1788441774-gzip\"",
-    "last_modified": "Thu, 03 Sep 2026 13:22:54 GMT",
-    "last_success_at": "2026-09-06T11:02:06Z",
+    "etag": "\"1789122697-gzip\"",
+    "last_modified": "Fri, 11 Sep 2026 10:31:37 GMT",
+    "last_success_at": "2026-09-14T09:57:32Z",
     "last_error": null,
     "last_result": {
       "changed": false,
@@ -218,11 +218,11 @@
     }
   },
   "watch:S24": {
-    "last_checked_at": "2026-09-06T11:02:06Z",
+    "last_checked_at": "2026-09-14T09:57:32Z",
     "fingerprint": "daea9609a7a1e1419f5f8849855e56b116b485992f40eb720a88475c54c4d9c9",
     "text_chars": 3148,
     "final_url": "https://www.semiconductors.org/global-semiconductor-sales-increase-6-4-month-to-month-in-july/",
-    "last_success_at": "2026-09-06T11:02:06Z",
+    "last_success_at": "2026-09-14T09:57:32Z",
     "last_error": null,
     "last_result": {
       "changed": false,
@@ -234,11 +234,11 @@
     "last_error": "HTTPError: HTTP Error 403: Forbidden"
   },
   "discover:D2-SIPRI-milex": {
-    "last_checked_at": "2026-09-06T11:02:06Z",
+    "last_checked_at": "2026-09-14T09:57:32Z",
     "final_url": "https://www.sipri.org/databases/milex",
-    "etag": "\"1788430545-gzip\"",
-    "last_modified": "Thu, 03 Sep 2026 10:15:45 GMT",
-    "last_success_at": "2026-09-06T11:02:10Z",
+    "etag": "\"1789108282-gzip\"",
+    "last_modified": "Fri, 11 Sep 2026 06:31:22 GMT",
+    "last_success_at": "2026-09-14T09:57:36Z",
     "last_error": null,
     "last_result": {
       "found": 8,
@@ -262,43 +262,43 @@
     }
   },
   "signal:EUROSTAT-LCI-DE": {
-    "last_checked_at": "2026-09-06T11:45:40Z",
-    "final_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/lc_lci_r2_q?lang=EN&geo=DE&freq=Q&unit=PCH_SM&lcstruct=D1_D4_MD5&s_adj=CA&lastTimePeriod=12",
-    "last_success_at": "2026-09-06T11:45:42Z",
+    "last_checked_at": "2026-09-14T09:57:36Z",
+    "final_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/lc_lci_r2_q?lang=EN&geo=DE&freq=Q&unit=PCH_SM&lcstruct=D1_D4_MD5&s_adj=CA&lastTimePeriod=4",
+    "last_success_at": "2026-09-14T09:57:36Z",
     "last_error": null,
     "last_result": {
-      "rows": 286,
-      "new": 286
+      "rows": 78,
+      "new": 0
     }
   },
   "signal:EUROSTAT-LCI-EU": {
-    "last_checked_at": "2026-09-06T11:45:42Z",
-    "final_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/lc_lci_r2_q?lang=EN&geo=EU27_2020&freq=Q&unit=PCH_SM&lcstruct=D1_D4_MD5&s_adj=CA&lastTimePeriod=12",
-    "last_success_at": "2026-09-06T11:45:43Z",
+    "last_checked_at": "2026-09-14T09:57:36Z",
+    "final_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/lc_lci_r2_q?lang=EN&geo=EU27_2020&freq=Q&unit=PCH_SM&lcstruct=D1_D4_MD5&s_adj=CA&lastTimePeriod=4",
+    "last_success_at": "2026-09-14T09:57:37Z",
     "last_error": null,
     "last_result": {
-      "rows": 287,
-      "new": 287
+      "rows": 79,
+      "new": 0
     }
   },
   "signal:EUROSTAT-OJA-ICT-DE": {
-    "last_checked_at": "2026-09-06T11:56:25Z",
-    "final_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/isoc_sk_oja2?lang=EN&geo=DE&freq=Q&unit=PC&lastTimePeriod=12",
-    "last_success_at": "2026-09-06T11:56:26Z",
+    "last_checked_at": "2026-09-14T09:57:37Z",
+    "final_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/isoc_sk_oja2?lang=EN&geo=DE&freq=Q&unit=PC&lastTimePeriod=4",
+    "last_success_at": "2026-09-14T09:57:38Z",
     "last_error": null,
     "last_result": {
-      "rows": 84,
-      "new": 84
+      "rows": 28,
+      "new": 0
     }
   },
   "signal:EUROSTAT-OJA-ICT-EU": {
-    "last_checked_at": "2026-09-06T11:56:26Z",
-    "final_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/isoc_sk_oja2?lang=EN&geo=EU27_2020&freq=Q&unit=PC&lastTimePeriod=12",
-    "last_success_at": "2026-09-06T11:56:28Z",
+    "last_checked_at": "2026-09-14T09:57:38Z",
+    "final_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/isoc_sk_oja2?lang=EN&geo=EU27_2020&freq=Q&unit=PC&lastTimePeriod=4",
+    "last_success_at": "2026-09-14T09:57:38Z",
     "last_error": null,
     "last_result": {
-      "rows": 84,
-      "new": 84
+      "rows": 28,
+      "new": 0
     }
   }
 }
