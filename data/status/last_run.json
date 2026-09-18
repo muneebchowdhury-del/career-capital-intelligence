@@ -1,26 +1,17 @@
 {
-  "run_id": "run_e9b5c5b86f122097c46717d3",
-  "started_at": "2026-09-17T09:30:19Z",
-  "completed_at": "2026-09-17T09:30:25Z",
-  "status": "partial",
+  "run_id": "run_78f1b61dda554ff541802187",
+  "started_at": "2026-09-18T09:03:08Z",
+  "completed_at": "2026-09-18T09:03:08Z",
+  "status": "success",
   "summary": {
-    "checked": 5,
-    "success": 3,
-    "failed": 2,
+    "checked": 0,
+    "success": 0,
+    "failed": 0,
     "new_observations": 0,
     "changed_pages": 0,
     "new_discoveries": 0,
-    "skipped": 16,
+    "skipped": 21,
     "manual_skipped": 13
   },
-  "errors": [
-    {
-      "source_id": "watch:S8",
-      "error": "HTTPError: HTTP Error 403: Forbidden"
-    },
-    {
-      "source_id": "watch:S18",
-      "error": "HTTPError: HTTP Error 403: Forbidden"
-    }
-  ]
+  "errors": []
 }
