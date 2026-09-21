@@ -24,7 +24,7 @@
       "latest": {
         "EU27": {
           "period": "2026-Q2",
-          "value": 2.7,
+          "value": 2.8,
           "unit": "%"
         },
         "Germany": {
@@ -34,14 +34,14 @@
         }
       },
       "momentum_4q_change": {
-        "EU27": 0.0,
+        "EU27": 0.1,
         "Germany": 0.8
       },
       "persistence_5q_avg": {
-        "EU27": 2.775,
+        "EU27": 2.825,
         "Germany": 4.55
       },
-      "germany_vs_eu_spread": 1.9,
+      "germany_vs_eu_spread": 1.8,
       "coverage_quarters": {
         "EU27": 4,
         "Germany": 4
@@ -110,8 +110,8 @@
       "dimension_label": "Human health and social work activities",
       "latest": {
         "EU27": {
-          "period": "2026-Q1",
-          "value": 2.4,
+          "period": "2026-Q2",
+          "value": 2.3,
           "unit": "%"
         },
         "Germany": {
@@ -121,15 +121,16 @@
         }
       },
       "momentum_4q_change": {
+        "EU27": -0.1,
         "Germany": 0.3
       },
       "persistence_5q_avg": {
-        "EU27": 2.4,
+        "EU27": 2.35,
         "Germany": 3.05
       },
-      "germany_vs_eu_spread": 0.6,
+      "germany_vs_eu_spread": 0.7,
       "coverage_quarters": {
-        "EU27": 1,
+        "EU27": 2,
         "Germany": 4
       }
     },
@@ -139,7 +140,7 @@
       "latest": {
         "EU27": {
           "period": "2026-Q2",
-          "value": 2.4,
+          "value": 2.2,
           "unit": "%"
         },
         "Germany": {
@@ -149,14 +150,14 @@
         }
       },
       "momentum_4q_change": {
-        "EU27": 0.2,
+        "EU27": 0.0,
         "Germany": 0.3
       },
       "persistence_5q_avg": {
-        "EU27": 2.4,
+        "EU27": 2.35,
         "Germany": 2.875
       },
-      "germany_vs_eu_spread": 0.3,
+      "germany_vs_eu_spread": 0.5,
       "coverage_quarters": {
         "EU27": 4,
         "Germany": 4
@@ -186,6 +187,35 @@
         "Germany": 2.9
       },
       "germany_vs_eu_spread": 0.5,
+      "coverage_quarters": {
+        "EU27": 4,
+        "Germany": 4
+      }
+    },
+    {
+      "dimension_key": "I",
+      "dimension_label": "Accommodation and food service activities",
+      "latest": {
+        "EU27": {
+          "period": "2026-Q2",
+          "value": 2.5,
+          "unit": "%"
+        },
+        "Germany": {
+          "period": "2026-Q2",
+          "value": 2.3,
+          "unit": "%"
+        }
+      },
+      "momentum_4q_change": {
+        "EU27": 0.2,
+        "Germany": 0.0
+      },
+      "persistence_5q_avg": {
+        "EU27": 2.6,
+        "Germany": 2.65
+      },
+      "germany_vs_eu_spread": -0.2,
       "coverage_quarters": {
         "EU27": 4,
         "Germany": 4
@@ -255,7 +285,7 @@
       "latest": {
         "EU27": {
           "period": "2026-Q2",
-          "value": 1.9,
+          "value": 2.0,
           "unit": "%"
         },
         "Germany": {
@@ -265,14 +295,14 @@
         }
       },
       "momentum_4q_change": {
-        "EU27": -0.1,
+        "EU27": 0.0,
         "Germany": 0.0
       },
       "persistence_5q_avg": {
-        "EU27": 2.025,
+        "EU27": 2.05,
         "Germany": 2.6
       },
-      "germany_vs_eu_spread": 0.5,
+      "germany_vs_eu_spread": 0.4,
       "coverage_quarters": {
         "EU27": 4,
         "Germany": 4
@@ -300,29 +330,29 @@
       }
     },
     {
-      "dimension_key": "N",
-      "dimension_label": "Professional, scientific and technical activities",
+      "dimension_key": "G-I",
+      "dimension_label": "Wholesale and retail trade, transport, accommodation and food service activities",
       "latest": {
         "EU27": {
           "period": "2026-Q2",
-          "value": 2.3,
+          "value": 2.0,
           "unit": "%"
         },
         "Germany": {
           "period": "2026-Q2",
-          "value": 2.2,
+          "value": 2.3,
           "unit": "%"
         }
       },
       "momentum_4q_change": {
-        "EU27": -0.1,
-        "Germany": -0.2
+        "EU27": 0.1,
+        "Germany": 0.1
       },
       "persistence_5q_avg": {
-        "EU27": 2.375,
+        "EU27": 2.025,
         "Germany": 2.45
       },
-      "germany_vs_eu_spread": -0.1,
+      "germany_vs_eu_spread": 0.3,
       "coverage_quarters": {
         "EU27": 4,
         "Germany": 4
@@ -348,68 +378,10 @@
         "Germany": 0.2
       },
       "persistence_5q_avg": {
-        "EU27": 1.65,
+        "EU27": 1.675,
         "Germany": 2.25
       },
       "germany_vs_eu_spread": 0.7,
-      "coverage_quarters": {
-        "EU27": 4,
-        "Germany": 4
-      }
-    },
-    {
-      "dimension_key": "I",
-      "dimension_label": "Accommodation and food service activities",
-      "latest": {
-        "EU27": {
-          "period": "2026-Q2",
-          "value": 2.2,
-          "unit": "%"
-        },
-        "Germany": {
-          "period": "2026-Q2",
-          "value": 2.3,
-          "unit": "%"
-        }
-      },
-      "momentum_4q_change": {
-        "EU27": -0.1,
-        "Germany": 0.0
-      },
-      "persistence_5q_avg": {
-        "EU27": 2.475,
-        "Germany": 2.65
-      },
-      "germany_vs_eu_spread": 0.1,
-      "coverage_quarters": {
-        "EU27": 4,
-        "Germany": 4
-      }
-    },
-    {
-      "dimension_key": "G-I",
-      "dimension_label": "Wholesale and retail trade, transport, accommodation and food service activities",
-      "latest": {
-        "EU27": {
-          "period": "2026-Q2",
-          "value": 1.9,
-          "unit": "%"
-        },
-        "Germany": {
-          "period": "2026-Q2",
-          "value": 2.3,
-          "unit": "%"
-        }
-      },
-      "momentum_4q_change": {
-        "EU27": 0.0,
-        "Germany": 0.1
-      },
-      "persistence_5q_avg": {
-        "EU27": 1.975,
-        "Germany": 2.45
-      },
-      "germany_vs_eu_spread": 0.4,
       "coverage_quarters": {
         "EU27": 4,
         "Germany": 4
@@ -445,58 +417,31 @@
       }
     },
     {
-      "dimension_key": "T",
-      "dimension_label": "Other service activities",
+      "dimension_key": "N",
+      "dimension_label": "Professional, scientific and technical activities",
       "latest": {
         "EU27": {
-          "period": "2026-Q1",
+          "period": "2026-Q2",
           "value": 2.2,
           "unit": "%"
         },
         "Germany": {
           "period": "2026-Q2",
-          "value": 2.0,
-          "unit": "%"
-        }
-      },
-      "momentum_4q_change": {
-        "Germany": -0.6
-      },
-      "persistence_5q_avg": {
-        "EU27": 2.2,
-        "Germany": 2.6
-      },
-      "germany_vs_eu_spread": -0.2,
-      "coverage_quarters": {
-        "EU27": 1,
-        "Germany": 4
-      }
-    },
-    {
-      "dimension_key": "S_T",
-      "dimension_label": "Arts, sports and recreation; other service activities",
-      "latest": {
-        "EU27": {
-          "period": "2026-Q1",
           "value": 2.2,
           "unit": "%"
-        },
-        "Germany": {
-          "period": "2026-Q2",
-          "value": 2.0,
-          "unit": "%"
         }
       },
       "momentum_4q_change": {
-        "Germany": -0.4
+        "EU27": -0.2,
+        "Germany": -0.2
       },
       "persistence_5q_avg": {
-        "EU27": 2.2,
+        "EU27": 2.35,
         "Germany": 2.45
       },
-      "germany_vs_eu_spread": -0.2,
+      "germany_vs_eu_spread": 0.0,
       "coverage_quarters": {
-        "EU27": 1,
+        "EU27": 4,
         "Germany": 4
       }
     },
@@ -572,12 +517,70 @@
       }
     },
     {
+      "dimension_key": "T",
+      "dimension_label": "Other service activities",
+      "latest": {
+        "EU27": {
+          "period": "2026-Q2",
+          "value": 1.9,
+          "unit": "%"
+        },
+        "Germany": {
+          "period": "2026-Q2",
+          "value": 2.0,
+          "unit": "%"
+        }
+      },
+      "momentum_4q_change": {
+        "EU27": -0.4,
+        "Germany": -0.6
+      },
+      "persistence_5q_avg": {
+        "EU27": 2.1,
+        "Germany": 2.6
+      },
+      "germany_vs_eu_spread": 0.1,
+      "coverage_quarters": {
+        "EU27": 2,
+        "Germany": 4
+      }
+    },
+    {
+      "dimension_key": "S_T",
+      "dimension_label": "Arts, sports and recreation; other service activities",
+      "latest": {
+        "EU27": {
+          "period": "2026-Q2",
+          "value": 2.0,
+          "unit": "%"
+        },
+        "Germany": {
+          "period": "2026-Q2",
+          "value": 2.0,
+          "unit": "%"
+        }
+      },
+      "momentum_4q_change": {
+        "EU27": -0.2,
+        "Germany": -0.4
+      },
+      "persistence_5q_avg": {
+        "EU27": 2.1,
+        "Germany": 2.45
+      },
+      "germany_vs_eu_spread": 0.0,
+      "coverage_quarters": {
+        "EU27": 2,
+        "Germany": 4
+      }
+    },
+    {
       "dimension_key": "S",
       "dimension_label": "Arts, sports and recreation",
       "latest": {
         "EU27": {
-          "period": "2026-Q1",
-          "value": 2.1,
+          "period": "2026-Q2",
+          "value": 1.9,
           "unit": "%"
         },
         "Germany": {
@@ -587,15 +590,45 @@
         }
       },
       "momentum_4q_change": {
+        "EU27": -0.3,
         "Germany": 0.1
       },
       "persistence_5q_avg": {
-        "EU27": 2.1,
+        "EU27": 2.05,
         "Germany": 1.925
       },
-      "germany_vs_eu_spread": -0.2,
+      "germany_vs_eu_spread": 0.0,
       "coverage_quarters": {
-        "EU27": 1,
+        "EU27": 2,
+        "Germany": 4
+      }
+    },
+    {
+      "dimension_key": "M",
+      "dimension_label": "Real estate activities",
+      "latest": {
+        "EU27": {
+          "period": "2026-Q2",
+          "value": 1.8,
+          "unit": "%"
+        },
+        "Germany": {
+          "period": "2026-Q2",
+          "value": 1.5,
+          "unit": "%"
+        }
+      },
+      "momentum_4q_change": {
+        "EU27": 0.2,
+        "Germany": 0.5
+      },
+      "persistence_5q_avg": {
+        "EU27": 1.8,
+        "Germany": 1.675
+      },
+      "germany_vs_eu_spread": -0.3,
+      "coverage_quarters": {
+        "EU27": 4,
         "Germany": 4
       }
     },
@@ -605,7 +638,7 @@
       "latest": {
         "EU27": {
           "period": "2026-Q2",
-          "value": 1.4,
+          "value": 1.5,
           "unit": "%"
         },
         "Germany": {
@@ -615,14 +648,43 @@
         }
       },
       "momentum_4q_change": {
-        "EU27": 0.0,
+        "EU27": 0.1,
         "Germany": 0.1
       },
       "persistence_5q_avg": {
-        "EU27": 1.4,
+        "EU27": 1.425,
         "Germany": 1.825
       },
-      "germany_vs_eu_spread": 0.3,
+      "germany_vs_eu_spread": 0.2,
+      "coverage_quarters": {
+        "EU27": 4,
+        "Germany": 4
+      }
+    },
+    {
+      "dimension_key": "D",
+      "dimension_label": "Electricity, gas, steam and air conditioning supply",
+      "latest": {
+        "EU27": {
+          "period": "2026-Q2",
+          "value": 1.3,
+          "unit": "%"
+        },
+        "Germany": {
+          "period": "2026-Q2",
+          "value": 1.7,
+          "unit": "%"
+        }
+      },
+      "momentum_4q_change": {
+        "EU27": -0.1,
+        "Germany": 0.3
+      },
+      "persistence_5q_avg": {
+        "EU27": 1.3,
+        "Germany": 1.55
+      },
+      "germany_vs_eu_spread": 0.4,
       "coverage_quarters": {
         "EU27": 4,
         "Germany": 4
@@ -687,35 +749,6 @@
       }
     },
     {
-      "dimension_key": "D",
-      "dimension_label": "Electricity, gas, steam and air conditioning supply",
-      "latest": {
-        "EU27": {
-          "period": "2026-Q1",
-          "value": 1.3,
-          "unit": "%"
-        },
-        "Germany": {
-          "period": "2026-Q2",
-          "value": 1.7,
-          "unit": "%"
-        }
-      },
-      "momentum_4q_change": {
-        "EU27": -0.1,
-        "Germany": 0.3
-      },
-      "persistence_5q_avg": {
-        "EU27": 1.3,
-        "Germany": 1.55
-      },
-      "germany_vs_eu_spread": 0.4,
-      "coverage_quarters": {
-        "EU27": 3,
-        "Germany": 4
-      }
-    },
-    {
       "dimension_key": "A",
       "dimension_label": "Agriculture, forestry and fishing",
       "latest": {
@@ -733,35 +766,6 @@
       },
       "germany_vs_eu_spread": null,
       "coverage_quarters": {
-        "Germany": 4
-      }
-    },
-    {
-      "dimension_key": "M",
-      "dimension_label": "Real estate activities",
-      "latest": {
-        "EU27": {
-          "period": "2026-Q2",
-          "value": 1.5,
-          "unit": "%"
-        },
-        "Germany": {
-          "period": "2026-Q2",
-          "value": 1.5,
-          "unit": "%"
-        }
-      },
-      "momentum_4q_change": {
-        "EU27": -0.1,
-        "Germany": 0.5
-      },
-      "persistence_5q_avg": {
-        "EU27": 1.675,
-        "Germany": 1.675
-      },
-      "germany_vs_eu_spread": 0.0,
-      "coverage_quarters": {
-        "EU27": 4,
         "Germany": 4
       }
     },
@@ -820,7 +824,7 @@
       "dimension_label": "Education",
       "latest": {
         "EU27": {
-          "period": "2026-Q1",
+          "period": "2026-Q2",
           "value": 1.0,
           "unit": "%"
         },
@@ -831,6 +835,7 @@
         }
       },
       "momentum_4q_change": {
+        "EU27": 0.0,
         "Germany": -0.5
       },
       "persistence_5q_avg": {
@@ -839,7 +844,7 @@
       },
       "germany_vs_eu_spread": 0.2,
       "coverage_quarters": {
-        "EU27": 1,
+        "EU27": 2,
         "Germany": 4
       }
     },
@@ -848,8 +853,8 @@
       "dimension_label": "Mining and quarrying",
       "latest": {
         "EU27": {
-          "period": "2026-Q1",
-          "value": 0.8,
+          "period": "2026-Q2",
+          "value": 0.6,
           "unit": "%"
         },
         "Germany": {
@@ -859,106 +864,48 @@
         }
       },
       "momentum_4q_change": {
-        "EU27": 0.2,
+        "EU27": 0.0,
         "Germany": 0.0
       },
       "persistence_5q_avg": {
-        "EU27": 0.667,
+        "EU27": 0.65,
         "Germany": 1.2
       },
-      "germany_vs_eu_spread": 0.0,
+      "germany_vs_eu_spread": 0.2,
       "coverage_quarters": {
-        "EU27": 3,
+        "EU27": 4,
         "Germany": 4
       }
     }
   ],
   "labor_cost_sectors": [
     {
-      "dimension_key": "B",
-      "dimension_label": "Mining and quarrying",
+      "dimension_key": "L",
+      "dimension_label": "Real estate activities",
       "latest": {
         "EU27": {
-          "period": "2026-Q1",
-          "value": 5.6,
+          "period": "2026-Q2",
+          "value": 5.5,
           "unit": "%"
         },
         "Germany": {
-          "period": "2026-Q1",
-          "value": 8.4,
+          "period": "2026-Q2",
+          "value": 9.2,
           "unit": "%"
         }
       },
       "momentum_4q_change": {
-        "EU27": 2.9,
-        "Germany": 16.6
+        "EU27": 3.2,
+        "Germany": 11.4
       },
       "persistence_5q_avg": {
-        "EU27": 3.5,
-        "Germany": 0.78
+        "EU27": 4.34,
+        "Germany": 3.68
       },
-      "germany_vs_eu_spread": 2.8,
+      "germany_vs_eu_spread": 3.7,
       "coverage_quarters": {
-        "EU27": 11,
-        "Germany": 11
-      }
-    },
-    {
-      "dimension_key": "N",
-      "dimension_label": "Administrative and support service activities",
-      "latest": {
-        "EU27": {
-          "period": "2026-Q1",
-          "value": 4.1,
-          "unit": "%"
-        },
-        "Germany": {
-          "period": "2026-Q1",
-          "value": 5.9,
-          "unit": "%"
-        }
-      },
-      "momentum_4q_change": {
-        "EU27": -0.6,
-        "Germany": 3.2
-      },
-      "persistence_5q_avg": {
-        "EU27": 3.96,
-        "Germany": 3.8
-      },
-      "germany_vs_eu_spread": 1.8,
-      "coverage_quarters": {
-        "EU27": 11,
-        "Germany": 11
-      }
-    },
-    {
-      "dimension_key": "J",
-      "dimension_label": "Information and communication",
-      "latest": {
-        "EU27": {
-          "period": "2026-Q1",
-          "value": 4.3,
-          "unit": "%"
-        },
-        "Germany": {
-          "period": "2026-Q1",
-          "value": 5.9,
-          "unit": "%"
-        }
-      },
-      "momentum_4q_change": {
-        "EU27": -0.3,
-        "Germany": 4.8
-      },
-      "persistence_5q_avg": {
-        "EU27": 4.14,
-        "Germany": 2.72
-      },
-      "germany_vs_eu_spread": 1.6,
-      "coverage_quarters": {
-        "EU27": 11,
-        "Germany": 11
+        "EU27": 12,
+        "Germany": 12
       }
     },
     {
@@ -966,231 +913,86 @@
       "dimension_label": "Other service activities",
       "latest": {
         "EU27": {
-          "period": "2026-Q1",
-          "value": 4.6,
-          "unit": "%"
-        },
-        "Germany": {
-          "period": "2026-Q1",
-          "value": 5.5,
-          "unit": "%"
-        }
-      },
-      "momentum_4q_change": {
-        "EU27": 0.8,
-        "Germany": 3.0
-      },
-      "persistence_5q_avg": {
-        "EU27": 4.24,
-        "Germany": 4.22
-      },
-      "germany_vs_eu_spread": 0.9,
-      "coverage_quarters": {
-        "EU27": 11,
-        "Germany": 11
-      }
-    },
-    {
-      "dimension_key": "I",
-      "dimension_label": "Accommodation and food service activities",
-      "latest": {
-        "EU27": {
-          "period": "2026-Q1",
-          "value": 2.6,
-          "unit": "%"
-        },
-        "Germany": {
-          "period": "2026-Q1",
+          "period": "2026-Q2",
           "value": 5.2,
           "unit": "%"
-        }
-      },
-      "momentum_4q_change": {
-        "EU27": -1.5,
-        "Germany": 3.4
-      },
-      "persistence_5q_avg": {
-        "EU27": 3.44,
-        "Germany": 2.46
-      },
-      "germany_vs_eu_spread": 2.6,
-      "coverage_quarters": {
-        "EU27": 11,
-        "Germany": 11
-      }
-    },
-    {
-      "dimension_key": "H",
-      "dimension_label": "Transportation and storage",
-      "latest": {
-        "EU27": {
-          "period": "2026-Q1",
-          "value": 4.1,
-          "unit": "%"
         },
         "Germany": {
-          "period": "2026-Q1",
-          "value": 5.2,
+          "period": "2026-Q2",
+          "value": 6.9,
           "unit": "%"
         }
       },
       "momentum_4q_change": {
-        "EU27": -0.4,
-        "Germany": 3.0
+        "EU27": 0.9,
+        "Germany": 2.7
       },
       "persistence_5q_avg": {
-        "EU27": 4.3,
-        "Germany": 2.68
+        "EU27": 4.56,
+        "Germany": 5.24
       },
-      "germany_vs_eu_spread": 1.1,
+      "germany_vs_eu_spread": 1.7,
       "coverage_quarters": {
-        "EU27": 11,
-        "Germany": 11
+        "EU27": 12,
+        "Germany": 12
       }
     },
     {
-      "dimension_key": "G-J",
-      "dimension_label": "Wholesale and retail trade; transport; accommodation and food service activities; information and communication",
+      "dimension_key": "J",
+      "dimension_label": "Information and communication",
       "latest": {
         "EU27": {
-          "period": "2026-Q1",
-          "value": 3.9,
+          "period": "2026-Q2",
+          "value": 4.4,
           "unit": "%"
         },
         "Germany": {
-          "period": "2026-Q1",
-          "value": 5.1,
+          "period": "2026-Q2",
+          "value": 5.8,
           "unit": "%"
         }
       },
       "momentum_4q_change": {
-        "EU27": -0.4,
-        "Germany": 3.0
+        "EU27": 0.3,
+        "Germany": 3.7
       },
       "persistence_5q_avg": {
-        "EU27": 3.9,
-        "Germany": 2.72
+        "EU27": 4.16,
+        "Germany": 3.8
       },
-      "germany_vs_eu_spread": 1.2,
+      "germany_vs_eu_spread": 1.4,
       "coverage_quarters": {
-        "EU27": 11,
-        "Germany": 11
+        "EU27": 12,
+        "Germany": 12
       }
     },
     {
-      "dimension_key": "P",
-      "dimension_label": "Education",
+      "dimension_key": "N",
+      "dimension_label": "Administrative and support service activities",
       "latest": {
         "EU27": {
-          "period": "2026-Q1",
-          "value": 4.1,
-          "unit": "%"
-        },
-        "Germany": {
-          "period": "2026-Q1",
+          "period": "2026-Q2",
           "value": 4.8,
           "unit": "%"
-        }
-      },
-      "momentum_4q_change": {
-        "EU27": 0.7,
-        "Germany": 2.8
-      },
-      "persistence_5q_avg": {
-        "EU27": 3.88,
-        "Germany": 4.82
-      },
-      "germany_vs_eu_spread": 0.7,
-      "coverage_quarters": {
-        "EU27": 11,
-        "Germany": 11
-      }
-    },
-    {
-      "dimension_key": "E",
-      "dimension_label": "Water supply; sewerage, waste management and remediation activities",
-      "latest": {
-        "EU27": {
-          "period": "2026-Q1",
-          "value": 3.5,
-          "unit": "%"
         },
         "Germany": {
-          "period": "2026-Q1",
-          "value": 4.7,
+          "period": "2026-Q2",
+          "value": 5.4,
           "unit": "%"
         }
       },
       "momentum_4q_change": {
-        "EU27": -1.6,
-        "Germany": 1.6
+        "EU27": 1.0,
+        "Germany": 0.9
       },
       "persistence_5q_avg": {
-        "EU27": 4.22,
-        "Germany": 3.92
-      },
-      "germany_vs_eu_spread": 1.2,
-      "coverage_quarters": {
-        "EU27": 11,
-        "Germany": 11
-      }
-    },
-    {
-      "dimension_key": "G",
-      "dimension_label": "Wholesale and retail trade; repair of motor vehicles and motorcycles",
-      "latest": {
-        "EU27": {
-          "period": "2026-Q1",
-          "value": 4.0,
-          "unit": "%"
-        },
-        "Germany": {
-          "period": "2026-Q1",
-          "value": 4.6,
-          "unit": "%"
-        }
-      },
-      "momentum_4q_change": {
-        "EU27": 0.0,
-        "Germany": 1.9
-      },
-      "persistence_5q_avg": {
-        "EU27": 3.74,
-        "Germany": 2.8
+        "EU27": 4.04,
+        "Germany": 4.44
       },
       "germany_vs_eu_spread": 0.6,
       "coverage_quarters": {
-        "EU27": 11,
-        "Germany": 11
-      }
-    },
-    {
-      "dimension_key": "L",
-      "dimension_label": "Real estate activities",
-      "latest": {
-        "EU27": {
-          "period": "2026-Q1",
-          "value": 4.5,
-          "unit": "%"
-        },
-        "Germany": {
-          "period": "2026-Q1",
-          "value": 4.0,
-          "unit": "%"
-        }
-      },
-      "momentum_4q_change": {
-        "EU27": -1.8,
-        "Germany": -2.4
-      },
-      "persistence_5q_avg": {
-        "EU27": 4.46,
-        "Germany": 3.04
-      },
-      "germany_vs_eu_spread": -0.5,
-      "coverage_quarters": {
-        "EU27": 11,
-        "Germany": 11
+        "EU27": 12,
+        "Germany": 12
       }
     },
     {
@@ -1198,28 +1000,115 @@
       "dimension_label": "Construction",
       "latest": {
         "EU27": {
-          "period": "2026-Q1",
-          "value": 4.2,
+          "period": "2026-Q2",
+          "value": 3.9,
           "unit": "%"
         },
         "Germany": {
-          "period": "2026-Q1",
-          "value": 3.9,
+          "period": "2026-Q2",
+          "value": 5.2,
           "unit": "%"
         }
       },
       "momentum_4q_change": {
-        "EU27": -0.9,
-        "Germany": -0.1
+        "EU27": -1.2,
+        "Germany": 0.9
       },
       "persistence_5q_avg": {
-        "EU27": 4.64,
-        "Germany": 3.94
+        "EU27": 4.42,
+        "Germany": 4.32
       },
-      "germany_vs_eu_spread": -0.3,
+      "germany_vs_eu_spread": 1.3,
       "coverage_quarters": {
-        "EU27": 11,
-        "Germany": 11
+        "EU27": 12,
+        "Germany": 12
+      }
+    },
+    {
+      "dimension_key": "G-J",
+      "dimension_label": "Wholesale and retail trade; transport; accommodation and food service activities; information and communication",
+      "latest": {
+        "EU27": {
+          "period": "2026-Q2",
+          "value": 3.6,
+          "unit": "%"
+        },
+        "Germany": {
+          "period": "2026-Q2",
+          "value": 5.1,
+          "unit": "%"
+        }
+      },
+      "momentum_4q_change": {
+        "EU27": -0.5,
+        "Germany": 2.5
+      },
+      "persistence_5q_avg": {
+        "EU27": 3.8,
+        "Germany": 3.46
+      },
+      "germany_vs_eu_spread": 1.5,
+      "coverage_quarters": {
+        "EU27": 12,
+        "Germany": 12
+      }
+    },
+    {
+      "dimension_key": "G",
+      "dimension_label": "Wholesale and retail trade; repair of motor vehicles and motorcycles",
+      "latest": {
+        "EU27": {
+          "period": "2026-Q2",
+          "value": 3.5,
+          "unit": "%"
+        },
+        "Germany": {
+          "period": "2026-Q2",
+          "value": 5.0,
+          "unit": "%"
+        }
+      },
+      "momentum_4q_change": {
+        "EU27": -0.5,
+        "Germany": 1.7
+      },
+      "persistence_5q_avg": {
+        "EU27": 3.7,
+        "Germany": 3.42
+      },
+      "germany_vs_eu_spread": 1.5,
+      "coverage_quarters": {
+        "EU27": 12,
+        "Germany": 12
+      }
+    },
+    {
+      "dimension_key": "H",
+      "dimension_label": "Transportation and storage",
+      "latest": {
+        "EU27": {
+          "period": "2026-Q2",
+          "value": 3.6,
+          "unit": "%"
+        },
+        "Germany": {
+          "period": "2026-Q2",
+          "value": 4.8,
+          "unit": "%"
+        }
+      },
+      "momentum_4q_change": {
+        "EU27": -0.8,
+        "Germany": 3.5
+      },
+      "persistence_5q_avg": {
+        "EU27": 4.1,
+        "Germany": 3.3
+      },
+      "germany_vs_eu_spread": 1.2,
+      "coverage_quarters": {
+        "EU27": 12,
+        "Germany": 12
       }
     },
     {
@@ -1227,28 +1116,115 @@
       "dimension_label": "Human health and social work activities",
       "latest": {
         "EU27": {
-          "period": "2026-Q1",
-          "value": 3.7,
+          "period": "2026-Q2",
+          "value": 4.0,
           "unit": "%"
         },
         "Germany": {
-          "period": "2026-Q1",
+          "period": "2026-Q2",
+          "value": 4.6,
+          "unit": "%"
+        }
+      },
+      "momentum_4q_change": {
+        "EU27": 0.1,
+        "Germany": 1.4
+      },
+      "persistence_5q_avg": {
+        "EU27": 3.9,
+        "Germany": 4.54
+      },
+      "germany_vs_eu_spread": 0.6,
+      "coverage_quarters": {
+        "EU27": 12,
+        "Germany": 12
+      }
+    },
+    {
+      "dimension_key": "I",
+      "dimension_label": "Accommodation and food service activities",
+      "latest": {
+        "EU27": {
+          "period": "2026-Q2",
+          "value": 3.1,
+          "unit": "%"
+        },
+        "Germany": {
+          "period": "2026-Q2",
+          "value": 4.4,
+          "unit": "%"
+        }
+      },
+      "momentum_4q_change": {
+        "EU27": -0.9,
+        "Germany": 1.8
+      },
+      "persistence_5q_avg": {
+        "EU27": 3.24,
+        "Germany": 3.02
+      },
+      "germany_vs_eu_spread": 1.3,
+      "coverage_quarters": {
+        "EU27": 12,
+        "Germany": 12
+      }
+    },
+    {
+      "dimension_key": "E",
+      "dimension_label": "Water supply; sewerage, waste management and remediation activities",
+      "latest": {
+        "EU27": {
+          "period": "2026-Q2",
+          "value": 3.4,
+          "unit": "%"
+        },
+        "Germany": {
+          "period": "2026-Q2",
+          "value": 3.9,
+          "unit": "%"
+        }
+      },
+      "momentum_4q_change": {
+        "EU27": -1.4,
+        "Germany": -0.8
+      },
+      "persistence_5q_avg": {
+        "EU27": 3.96,
+        "Germany": 4.24
+      },
+      "germany_vs_eu_spread": 0.5,
+      "coverage_quarters": {
+        "EU27": 12,
+        "Germany": 12
+      }
+    },
+    {
+      "dimension_key": "P",
+      "dimension_label": "Education",
+      "latest": {
+        "EU27": {
+          "period": "2026-Q2",
+          "value": 3.4,
+          "unit": "%"
+        },
+        "Germany": {
+          "period": "2026-Q2",
           "value": 3.8,
           "unit": "%"
         }
       },
       "momentum_4q_change": {
-        "EU27": -0.5,
-        "Germany": -0.4
+        "EU27": -0.3,
+        "Germany": -0.1
       },
       "persistence_5q_avg": {
         "EU27": 3.86,
-        "Germany": 4.28
+        "Germany": 5.22
       },
-      "germany_vs_eu_spread": 0.1,
+      "germany_vs_eu_spread": 0.4,
       "coverage_quarters": {
-        "EU27": 11,
-        "Germany": 11
+        "EU27": 12,
+        "Germany": 12
       }
     },
     {
@@ -1256,202 +1232,28 @@
       "dimension_label": "Public administration and defence; compulsory social security; education; human health and social work activities; arts, entertainment and recreation; other service activities",
       "latest": {
         "EU27": {
-          "period": "2026-Q1",
-          "value": 3.7,
+          "period": "2026-Q2",
+          "value": 3.3,
           "unit": "%"
         },
         "Germany": {
-          "period": "2026-Q1",
-          "value": 3.5,
+          "period": "2026-Q2",
+          "value": 3.3,
           "unit": "%"
         }
       },
       "momentum_4q_change": {
-        "EU27": 0.2,
-        "Germany": 0.9
+        "EU27": -0.4,
+        "Germany": -0.1
       },
       "persistence_5q_avg": {
         "EU27": 3.7,
-        "Germany": 4.1
+        "Germany": 4.36
       },
-      "germany_vs_eu_spread": -0.2,
+      "germany_vs_eu_spread": 0.0,
       "coverage_quarters": {
-        "EU27": 11,
-        "Germany": 11
-      }
-    },
-    {
-      "dimension_key": "D",
-      "dimension_label": "Electricity, gas, steam and air conditioning supply",
-      "latest": {
-        "EU27": {
-          "period": "2026-Q1",
-          "value": 3.7,
-          "unit": "%"
-        },
-        "Germany": {
-          "period": "2026-Q1",
-          "value": 2.7,
-          "unit": "%"
-        }
-      },
-      "momentum_4q_change": {
-        "EU27": 0.3,
-        "Germany": 1.7
-      },
-      "persistence_5q_avg": {
-        "EU27": 3.2,
-        "Germany": 1.24
-      },
-      "germany_vs_eu_spread": -1.0,
-      "coverage_quarters": {
-        "EU27": 11,
-        "Germany": 11
-      }
-    },
-    {
-      "dimension_key": "B-F",
-      "dimension_label": "Industry and construction",
-      "latest": {
-        "EU27": {
-          "period": "2026-Q1",
-          "value": 3.7,
-          "unit": "%"
-        },
-        "Germany": {
-          "period": "2026-Q1",
-          "value": 3.1,
-          "unit": "%"
-        }
-      },
-      "momentum_4q_change": {
-        "EU27": -0.1,
-        "Germany": 2.6
-      },
-      "persistence_5q_avg": {
-        "EU27": 3.78,
-        "Germany": 2.32
-      },
-      "germany_vs_eu_spread": -0.6,
-      "coverage_quarters": {
-        "EU27": 11,
-        "Germany": 11
-      }
-    },
-    {
-      "dimension_key": "B-E",
-      "dimension_label": "Industry (except construction)",
-      "latest": {
-        "EU27": {
-          "period": "2026-Q1",
-          "value": 3.6,
-          "unit": "%"
-        },
-        "Germany": {
-          "period": "2026-Q1",
-          "value": 3.0,
-          "unit": "%"
-        }
-      },
-      "momentum_4q_change": {
-        "EU27": 0.2,
-        "Germany": 3.3
-      },
-      "persistence_5q_avg": {
-        "EU27": 3.58,
-        "Germany": 1.96
-      },
-      "germany_vs_eu_spread": -0.6,
-      "coverage_quarters": {
-        "EU27": 11,
-        "Germany": 11
-      }
-    },
-    {
-      "dimension_key": "C",
-      "dimension_label": "Manufacturing",
-      "latest": {
-        "EU27": {
-          "period": "2026-Q1",
-          "value": 3.5,
-          "unit": "%"
-        },
-        "Germany": {
-          "period": "2026-Q1",
-          "value": 2.9,
-          "unit": "%"
-        }
-      },
-      "momentum_4q_change": {
-        "EU27": 0.2,
-        "Germany": 3.3
-      },
-      "persistence_5q_avg": {
-        "EU27": 3.54,
-        "Germany": 1.94
-      },
-      "germany_vs_eu_spread": -0.6,
-      "coverage_quarters": {
-        "EU27": 11,
-        "Germany": 11
-      }
-    },
-    {
-      "dimension_key": "B-N",
-      "dimension_label": "Business economy",
-      "latest": {
-        "EU27": {
-          "period": "2026-Q1",
-          "value": 3.5,
-          "unit": "%"
-        },
-        "Germany": {
-          "period": "2026-Q1",
-          "value": 2.8,
-          "unit": "%"
-        }
-      },
-      "momentum_4q_change": {
-        "EU27": -0.9,
-        "Germany": 0.2
-      },
-      "persistence_5q_avg": {
-        "EU27": 4.02,
-        "Germany": 3.16
-      },
-      "germany_vs_eu_spread": -0.7,
-      "coverage_quarters": {
-        "EU27": 11,
-        "Germany": 11
-      }
-    },
-    {
-      "dimension_key": "O",
-      "dimension_label": "Public administration and defence; compulsory social security",
-      "latest": {
-        "EU27": {
-          "period": "2026-Q1",
-          "value": 3.4,
-          "unit": "%"
-        },
-        "Germany": {
-          "period": "2026-Q1",
-          "value": 1.9,
-          "unit": "%"
-        }
-      },
-      "momentum_4q_change": {
-        "EU27": 0.7,
-        "Germany": 0.9
-      },
-      "persistence_5q_avg": {
-        "EU27": 3.32,
-        "Germany": 3.58
-      },
-      "germany_vs_eu_spread": -1.5,
-      "coverage_quarters": {
-        "EU27": 11,
-        "Germany": 11
+        "EU27": 12,
+        "Germany": 12
       }
     },
     {
@@ -1459,57 +1261,57 @@
       "dimension_label": "Financial and insurance activities",
       "latest": {
         "EU27": {
-          "period": "2026-Q1",
-          "value": 3.4,
+          "period": "2026-Q2",
+          "value": 3.2,
           "unit": "%"
         },
         "Germany": {
-          "period": "2026-Q1",
-          "value": 1.9,
+          "period": "2026-Q2",
+          "value": 2.7,
           "unit": "%"
         }
       },
       "momentum_4q_change": {
-        "EU27": 0.2,
-        "Germany": 6.3
+        "EU27": -1.8,
+        "Germany": -2.0
       },
       "persistence_5q_avg": {
-        "EU27": 3.56,
-        "Germany": 1.78
+        "EU27": 3.62,
+        "Germany": 3.34
       },
-      "germany_vs_eu_spread": -1.5,
+      "germany_vs_eu_spread": -0.5,
       "coverage_quarters": {
-        "EU27": 11,
-        "Germany": 11
+        "EU27": 12,
+        "Germany": 12
       }
     },
     {
-      "dimension_key": "G-N",
-      "dimension_label": "Services of the business economy",
+      "dimension_key": "B-F",
+      "dimension_label": "Industry and construction",
       "latest": {
         "EU27": {
-          "period": "2026-Q1",
-          "value": 3.4,
+          "period": "2026-Q2",
+          "value": 3.2,
           "unit": "%"
         },
         "Germany": {
-          "period": "2026-Q1",
-          "value": 2.6,
+          "period": "2026-Q2",
+          "value": 3.2,
           "unit": "%"
         }
       },
       "momentum_4q_change": {
-        "EU27": -1.4,
-        "Germany": -1.4
+        "EU27": -1.3,
+        "Germany": -0.2
       },
       "persistence_5q_avg": {
-        "EU27": 4.16,
-        "Germany": 3.74
+        "EU27": 3.72,
+        "Germany": 2.98
       },
-      "germany_vs_eu_spread": -0.8,
+      "germany_vs_eu_spread": 0.0,
       "coverage_quarters": {
-        "EU27": 11,
-        "Germany": 11
+        "EU27": 12,
+        "Germany": 12
       }
     },
     {
@@ -1522,23 +1324,197 @@
           "unit": "%"
         },
         "Germany": {
-          "period": "2026-Q1",
+          "period": "2026-Q2",
           "value": 3.0,
           "unit": "%"
         }
       },
       "momentum_4q_change": {
         "EU27": -1.3,
-        "Germany": 0.4
+        "Germany": -1.3
       },
       "persistence_5q_avg": {
-        "EU27": 3.76,
-        "Germany": 3.42
+        "EU27": 3.78,
+        "Germany": 3.64
       },
       "germany_vs_eu_spread": -0.2,
       "coverage_quarters": {
         "EU27": 12,
-        "Germany": 11
+        "Germany": 12
+      }
+    },
+    {
+      "dimension_key": "G-N",
+      "dimension_label": "Services of the business economy",
+      "latest": {
+        "EU27": {
+          "period": "2026-Q2",
+          "value": 3.1,
+          "unit": "%"
+        },
+        "Germany": {
+          "period": "2026-Q2",
+          "value": 2.7,
+          "unit": "%"
+        }
+      },
+      "momentum_4q_change": {
+        "EU27": -1.9,
+        "Germany": -3.1
+      },
+      "persistence_5q_avg": {
+        "EU27": 3.88,
+        "Germany": 3.62
+      },
+      "germany_vs_eu_spread": -0.4,
+      "coverage_quarters": {
+        "EU27": 12,
+        "Germany": 12
+      }
+    },
+    {
+      "dimension_key": "B-N",
+      "dimension_label": "Business economy",
+      "latest": {
+        "EU27": {
+          "period": "2026-Q2",
+          "value": 3.1,
+          "unit": "%"
+        },
+        "Germany": {
+          "period": "2026-Q2",
+          "value": 2.9,
+          "unit": "%"
+        }
+      },
+      "momentum_4q_change": {
+        "EU27": -1.7,
+        "Germany": -1.9
+      },
+      "persistence_5q_avg": {
+        "EU27": 3.82,
+        "Germany": 3.38
+      },
+      "germany_vs_eu_spread": -0.2,
+      "coverage_quarters": {
+        "EU27": 12,
+        "Germany": 12
+      }
+    },
+    {
+      "dimension_key": "C",
+      "dimension_label": "Manufacturing",
+      "latest": {
+        "EU27": {
+          "period": "2026-Q2",
+          "value": 3.0,
+          "unit": "%"
+        },
+        "Germany": {
+          "period": "2026-Q2",
+          "value": 2.7,
+          "unit": "%"
+        }
+      },
+      "momentum_4q_change": {
+        "EU27": -1.3,
+        "Germany": -0.7
+      },
+      "persistence_5q_avg": {
+        "EU27": 3.52,
+        "Germany": 2.68
+      },
+      "germany_vs_eu_spread": -0.3,
+      "coverage_quarters": {
+        "EU27": 12,
+        "Germany": 12
+      }
+    },
+    {
+      "dimension_key": "B-E",
+      "dimension_label": "Industry (except construction)",
+      "latest": {
+        "EU27": {
+          "period": "2026-Q2",
+          "value": 3.0,
+          "unit": "%"
+        },
+        "Germany": {
+          "period": "2026-Q2",
+          "value": 2.8,
+          "unit": "%"
+        }
+      },
+      "momentum_4q_change": {
+        "EU27": -1.3,
+        "Germany": -0.4
+      },
+      "persistence_5q_avg": {
+        "EU27": 3.52,
+        "Germany": 2.7
+      },
+      "germany_vs_eu_spread": -0.2,
+      "coverage_quarters": {
+        "EU27": 12,
+        "Germany": 12
+      }
+    },
+    {
+      "dimension_key": "B",
+      "dimension_label": "Mining and quarrying",
+      "latest": {
+        "EU27": {
+          "period": "2026-Q2",
+          "value": 1.3,
+          "unit": "%"
+        },
+        "Germany": {
+          "period": "2026-Q2",
+          "value": 3.0,
+          "unit": "%"
+        }
+      },
+      "momentum_4q_change": {
+        "EU27": -6.3,
+        "Germany": 2.4
+      },
+      "persistence_5q_avg": {
+        "EU27": 3.3,
+        "Germany": 3.06
+      },
+      "germany_vs_eu_spread": 1.7,
+      "coverage_quarters": {
+        "EU27": 12,
+        "Germany": 12
+      }
+    },
+    {
+      "dimension_key": "D",
+      "dimension_label": "Electricity, gas, steam and air conditioning supply",
+      "latest": {
+        "EU27": {
+          "period": "2026-Q2",
+          "value": 2.2,
+          "unit": "%"
+        },
+        "Germany": {
+          "period": "2026-Q2",
+          "value": 2.7,
+          "unit": "%"
+        }
+      },
+      "momentum_4q_change": {
+        "EU27": -1.4,
+        "Germany": 3.9
+      },
+      "persistence_5q_avg": {
+        "EU27": 3.06,
+        "Germany": 1.74
+      },
+      "germany_vs_eu_spread": 0.5,
+      "coverage_quarters": {
+        "EU27": 12,
+        "Germany": 12
       }
     },
     {
@@ -1546,28 +1522,57 @@
       "dimension_label": "Financial and insurance activities; real estate activities; professional, scientific and technical activities; administrative and support service activities",
       "latest": {
         "EU27": {
-          "period": "2026-Q1",
-          "value": 2.7,
+          "period": "2026-Q2",
+          "value": 2.4,
           "unit": "%"
         },
         "Germany": {
-          "period": "2026-Q1",
-          "value": -0.2,
+          "period": "2026-Q2",
+          "value": 0.0,
           "unit": "%"
         }
       },
       "momentum_4q_change": {
-        "EU27": -2.7,
-        "Germany": -6.4
+        "EU27": -3.8,
+        "Germany": -9.7
       },
       "persistence_5q_avg": {
-        "EU27": 4.5,
-        "Germany": 5.04
+        "EU27": 3.96,
+        "Germany": 3.92
       },
-      "germany_vs_eu_spread": -2.9,
+      "germany_vs_eu_spread": -2.4,
       "coverage_quarters": {
-        "EU27": 11,
-        "Germany": 11
+        "EU27": 12,
+        "Germany": 12
+      }
+    },
+    {
+      "dimension_key": "O",
+      "dimension_label": "Public administration and defence; compulsory social security",
+      "latest": {
+        "EU27": {
+          "period": "2026-Q2",
+          "value": 2.1,
+          "unit": "%"
+        },
+        "Germany": {
+          "period": "2026-Q2",
+          "value": 0.9,
+          "unit": "%"
+        }
+      },
+      "momentum_4q_change": {
+        "EU27": -1.2,
+        "Germany": -2.5
+      },
+      "persistence_5q_avg": {
+        "EU27": 3.22,
+        "Germany": 3.68
+      },
+      "germany_vs_eu_spread": -1.2,
+      "coverage_quarters": {
+        "EU27": 12,
+        "Germany": 12
       }
     },
     {
@@ -1575,28 +1580,28 @@
       "dimension_label": "Arts, entertainment and recreation",
       "latest": {
         "EU27": {
-          "period": "2026-Q1",
-          "value": 2.5,
+          "period": "2026-Q2",
+          "value": 1.9,
           "unit": "%"
         },
         "Germany": {
-          "period": "2026-Q1",
-          "value": -1.3,
+          "period": "2026-Q2",
+          "value": -3.0,
           "unit": "%"
         }
       },
       "momentum_4q_change": {
-        "EU27": -0.2,
-        "Germany": -1.9
+        "EU27": -1.6,
+        "Germany": -3.0
       },
       "persistence_5q_avg": {
-        "EU27": 3.06,
-        "Germany": 0.82
+        "EU27": 2.94,
+        "Germany": 0.26
       },
-      "germany_vs_eu_spread": -3.8,
+      "germany_vs_eu_spread": -4.9,
       "coverage_quarters": {
-        "EU27": 11,
-        "Germany": 11
+        "EU27": 12,
+        "Germany": 12
       }
     },
     {
@@ -1604,28 +1609,28 @@
       "dimension_label": "Professional, scientific and technical activities",
       "latest": {
         "EU27": {
-          "period": "2026-Q1",
-          "value": 1.1,
+          "period": "2026-Q2",
+          "value": 0.1,
           "unit": "%"
         },
         "Germany": {
-          "period": "2026-Q1",
-          "value": -4.4,
+          "period": "2026-Q2",
+          "value": -5.0,
           "unit": "%"
         }
       },
       "momentum_4q_change": {
-        "EU27": -6.2,
-        "Germany": -17.7
+        "EU27": -8.9,
+        "Germany": -21.5
       },
       "persistence_5q_avg": {
-        "EU27": 5.44,
-        "Germany": 7.68
+        "EU27": 4.1,
+        "Germany": 4.14
       },
-      "germany_vs_eu_spread": -5.5,
+      "germany_vs_eu_spread": -5.1,
       "coverage_quarters": {
-        "EU27": 11,
-        "Germany": 11
+        "EU27": 12,
+        "Germany": 12
       }
     }
   ],
@@ -1844,7 +1849,7 @@
           "latest": {
             "EU27": {
               "period": "2026-Q2",
-              "value": 2.7,
+              "value": 2.8,
               "unit": "%"
             },
             "Germany": {
@@ -1854,14 +1859,14 @@
             }
           },
           "momentum_4q_change": {
-            "EU27": 0.0,
+            "EU27": 0.1,
             "Germany": 0.8
           },
           "persistence_5q_avg": {
-            "EU27": 2.775,
+            "EU27": 2.825,
             "Germany": 4.55
           },
-          "germany_vs_eu_spread": 1.9,
+          "germany_vs_eu_spread": 1.8,
           "coverage_quarters": {
             "EU27": 4,
             "Germany": 4
@@ -1930,8 +1935,8 @@
           "dimension_label": "Human health and social work activities",
           "latest": {
             "EU27": {
-              "period": "2026-Q1",
-              "value": 2.4,
+              "period": "2026-Q2",
+              "value": 2.3,
               "unit": "%"
             },
             "Germany": {
@@ -1941,15 +1946,16 @@
             }
           },
           "momentum_4q_change": {
+            "EU27": -0.1,
             "Germany": 0.3
           },
           "persistence_5q_avg": {
-            "EU27": 2.4,
+            "EU27": 2.35,
             "Germany": 3.05
           },
-          "germany_vs_eu_spread": 0.6,
+          "germany_vs_eu_spread": 0.7,
           "coverage_quarters": {
-            "EU27": 1,
+            "EU27": 2,
             "Germany": 4
           }
         },
@@ -1959,7 +1965,7 @@
           "latest": {
             "EU27": {
               "period": "2026-Q2",
-              "value": 2.4,
+              "value": 2.2,
               "unit": "%"
             },
             "Germany": {
@@ -1969,14 +1975,14 @@
             }
           },
           "momentum_4q_change": {
-            "EU27": 0.2,
+            "EU27": 0.0,
             "Germany": 0.3
           },
           "persistence_5q_avg": {
-            "EU27": 2.4,
+            "EU27": 2.35,
             "Germany": 2.875
           },
-          "germany_vs_eu_spread": 0.3,
+          "germany_vs_eu_spread": 0.5,
           "coverage_quarters": {
             "EU27": 4,
             "Germany": 4
@@ -2006,6 +2012,35 @@
             "Germany": 2.9
           },
           "germany_vs_eu_spread": 0.5,
+          "coverage_quarters": {
+            "EU27": 4,
+            "Germany": 4
+          }
+        },
+        {
+          "dimension_key": "I",
+          "dimension_label": "Accommodation and food service activities",
+          "latest": {
+            "EU27": {
+              "period": "2026-Q2",
+              "value": 2.5,
+              "unit": "%"
+            },
+            "Germany": {
+              "period": "2026-Q2",
+              "value": 2.3,
+              "unit": "%"
+            }
+          },
+          "momentum_4q_change": {
+            "EU27": 0.2,
+            "Germany": 0.0
+          },
+          "persistence_5q_avg": {
+            "EU27": 2.6,
+            "Germany": 2.65
+          },
+          "germany_vs_eu_spread": -0.2,
           "coverage_quarters": {
             "EU27": 4,
             "Germany": 4
@@ -2075,7 +2110,7 @@
           "latest": {
             "EU27": {
               "period": "2026-Q2",
-              "value": 1.9,
+              "value": 2.0,
               "unit": "%"
             },
             "Germany": {
@@ -2085,14 +2120,14 @@
             }
           },
           "momentum_4q_change": {
-            "EU27": -0.1,
+            "EU27": 0.0,
             "Germany": 0.0
           },
           "persistence_5q_avg": {
-            "EU27": 2.025,
+            "EU27": 2.05,
             "Germany": 2.6
           },
-          "germany_vs_eu_spread": 0.5,
+          "germany_vs_eu_spread": 0.4,
           "coverage_quarters": {
             "EU27": 4,
             "Germany": 4
@@ -2120,29 +2155,29 @@
           }
         },
         {
-          "dimension_key": "N",
-          "dimension_label": "Professional, scientific and technical activities",
+          "dimension_key": "G-I",
+          "dimension_label": "Wholesale and retail trade, transport, accommodation and food service activities",
           "latest": {
             "EU27": {
               "period": "2026-Q2",
-              "value": 2.3,
+              "value": 2.0,
               "unit": "%"
             },
             "Germany": {
               "period": "2026-Q2",
-              "value": 2.2,
+              "value": 2.3,
               "unit": "%"
             }
           },
           "momentum_4q_change": {
-            "EU27": -0.1,
-            "Germany": -0.2
+            "EU27": 0.1,
+            "Germany": 0.1
           },
           "persistence_5q_avg": {
-            "EU27": 2.375,
+            "EU27": 2.025,
             "Germany": 2.45
           },
-          "germany_vs_eu_spread": -0.1,
+          "germany_vs_eu_spread": 0.3,
           "coverage_quarters": {
             "EU27": 4,
             "Germany": 4
@@ -2168,68 +2203,10 @@
             "Germany": 0.2
           },
           "persistence_5q_avg": {
-            "EU27": 1.65,
+            "EU27": 1.675,
             "Germany": 2.25
           },
           "germany_vs_eu_spread": 0.7,
-          "coverage_quarters": {
-            "EU27": 4,
-            "Germany": 4
-          }
-        },
-        {
-          "dimension_key": "I",
-          "dimension_label": "Accommodation and food service activities",
-          "latest": {
-            "EU27": {
-              "period": "2026-Q2",
-              "value": 2.2,
-              "unit": "%"
-            },
-            "Germany": {
-              "period": "2026-Q2",
-              "value": 2.3,
-              "unit": "%"
-            }
-          },
-          "momentum_4q_change": {
-            "EU27": -0.1,
-            "Germany": 0.0
-          },
-          "persistence_5q_avg": {
-            "EU27": 2.475,
-            "Germany": 2.65
-          },
-          "germany_vs_eu_spread": 0.1,
-          "coverage_quarters": {
-            "EU27": 4,
-            "Germany": 4
-          }
-        },
-        {
-          "dimension_key": "G-I",
-          "dimension_label": "Wholesale and retail trade, transport, accommodation and food service activities",
-          "latest": {
-            "EU27": {
-              "period": "2026-Q2",
-              "value": 1.9,
-              "unit": "%"
-            },
-            "Germany": {
-              "period": "2026-Q2",
-              "value": 2.3,
-              "unit": "%"
-            }
-          },
-          "momentum_4q_change": {
-            "EU27": 0.0,
-            "Germany": 0.1
-          },
-          "persistence_5q_avg": {
-            "EU27": 1.975,
-            "Germany": 2.45
-          },
-          "germany_vs_eu_spread": 0.4,
           "coverage_quarters": {
             "EU27": 4,
             "Germany": 4
@@ -2265,58 +2242,31 @@
           }
         },
         {
-          "dimension_key": "T",
-          "dimension_label": "Other service activities",
+          "dimension_key": "N",
+          "dimension_label": "Professional, scientific and technical activities",
           "latest": {
             "EU27": {
-              "period": "2026-Q1",
+              "period": "2026-Q2",
               "value": 2.2,
               "unit": "%"
             },
             "Germany": {
               "period": "2026-Q2",
-              "value": 2.0,
-              "unit": "%"
-            }
-          },
-          "momentum_4q_change": {
-            "Germany": -0.6
-          },
-          "persistence_5q_avg": {
-            "EU27": 2.2,
-            "Germany": 2.6
-          },
-          "germany_vs_eu_spread": -0.2,
-          "coverage_quarters": {
-            "EU27": 1,
-            "Germany": 4
-          }
-        },
-        {
-          "dimension_key": "S_T",
-          "dimension_label": "Arts, sports and recreation; other service activities",
-          "latest": {
-            "EU27": {
-              "period": "2026-Q1",
               "value": 2.2,
               "unit": "%"
-            },
-            "Germany": {
-              "period": "2026-Q2",
-              "value": 2.0,
-              "unit": "%"
             }
           },
           "momentum_4q_change": {
-            "Germany": -0.4
+            "EU27": -0.2,
+            "Germany": -0.2
           },
           "persistence_5q_avg": {
-            "EU27": 2.2,
+            "EU27": 2.35,
             "Germany": 2.45
           },
-          "germany_vs_eu_spread": -0.2,
+          "germany_vs_eu_spread": 0.0,
           "coverage_quarters": {
-            "EU27": 1,
+            "EU27": 4,
             "Germany": 4
           }
         },
@@ -2392,12 +2342,70 @@
           }
         },
         {
+          "dimension_key": "T",
+          "dimension_label": "Other service activities",
+          "latest": {
+            "EU27": {
+              "period": "2026-Q2",
+              "value": 1.9,
+              "unit": "%"
+            },
+            "Germany": {
+              "period": "2026-Q2",
+              "value": 2.0,
+              "unit": "%"
+            }
+          },
+          "momentum_4q_change": {
+            "EU27": -0.4,
+            "Germany": -0.6
+          },
+          "persistence_5q_avg": {
+            "EU27": 2.1,
+            "Germany": 2.6
+          },
+          "germany_vs_eu_spread": 0.1,
+          "coverage_quarters": {
+            "EU27": 2,
+            "Germany": 4
+          }
+        },
+        {
+          "dimension_key": "S_T",
+          "dimension_label": "Arts, sports and recreation; other service activities",
+          "latest": {
+            "EU27": {
+              "period": "2026-Q2",
+              "value": 2.0,
+              "unit": "%"
+            },
+            "Germany": {
+              "period": "2026-Q2",
+              "value": 2.0,
+              "unit": "%"
+            }
+          },
+          "momentum_4q_change": {
+            "EU27": -0.2,
+            "Germany": -0.4
+          },
+          "persistence_5q_avg": {
+            "EU27": 2.1,
+            "Germany": 2.45
+          },
+          "germany_vs_eu_spread": 0.0,
+          "coverage_quarters": {
+            "EU27": 2,
+            "Germany": 4
+          }
+        },
+        {
           "dimension_key": "S",
           "dimension_label": "Arts, sports and recreation",
           "latest": {
             "EU27": {
-              "period": "2026-Q1",
-              "value": 2.1,
+              "period": "2026-Q2",
+              "value": 1.9,
               "unit": "%"
             },
             "Germany": {
@@ -2407,15 +2415,45 @@
             }
           },
           "momentum_4q_change": {
+            "EU27": -0.3,
             "Germany": 0.1
           },
           "persistence_5q_avg": {
-            "EU27": 2.1,
+            "EU27": 2.05,
             "Germany": 1.925
           },
-          "germany_vs_eu_spread": -0.2,
+          "germany_vs_eu_spread": 0.0,
           "coverage_quarters": {
-            "EU27": 1,
+            "EU27": 2,
+            "Germany": 4
+          }
+        },
+        {
+          "dimension_key": "M",
+          "dimension_label": "Real estate activities",
+          "latest": {
+            "EU27": {
+              "period": "2026-Q2",
+              "value": 1.8,
+              "unit": "%"
+            },
+            "Germany": {
+              "period": "2026-Q2",
+              "value": 1.5,
+              "unit": "%"
+            }
+          },
+          "momentum_4q_change": {
+            "EU27": 0.2,
+            "Germany": 0.5
+          },
+          "persistence_5q_avg": {
+            "EU27": 1.8,
+            "Germany": 1.675
+          },
+          "germany_vs_eu_spread": -0.3,
+          "coverage_quarters": {
+            "EU27": 4,
             "Germany": 4
           }
         },
@@ -2425,7 +2463,7 @@
           "latest": {
             "EU27": {
               "period": "2026-Q2",
-              "value": 1.4,
+              "value": 1.5,
               "unit": "%"
             },
             "Germany": {
@@ -2435,14 +2473,43 @@
             }
           },
           "momentum_4q_change": {
-            "EU27": 0.0,
+            "EU27": 0.1,
             "Germany": 0.1
           },
           "persistence_5q_avg": {
-            "EU27": 1.4,
+            "EU27": 1.425,
             "Germany": 1.825
           },
-          "germany_vs_eu_spread": 0.3,
+          "germany_vs_eu_spread": 0.2,
+          "coverage_quarters": {
+            "EU27": 4,
+            "Germany": 4
+          }
+        },
+        {
+          "dimension_key": "D",
+          "dimension_label": "Electricity, gas, steam and air conditioning supply",
+          "latest": {
+            "EU27": {
+              "period": "2026-Q2",
+              "value": 1.3,
+              "unit": "%"
+            },
+            "Germany": {
+              "period": "2026-Q2",
+              "value": 1.7,
+              "unit": "%"
+            }
+          },
+          "momentum_4q_change": {
+            "EU27": -0.1,
+            "Germany": 0.3
+          },
+          "persistence_5q_avg": {
+            "EU27": 1.3,
+            "Germany": 1.55
+          },
+          "germany_vs_eu_spread": 0.4,
           "coverage_quarters": {
             "EU27": 4,
             "Germany": 4
@@ -2507,35 +2574,6 @@
           }
         },
         {
-          "dimension_key": "D",
-          "dimension_label": "Electricity, gas, steam and air conditioning supply",
-          "latest": {
-            "EU27": {
-              "period": "2026-Q1",
-              "value": 1.3,
-              "unit": "%"
-            },
-            "Germany": {
-              "period": "2026-Q2",
-              "value": 1.7,
-              "unit": "%"
-            }
-          },
-          "momentum_4q_change": {
-            "EU27": -0.1,
-            "Germany": 0.3
-          },
-          "persistence_5q_avg": {
-            "EU27": 1.3,
-            "Germany": 1.55
-          },
-          "germany_vs_eu_spread": 0.4,
-          "coverage_quarters": {
-            "EU27": 3,
-            "Germany": 4
-          }
-        },
-        {
           "dimension_key": "A",
           "dimension_label": "Agriculture, forestry and fishing",
           "latest": {
@@ -2553,35 +2591,6 @@
           },
           "germany_vs_eu_spread": null,
           "coverage_quarters": {
-            "Germany": 4
-          }
-        },
-        {
-          "dimension_key": "M",
-          "dimension_label": "Real estate activities",
-          "latest": {
-            "EU27": {
-              "period": "2026-Q2",
-              "value": 1.5,
-              "unit": "%"
-            },
-            "Germany": {
-              "period": "2026-Q2",
-              "value": 1.5,
-              "unit": "%"
-            }
-          },
-          "momentum_4q_change": {
-            "EU27": -0.1,
-            "Germany": 0.5
-          },
-          "persistence_5q_avg": {
-            "EU27": 1.675,
-            "Germany": 1.675
-          },
-          "germany_vs_eu_spread": 0.0,
-          "coverage_quarters": {
-            "EU27": 4,
             "Germany": 4
           }
         },
@@ -2640,7 +2649,7 @@
           "dimension_label": "Education",
           "latest": {
             "EU27": {
-              "period": "2026-Q1",
+              "period": "2026-Q2",
               "value": 1.0,
               "unit": "%"
             },
@@ -2651,6 +2660,7 @@
             }
           },
           "momentum_4q_change": {
+            "EU27": 0.0,
             "Germany": -0.5
           },
           "persistence_5q_avg": {
@@ -2659,7 +2669,7 @@
           },
           "germany_vs_eu_spread": 0.2,
           "coverage_quarters": {
-            "EU27": 1,
+            "EU27": 2,
             "Germany": 4
           }
         },
@@ -2668,8 +2678,8 @@
           "dimension_label": "Mining and quarrying",
           "latest": {
             "EU27": {
-              "period": "2026-Q1",
-              "value": 0.8,
+              "period": "2026-Q2",
+              "value": 0.6,
               "unit": "%"
             },
             "Germany": {
@@ -2679,16 +2689,16 @@
             }
           },
           "momentum_4q_change": {
-            "EU27": 0.2,
+            "EU27": 0.0,
             "Germany": 0.0
           },
           "persistence_5q_avg": {
-            "EU27": 0.667,
+            "EU27": 0.65,
             "Germany": 1.2
           },
-          "germany_vs_eu_spread": 0.0,
+          "germany_vs_eu_spread": 0.2,
           "coverage_quarters": {
-            "EU27": 3,
+            "EU27": 4,
             "Germany": 4
           }
         }
@@ -2698,90 +2708,32 @@
       "sector_count": 26,
       "sectors": [
         {
-          "dimension_key": "B",
-          "dimension_label": "Mining and quarrying",
+          "dimension_key": "L",
+          "dimension_label": "Real estate activities",
           "latest": {
             "EU27": {
-              "period": "2026-Q1",
-              "value": 5.6,
+              "period": "2026-Q2",
+              "value": 5.5,
               "unit": "%"
             },
             "Germany": {
-              "period": "2026-Q1",
-              "value": 8.4,
+              "period": "2026-Q2",
+              "value": 9.2,
               "unit": "%"
             }
           },
           "momentum_4q_change": {
-            "EU27": 2.9,
-            "Germany": 16.6
+            "EU27": 3.2,
+            "Germany": 11.4
           },
           "persistence_5q_avg": {
-            "EU27": 3.5,
-            "Germany": 0.78
+            "EU27": 4.34,
+            "Germany": 3.68
           },
-          "germany_vs_eu_spread": 2.8,
+          "germany_vs_eu_spread": 3.7,
           "coverage_quarters": {
-            "EU27": 11,
-            "Germany": 11
-          }
-        },
-        {
-          "dimension_key": "N",
-          "dimension_label": "Administrative and support service activities",
-          "latest": {
-            "EU27": {
-              "period": "2026-Q1",
-              "value": 4.1,
-              "unit": "%"
-            },
-            "Germany": {
-              "period": "2026-Q1",
-              "value": 5.9,
-              "unit": "%"
-            }
-          },
-          "momentum_4q_change": {
-            "EU27": -0.6,
-            "Germany": 3.2
-          },
-          "persistence_5q_avg": {
-            "EU27": 3.96,
-            "Germany": 3.8
-          },
-          "germany_vs_eu_spread": 1.8,
-          "coverage_quarters": {
-            "EU27": 11,
-            "Germany": 11
-          }
-        },
-        {
-          "dimension_key": "J",
-          "dimension_label": "Information and communication",
-          "latest": {
-            "EU27": {
-              "period": "2026-Q1",
-              "value": 4.3,
-              "unit": "%"
-            },
-            "Germany": {
-              "period": "2026-Q1",
-              "value": 5.9,
-              "unit": "%"
-            }
-          },
-          "momentum_4q_change": {
-            "EU27": -0.3,
-            "Germany": 4.8
-          },
-          "persistence_5q_avg": {
-            "EU27": 4.14,
-            "Germany": 2.72
-          },
-          "germany_vs_eu_spread": 1.6,
-          "coverage_quarters": {
-            "EU27": 11,
-            "Germany": 11
+            "EU27": 12,
+            "Germany": 12
           }
         },
         {
@@ -2789,231 +2741,86 @@
           "dimension_label": "Other service activities",
           "latest": {
             "EU27": {
-              "period": "2026-Q1",
-              "value": 4.6,
-              "unit": "%"
-            },
-            "Germany": {
-              "period": "2026-Q1",
-              "value": 5.5,
-              "unit": "%"
-            }
-          },
-          "momentum_4q_change": {
-            "EU27": 0.8,
-            "Germany": 3.0
-          },
-          "persistence_5q_avg": {
-            "EU27": 4.24,
-            "Germany": 4.22
-          },
-          "germany_vs_eu_spread": 0.9,
-          "coverage_quarters": {
-            "EU27": 11,
-            "Germany": 11
-          }
-        },
-        {
-          "dimension_key": "I",
-          "dimension_label": "Accommodation and food service activities",
-          "latest": {
-            "EU27": {
-              "period": "2026-Q1",
-              "value": 2.6,
-              "unit": "%"
-            },
-            "Germany": {
-              "period": "2026-Q1",
+              "period": "2026-Q2",
               "value": 5.2,
               "unit": "%"
-            }
-          },
-          "momentum_4q_change": {
-            "EU27": -1.5,
-            "Germany": 3.4
-          },
-          "persistence_5q_avg": {
-            "EU27": 3.44,
-            "Germany": 2.46
-          },
-          "germany_vs_eu_spread": 2.6,
-          "coverage_quarters": {
-            "EU27": 11,
-            "Germany": 11
-          }
-        },
-        {
-          "dimension_key": "H",
-          "dimension_label": "Transportation and storage",
-          "latest": {
-            "EU27": {
-              "period": "2026-Q1",
-              "value": 4.1,
-              "unit": "%"
             },
             "Germany": {
-              "period": "2026-Q1",
-              "value": 5.2,
+              "period": "2026-Q2",
+              "value": 6.9,
               "unit": "%"
             }
           },
           "momentum_4q_change": {
-            "EU27": -0.4,
-            "Germany": 3.0
+            "EU27": 0.9,
+            "Germany": 2.7
           },
           "persistence_5q_avg": {
-            "EU27": 4.3,
-            "Germany": 2.68
+            "EU27": 4.56,
+            "Germany": 5.24
           },
-          "germany_vs_eu_spread": 1.1,
+          "germany_vs_eu_spread": 1.7,
           "coverage_quarters": {
-            "EU27": 11,
-            "Germany": 11
+            "EU27": 12,
+            "Germany": 12
           }
         },
         {
-          "dimension_key": "G-J",
-          "dimension_label": "Wholesale and retail trade; transport; accommodation and food service activities; information and communication",
+          "dimension_key": "J",
+          "dimension_label": "Information and communication",
           "latest": {
             "EU27": {
-              "period": "2026-Q1",
-              "value": 3.9,
+              "period": "2026-Q2",
+              "value": 4.4,
               "unit": "%"
             },
             "Germany": {
-              "period": "2026-Q1",
-              "value": 5.1,
+              "period": "2026-Q2",
+              "value": 5.8,
               "unit": "%"
             }
           },
           "momentum_4q_change": {
-            "EU27": -0.4,
-            "Germany": 3.0
+            "EU27": 0.3,
+            "Germany": 3.7
           },
           "persistence_5q_avg": {
-            "EU27": 3.9,
-            "Germany": 2.72
+            "EU27": 4.16,
+            "Germany": 3.8
           },
-          "germany_vs_eu_spread": 1.2,
+          "germany_vs_eu_spread": 1.4,
           "coverage_quarters": {
-            "EU27": 11,
-            "Germany": 11
+            "EU27": 12,
+            "Germany": 12
           }
         },
         {
-          "dimension_key": "P",
-          "dimension_label": "Education",
+          "dimension_key": "N",
+          "dimension_label": "Administrative and support service activities",
           "latest": {
             "EU27": {
-              "period": "2026-Q1",
-              "value": 4.1,
-              "unit": "%"
-            },
-            "Germany": {
-              "period": "2026-Q1",
+              "period": "2026-Q2",
               "value": 4.8,
               "unit": "%"
-            }
-          },
-          "momentum_4q_change": {
-            "EU27": 0.7,
-            "Germany": 2.8
-          },
-          "persistence_5q_avg": {
-            "EU27": 3.88,
-            "Germany": 4.82
-          },
-          "germany_vs_eu_spread": 0.7,
-          "coverage_quarters": {
-            "EU27": 11,
-            "Germany": 11
-          }
-        },
-        {
-          "dimension_key": "E",
-          "dimension_label": "Water supply; sewerage, waste management and remediation activities",
-          "latest": {
-            "EU27": {
-              "period": "2026-Q1",
-              "value": 3.5,
-              "unit": "%"
             },
             "Germany": {
-              "period": "2026-Q1",
-              "value": 4.7,
+              "period": "2026-Q2",
+              "value": 5.4,
               "unit": "%"
             }
           },
           "momentum_4q_change": {
-            "EU27": -1.6,
-            "Germany": 1.6
+            "EU27": 1.0,
+            "Germany": 0.9
           },
           "persistence_5q_avg": {
-            "EU27": 4.22,
-            "Germany": 3.92
-          },
-          "germany_vs_eu_spread": 1.2,
-          "coverage_quarters": {
-            "EU27": 11,
-            "Germany": 11
-          }
-        },
-        {
-          "dimension_key": "G",
-          "dimension_label": "Wholesale and retail trade; repair of motor vehicles and motorcycles",
-          "latest": {
-            "EU27": {
-              "period": "2026-Q1",
-              "value": 4.0,
-              "unit": "%"
-            },
-            "Germany": {
-              "period": "2026-Q1",
-              "value": 4.6,
-              "unit": "%"
-            }
-          },
-          "momentum_4q_change": {
-            "EU27": 0.0,
-            "Germany": 1.9
-          },
-          "persistence_5q_avg": {
-            "EU27": 3.74,
-            "Germany": 2.8
+            "EU27": 4.04,
+            "Germany": 4.44
           },
           "germany_vs_eu_spread": 0.6,
           "coverage_quarters": {
-            "EU27": 11,
-            "Germany": 11
-          }
-        },
-        {
-          "dimension_key": "L",
-          "dimension_label": "Real estate activities",
-          "latest": {
-            "EU27": {
-              "period": "2026-Q1",
-              "value": 4.5,
-              "unit": "%"
-            },
-            "Germany": {
-              "period": "2026-Q1",
-              "value": 4.0,
-              "unit": "%"
-            }
-          },
-          "momentum_4q_change": {
-            "EU27": -1.8,
-            "Germany": -2.4
-          },
-          "persistence_5q_avg": {
-            "EU27": 4.46,
-            "Germany": 3.04
-          },
-          "germany_vs_eu_spread": -0.5,
-          "coverage_quarters": {
-            "EU27": 11,
-            "Germany": 11
+            "EU27": 12,
+            "Germany": 12
           }
         },
         {
@@ -3021,28 +2828,115 @@
           "dimension_label": "Construction",
           "latest": {
             "EU27": {
-              "period": "2026-Q1",
-              "value": 4.2,
+              "period": "2026-Q2",
+              "value": 3.9,
               "unit": "%"
             },
             "Germany": {
-              "period": "2026-Q1",
-              "value": 3.9,
+              "period": "2026-Q2",
+              "value": 5.2,
               "unit": "%"
             }
           },
           "momentum_4q_change": {
-            "EU27": -0.9,
-            "Germany": -0.1
+            "EU27": -1.2,
+            "Germany": 0.9
           },
           "persistence_5q_avg": {
-            "EU27": 4.64,
-            "Germany": 3.94
+            "EU27": 4.42,
+            "Germany": 4.32
           },
-          "germany_vs_eu_spread": -0.3,
+          "germany_vs_eu_spread": 1.3,
           "coverage_quarters": {
-            "EU27": 11,
-            "Germany": 11
+            "EU27": 12,
+            "Germany": 12
+          }
+        },
+        {
+          "dimension_key": "G-J",
+          "dimension_label": "Wholesale and retail trade; transport; accommodation and food service activities; information and communication",
+          "latest": {
+            "EU27": {
+              "period": "2026-Q2",
+              "value": 3.6,
+              "unit": "%"
+            },
+            "Germany": {
+              "period": "2026-Q2",
+              "value": 5.1,
+              "unit": "%"
+            }
+          },
+          "momentum_4q_change": {
+            "EU27": -0.5,
+            "Germany": 2.5
+          },
+          "persistence_5q_avg": {
+            "EU27": 3.8,
+            "Germany": 3.46
+          },
+          "germany_vs_eu_spread": 1.5,
+          "coverage_quarters": {
+            "EU27": 12,
+            "Germany": 12
+          }
+        },
+        {
+          "dimension_key": "G",
+          "dimension_label": "Wholesale and retail trade; repair of motor vehicles and motorcycles",
+          "latest": {
+            "EU27": {
+              "period": "2026-Q2",
+              "value": 3.5,
+              "unit": "%"
+            },
+            "Germany": {
+              "period": "2026-Q2",
+              "value": 5.0,
+              "unit": "%"
+            }
+          },
+          "momentum_4q_change": {
+            "EU27": -0.5,
+            "Germany": 1.7
+          },
+          "persistence_5q_avg": {
+            "EU27": 3.7,
+            "Germany": 3.42
+          },
+          "germany_vs_eu_spread": 1.5,
+          "coverage_quarters": {
+            "EU27": 12,
+            "Germany": 12
+          }
+        },
+        {
+          "dimension_key": "H",
+          "dimension_label": "Transportation and storage",
+          "latest": {
+            "EU27": {
+              "period": "2026-Q2",
+              "value": 3.6,
+              "unit": "%"
+            },
+            "Germany": {
+              "period": "2026-Q2",
+              "value": 4.8,
+              "unit": "%"
+            }
+          },
+          "momentum_4q_change": {
+            "EU27": -0.8,
+            "Germany": 3.5
+          },
+          "persistence_5q_avg": {
+            "EU27": 4.1,
+            "Germany": 3.3
+          },
+          "germany_vs_eu_spread": 1.2,
+          "coverage_quarters": {
+            "EU27": 12,
+            "Germany": 12
           }
         },
         {
@@ -3050,28 +2944,115 @@
           "dimension_label": "Human health and social work activities",
           "latest": {
             "EU27": {
-              "period": "2026-Q1",
-              "value": 3.7,
+              "period": "2026-Q2",
+              "value": 4.0,
               "unit": "%"
             },
             "Germany": {
-              "period": "2026-Q1",
+              "period": "2026-Q2",
+              "value": 4.6,
+              "unit": "%"
+            }
+          },
+          "momentum_4q_change": {
+            "EU27": 0.1,
+            "Germany": 1.4
+          },
+          "persistence_5q_avg": {
+            "EU27": 3.9,
+            "Germany": 4.54
+          },
+          "germany_vs_eu_spread": 0.6,
+          "coverage_quarters": {
+            "EU27": 12,
+            "Germany": 12
+          }
+        },
+        {
+          "dimension_key": "I",
+          "dimension_label": "Accommodation and food service activities",
+          "latest": {
+            "EU27": {
+              "period": "2026-Q2",
+              "value": 3.1,
+              "unit": "%"
+            },
+            "Germany": {
+              "period": "2026-Q2",
+              "value": 4.4,
+              "unit": "%"
+            }
+          },
+          "momentum_4q_change": {
+            "EU27": -0.9,
+            "Germany": 1.8
+          },
+          "persistence_5q_avg": {
+            "EU27": 3.24,
+            "Germany": 3.02
+          },
+          "germany_vs_eu_spread": 1.3,
+          "coverage_quarters": {
+            "EU27": 12,
+            "Germany": 12
+          }
+        },
+        {
+          "dimension_key": "E",
+          "dimension_label": "Water supply; sewerage, waste management and remediation activities",
+          "latest": {
+            "EU27": {
+              "period": "2026-Q2",
+              "value": 3.4,
+              "unit": "%"
+            },
+            "Germany": {
+              "period": "2026-Q2",
+              "value": 3.9,
+              "unit": "%"
+            }
+          },
+          "momentum_4q_change": {
+            "EU27": -1.4,
+            "Germany": -0.8
+          },
+          "persistence_5q_avg": {
+            "EU27": 3.96,
+            "Germany": 4.24
+          },
+          "germany_vs_eu_spread": 0.5,
+          "coverage_quarters": {
+            "EU27": 12,
+            "Germany": 12
+          }
+        },
+        {
+          "dimension_key": "P",
+          "dimension_label": "Education",
+          "latest": {
+            "EU27": {
+              "period": "2026-Q2",
+              "value": 3.4,
+              "unit": "%"
+            },
+            "Germany": {
+              "period": "2026-Q2",
               "value": 3.8,
               "unit": "%"
             }
           },
           "momentum_4q_change": {
-            "EU27": -0.5,
-            "Germany": -0.4
+            "EU27": -0.3,
+            "Germany": -0.1
           },
           "persistence_5q_avg": {
             "EU27": 3.86,
-            "Germany": 4.28
+            "Germany": 5.22
           },
-          "germany_vs_eu_spread": 0.1,
+          "germany_vs_eu_spread": 0.4,
           "coverage_quarters": {
-            "EU27": 11,
-            "Germany": 11
+            "EU27": 12,
+            "Germany": 12
           }
         },
         {
@@ -3079,202 +3060,28 @@
           "dimension_label": "Public administration and defence; compulsory social security; education; human health and social work activities; arts, entertainment and recreation; other service activities",
           "latest": {
             "EU27": {
-              "period": "2026-Q1",
-              "value": 3.7,
+              "period": "2026-Q2",
+              "value": 3.3,
               "unit": "%"
             },
             "Germany": {
-              "period": "2026-Q1",
-              "value": 3.5,
+              "period": "2026-Q2",
+              "value": 3.3,
               "unit": "%"
             }
           },
           "momentum_4q_change": {
-            "EU27": 0.2,
-            "Germany": 0.9
+            "EU27": -0.4,
+            "Germany": -0.1
           },
           "persistence_5q_avg": {
             "EU27": 3.7,
-            "Germany": 4.1
+            "Germany": 4.36
           },
-          "germany_vs_eu_spread": -0.2,
+          "germany_vs_eu_spread": 0.0,
           "coverage_quarters": {
-            "EU27": 11,
-            "Germany": 11
-          }
-        },
-        {
-          "dimension_key": "D",
-          "dimension_label": "Electricity, gas, steam and air conditioning supply",
-          "latest": {
-            "EU27": {
-              "period": "2026-Q1",
-              "value": 3.7,
-              "unit": "%"
-            },
-            "Germany": {
-              "period": "2026-Q1",
-              "value": 2.7,
-              "unit": "%"
-            }
-          },
-          "momentum_4q_change": {
-            "EU27": 0.3,
-            "Germany": 1.7
-          },
-          "persistence_5q_avg": {
-            "EU27": 3.2,
-            "Germany": 1.24
-          },
-          "germany_vs_eu_spread": -1.0,
-          "coverage_quarters": {
-            "EU27": 11,
-            "Germany": 11
-          }
-        },
-        {
-          "dimension_key": "B-F",
-          "dimension_label": "Industry and construction",
-          "latest": {
-            "EU27": {
-              "period": "2026-Q1",
-              "value": 3.7,
-              "unit": "%"
-            },
-            "Germany": {
-              "period": "2026-Q1",
-              "value": 3.1,
-              "unit": "%"
-            }
-          },
-          "momentum_4q_change": {
-            "EU27": -0.1,
-            "Germany": 2.6
-          },
-          "persistence_5q_avg": {
-            "EU27": 3.78,
-            "Germany": 2.32
-          },
-          "germany_vs_eu_spread": -0.6,
-          "coverage_quarters": {
-            "EU27": 11,
-            "Germany": 11
-          }
-        },
-        {
-          "dimension_key": "B-E",
-          "dimension_label": "Industry (except construction)",
-          "latest": {
-            "EU27": {
-              "period": "2026-Q1",
-              "value": 3.6,
-              "unit": "%"
-            },
-            "Germany": {
-              "period": "2026-Q1",
-              "value": 3.0,
-              "unit": "%"
-            }
-          },
-          "momentum_4q_change": {
-            "EU27": 0.2,
-            "Germany": 3.3
-          },
-          "persistence_5q_avg": {
-            "EU27": 3.58,
-            "Germany": 1.96
-          },
-          "germany_vs_eu_spread": -0.6,
-          "coverage_quarters": {
-            "EU27": 11,
-            "Germany": 11
-          }
-        },
-        {
-          "dimension_key": "C",
-          "dimension_label": "Manufacturing",
-          "latest": {
-            "EU27": {
-              "period": "2026-Q1",
-              "value": 3.5,
-              "unit": "%"
-            },
-            "Germany": {
-              "period": "2026-Q1",
-              "value": 2.9,
-              "unit": "%"
-            }
-          },
-          "momentum_4q_change": {
-            "EU27": 0.2,
-            "Germany": 3.3
-          },
-          "persistence_5q_avg": {
-            "EU27": 3.54,
-            "Germany": 1.94
-          },
-          "germany_vs_eu_spread": -0.6,
-          "coverage_quarters": {
-            "EU27": 11,
-            "Germany": 11
-          }
-        },
-        {
-          "dimension_key": "B-N",
-          "dimension_label": "Business economy",
-          "latest": {
-            "EU27": {
-              "period": "2026-Q1",
-              "value": 3.5,
-              "unit": "%"
-            },
-            "Germany": {
-              "period": "2026-Q1",
-              "value": 2.8,
-              "unit": "%"
-            }
-          },
-          "momentum_4q_change": {
-            "EU27": -0.9,
-            "Germany": 0.2
-          },
-          "persistence_5q_avg": {
-            "EU27": 4.02,
-            "Germany": 3.16
-          },
-          "germany_vs_eu_spread": -0.7,
-          "coverage_quarters": {
-            "EU27": 11,
-            "Germany": 11
-          }
-        },
-        {
-          "dimension_key": "O",
-          "dimension_label": "Public administration and defence; compulsory social security",
-          "latest": {
-            "EU27": {
-              "period": "2026-Q1",
-              "value": 3.4,
-              "unit": "%"
-            },
-            "Germany": {
-              "period": "2026-Q1",
-              "value": 1.9,
-              "unit": "%"
-            }
-          },
-          "momentum_4q_change": {
-            "EU27": 0.7,
-            "Germany": 0.9
-          },
-          "persistence_5q_avg": {
-            "EU27": 3.32,
-            "Germany": 3.58
-          },
-          "germany_vs_eu_spread": -1.5,
-          "coverage_quarters": {
-            "EU27": 11,
-            "Germany": 11
+            "EU27": 12,
+            "Germany": 12
           }
         },
         {
@@ -3282,57 +3089,57 @@
           "dimension_label": "Financial and insurance activities",
           "latest": {
             "EU27": {
-              "period": "2026-Q1",
-              "value": 3.4,
+              "period": "2026-Q2",
+              "value": 3.2,
               "unit": "%"
             },
             "Germany": {
-              "period": "2026-Q1",
-              "value": 1.9,
+              "period": "2026-Q2",
+              "value": 2.7,
               "unit": "%"
             }
           },
           "momentum_4q_change": {
-            "EU27": 0.2,
-            "Germany": 6.3
+            "EU27": -1.8,
+            "Germany": -2.0
           },
           "persistence_5q_avg": {
-            "EU27": 3.56,
-            "Germany": 1.78
+            "EU27": 3.62,
+            "Germany": 3.34
           },
-          "germany_vs_eu_spread": -1.5,
+          "germany_vs_eu_spread": -0.5,
           "coverage_quarters": {
-            "EU27": 11,
-            "Germany": 11
+            "EU27": 12,
+            "Germany": 12
           }
         },
         {
-          "dimension_key": "G-N",
-          "dimension_label": "Services of the business economy",
+          "dimension_key": "B-F",
+          "dimension_label": "Industry and construction",
           "latest": {
             "EU27": {
-              "period": "2026-Q1",
-              "value": 3.4,
+              "period": "2026-Q2",
+              "value": 3.2,
               "unit": "%"
             },
             "Germany": {
-              "period": "2026-Q1",
-              "value": 2.6,
+              "period": "2026-Q2",
+              "value": 3.2,
               "unit": "%"
             }
           },
           "momentum_4q_change": {
-            "EU27": -1.4,
-            "Germany": -1.4
+            "EU27": -1.3,
+            "Germany": -0.2
           },
           "persistence_5q_avg": {
-            "EU27": 4.16,
-            "Germany": 3.74
+            "EU27": 3.72,
+            "Germany": 2.98
           },
-          "germany_vs_eu_spread": -0.8,
+          "germany_vs_eu_spread": 0.0,
           "coverage_quarters": {
-            "EU27": 11,
-            "Germany": 11
+            "EU27": 12,
+            "Germany": 12
           }
         },
         {
@@ -3345,23 +3152,197 @@
               "unit": "%"
             },
             "Germany": {
-              "period": "2026-Q1",
+              "period": "2026-Q2",
               "value": 3.0,
               "unit": "%"
             }
           },
           "momentum_4q_change": {
             "EU27": -1.3,
-            "Germany": 0.4
+            "Germany": -1.3
           },
           "persistence_5q_avg": {
-            "EU27": 3.76,
-            "Germany": 3.42
+            "EU27": 3.78,
+            "Germany": 3.64
           },
           "germany_vs_eu_spread": -0.2,
           "coverage_quarters": {
             "EU27": 12,
-            "Germany": 11
+            "Germany": 12
+          }
+        },
+        {
+          "dimension_key": "G-N",
+          "dimension_label": "Services of the business economy",
+          "latest": {
+            "EU27": {
+              "period": "2026-Q2",
+              "value": 3.1,
+              "unit": "%"
+            },
+            "Germany": {
+              "period": "2026-Q2",
+              "value": 2.7,
+              "unit": "%"
+            }
+          },
+          "momentum_4q_change": {
+            "EU27": -1.9,
+            "Germany": -3.1
+          },
+          "persistence_5q_avg": {
+            "EU27": 3.88,
+            "Germany": 3.62
+          },
+          "germany_vs_eu_spread": -0.4,
+          "coverage_quarters": {
+            "EU27": 12,
+            "Germany": 12
+          }
+        },
+        {
+          "dimension_key": "B-N",
+          "dimension_label": "Business economy",
+          "latest": {
+            "EU27": {
+              "period": "2026-Q2",
+              "value": 3.1,
+              "unit": "%"
+            },
+            "Germany": {
+              "period": "2026-Q2",
+              "value": 2.9,
+              "unit": "%"
+            }
+          },
+          "momentum_4q_change": {
+            "EU27": -1.7,
+            "Germany": -1.9
+          },
+          "persistence_5q_avg": {
+            "EU27": 3.82,
+            "Germany": 3.38
+          },
+          "germany_vs_eu_spread": -0.2,
+          "coverage_quarters": {
+            "EU27": 12,
+            "Germany": 12
+          }
+        },
+        {
+          "dimension_key": "C",
+          "dimension_label": "Manufacturing",
+          "latest": {
+            "EU27": {
+              "period": "2026-Q2",
+              "value": 3.0,
+              "unit": "%"
+            },
+            "Germany": {
+              "period": "2026-Q2",
+              "value": 2.7,
+              "unit": "%"
+            }
+          },
+          "momentum_4q_change": {
+            "EU27": -1.3,
+            "Germany": -0.7
+          },
+          "persistence_5q_avg": {
+            "EU27": 3.52,
+            "Germany": 2.68
+          },
+          "germany_vs_eu_spread": -0.3,
+          "coverage_quarters": {
+            "EU27": 12,
+            "Germany": 12
+          }
+        },
+        {
+          "dimension_key": "B-E",
+          "dimension_label": "Industry (except construction)",
+          "latest": {
+            "EU27": {
+              "period": "2026-Q2",
+              "value": 3.0,
+              "unit": "%"
+            },
+            "Germany": {
+              "period": "2026-Q2",
+              "value": 2.8,
+              "unit": "%"
+            }
+          },
+          "momentum_4q_change": {
+            "EU27": -1.3,
+            "Germany": -0.4
+          },
+          "persistence_5q_avg": {
+            "EU27": 3.52,
+            "Germany": 2.7
+          },
+          "germany_vs_eu_spread": -0.2,
+          "coverage_quarters": {
+            "EU27": 12,
+            "Germany": 12
+          }
+        },
+        {
+          "dimension_key": "B",
+          "dimension_label": "Mining and quarrying",
+          "latest": {
+            "EU27": {
+              "period": "2026-Q2",
+              "value": 1.3,
+              "unit": "%"
+            },
+            "Germany": {
+              "period": "2026-Q2",
+              "value": 3.0,
+              "unit": "%"
+            }
+          },
+          "momentum_4q_change": {
+            "EU27": -6.3,
+            "Germany": 2.4
+          },
+          "persistence_5q_avg": {
+            "EU27": 3.3,
+            "Germany": 3.06
+          },
+          "germany_vs_eu_spread": 1.7,
+          "coverage_quarters": {
+            "EU27": 12,
+            "Germany": 12
+          }
+        },
+        {
+          "dimension_key": "D",
+          "dimension_label": "Electricity, gas, steam and air conditioning supply",
+          "latest": {
+            "EU27": {
+              "period": "2026-Q2",
+              "value": 2.2,
+              "unit": "%"
+            },
+            "Germany": {
+              "period": "2026-Q2",
+              "value": 2.7,
+              "unit": "%"
+            }
+          },
+          "momentum_4q_change": {
+            "EU27": -1.4,
+            "Germany": 3.9
+          },
+          "persistence_5q_avg": {
+            "EU27": 3.06,
+            "Germany": 1.74
+          },
+          "germany_vs_eu_spread": 0.5,
+          "coverage_quarters": {
+            "EU27": 12,
+            "Germany": 12
           }
         },
         {
@@ -3369,28 +3350,57 @@
           "dimension_label": "Financial and insurance activities; real estate activities; professional, scientific and technical activities; administrative and support service activities",
           "latest": {
             "EU27": {
-              "period": "2026-Q1",
-              "value": 2.7,
+              "period": "2026-Q2",
+              "value": 2.4,
               "unit": "%"
             },
             "Germany": {
-              "period": "2026-Q1",
-              "value": -0.2,
+              "period": "2026-Q2",
+              "value": 0.0,
               "unit": "%"
             }
           },
           "momentum_4q_change": {
-            "EU27": -2.7,
-            "Germany": -6.4
+            "EU27": -3.8,
+            "Germany": -9.7
           },
           "persistence_5q_avg": {
-            "EU27": 4.5,
-            "Germany": 5.04
+            "EU27": 3.96,
+            "Germany": 3.92
           },
-          "germany_vs_eu_spread": -2.9,
+          "germany_vs_eu_spread": -2.4,
           "coverage_quarters": {
-            "EU27": 11,
-            "Germany": 11
+            "EU27": 12,
+            "Germany": 12
+          }
+        },
+        {
+          "dimension_key": "O",
+          "dimension_label": "Public administration and defence; compulsory social security",
+          "latest": {
+            "EU27": {
+              "period": "2026-Q2",
+              "value": 2.1,
+              "unit": "%"
+            },
+            "Germany": {
+              "period": "2026-Q2",
+              "value": 0.9,
+              "unit": "%"
+            }
+          },
+          "momentum_4q_change": {
+            "EU27": -1.2,
+            "Germany": -2.5
+          },
+          "persistence_5q_avg": {
+            "EU27": 3.22,
+            "Germany": 3.68
+          },
+          "germany_vs_eu_spread": -1.2,
+          "coverage_quarters": {
+            "EU27": 12,
+            "Germany": 12
           }
         },
         {
@@ -3398,28 +3408,28 @@
           "dimension_label": "Arts, entertainment and recreation",
           "latest": {
             "EU27": {
-              "period": "2026-Q1",
-              "value": 2.5,
+              "period": "2026-Q2",
+              "value": 1.9,
               "unit": "%"
             },
             "Germany": {
-              "period": "2026-Q1",
-              "value": -1.3,
+              "period": "2026-Q2",
+              "value": -3.0,
               "unit": "%"
             }
           },
           "momentum_4q_change": {
-            "EU27": -0.2,
-            "Germany": -1.9
+            "EU27": -1.6,
+            "Germany": -3.0
           },
           "persistence_5q_avg": {
-            "EU27": 3.06,
-            "Germany": 0.82
+            "EU27": 2.94,
+            "Germany": 0.26
           },
-          "germany_vs_eu_spread": -3.8,
+          "germany_vs_eu_spread": -4.9,
           "coverage_quarters": {
-            "EU27": 11,
-            "Germany": 11
+            "EU27": 12,
+            "Germany": 12
           }
         },
         {
@@ -3427,28 +3437,28 @@
           "dimension_label": "Professional, scientific and technical activities",
           "latest": {
             "EU27": {
-              "period": "2026-Q1",
-              "value": 1.1,
+              "period": "2026-Q2",
+              "value": 0.1,
               "unit": "%"
             },
             "Germany": {
-              "period": "2026-Q1",
-              "value": -4.4,
+              "period": "2026-Q2",
+              "value": -5.0,
               "unit": "%"
             }
           },
           "momentum_4q_change": {
-            "EU27": -6.2,
-            "Germany": -17.7
+            "EU27": -8.9,
+            "Germany": -21.5
           },
           "persistence_5q_avg": {
-            "EU27": 5.44,
-            "Germany": 7.68
+            "EU27": 4.1,
+            "Germany": 4.14
           },
-          "germany_vs_eu_spread": -5.5,
+          "germany_vs_eu_spread": -5.1,
           "coverage_quarters": {
-            "EU27": 11,
-            "Germany": 11
+            "EU27": 12,
+            "Germany": 12
           }
         }
       ]
@@ -3683,13 +3693,13 @@
           "EU27": {
             "dimension_key": "K",
             "dimension_label": "Telecommunication, computer programming, consulting, computing infrastructure and other information service activities",
-            "latest_rate": 2.4,
+            "latest_rate": 2.2,
             "latest_period": "2026-Q2",
-            "momentum_4q_change": 0.2,
-            "persistence_5q_avg": 2.4,
+            "momentum_4q_change": 0.0,
+            "persistence_5q_avg": 2.35,
             "coverage_quarters": 4
           },
-          "germany_vs_eu_spread": 0.3
+          "germany_vs_eu_spread": 0.5
         }
       ],
       "labor_cost_evidence": [
@@ -3699,22 +3709,22 @@
           "Germany": {
             "dimension_key": "J",
             "dimension_label": "Information and communication",
-            "latest_rate": 5.9,
-            "latest_period": "2026-Q1",
-            "momentum_4q_change": 4.8,
-            "persistence_5q_avg": 2.72,
-            "coverage_quarters": 11
+            "latest_rate": 5.8,
+            "latest_period": "2026-Q2",
+            "momentum_4q_change": 3.7,
+            "persistence_5q_avg": 3.8,
+            "coverage_quarters": 12
           },
           "EU27": {
             "dimension_key": "J",
             "dimension_label": "Information and communication",
-            "latest_rate": 4.3,
-            "latest_period": "2026-Q1",
-            "momentum_4q_change": -0.3,
-            "persistence_5q_avg": 4.14,
-            "coverage_quarters": 11
+            "latest_rate": 4.4,
+            "latest_period": "2026-Q2",
+            "momentum_4q_change": 0.3,
+            "persistence_5q_avg": 4.16,
+            "coverage_quarters": 12
           },
-          "germany_vs_eu_spread": 1.6
+          "germany_vs_eu_spread": 1.4
         }
       ],
       "evidence": [
@@ -3733,13 +3743,13 @@
           "EU27": {
             "dimension_key": "K",
             "dimension_label": "Telecommunication, computer programming, consulting, computing infrastructure and other information service activities",
-            "latest_rate": 2.4,
+            "latest_rate": 2.2,
             "latest_period": "2026-Q2",
-            "momentum_4q_change": 0.2,
-            "persistence_5q_avg": 2.4,
+            "momentum_4q_change": 0.0,
+            "persistence_5q_avg": 2.35,
             "coverage_quarters": 4
           },
-          "germany_vs_eu_spread": 0.3
+          "germany_vs_eu_spread": 0.5
         }
       ],
       "status": "evidence_only"
@@ -3763,13 +3773,13 @@
           "EU27": {
             "dimension_key": "K",
             "dimension_label": "Telecommunication, computer programming, consulting, computing infrastructure and other information service activities",
-            "latest_rate": 2.4,
+            "latest_rate": 2.2,
             "latest_period": "2026-Q2",
-            "momentum_4q_change": 0.2,
-            "persistence_5q_avg": 2.4,
+            "momentum_4q_change": 0.0,
+            "persistence_5q_avg": 2.35,
             "coverage_quarters": 4
           },
-          "germany_vs_eu_spread": 0.3
+          "germany_vs_eu_spread": 0.5
         }
       ],
       "labor_cost_evidence": [
@@ -3779,22 +3789,22 @@
           "Germany": {
             "dimension_key": "J",
             "dimension_label": "Information and communication",
-            "latest_rate": 5.9,
-            "latest_period": "2026-Q1",
-            "momentum_4q_change": 4.8,
-            "persistence_5q_avg": 2.72,
-            "coverage_quarters": 11
+            "latest_rate": 5.8,
+            "latest_period": "2026-Q2",
+            "momentum_4q_change": 3.7,
+            "persistence_5q_avg": 3.8,
+            "coverage_quarters": 12
           },
           "EU27": {
             "dimension_key": "J",
             "dimension_label": "Information and communication",
-            "latest_rate": 4.3,
-            "latest_period": "2026-Q1",
-            "momentum_4q_change": -0.3,
-            "persistence_5q_avg": 4.14,
-            "coverage_quarters": 11
+            "latest_rate": 4.4,
+            "latest_period": "2026-Q2",
+            "momentum_4q_change": 0.3,
+            "persistence_5q_avg": 4.16,
+            "coverage_quarters": 12
           },
-          "germany_vs_eu_spread": 1.6
+          "germany_vs_eu_spread": 1.4
         }
       ],
       "evidence": [
@@ -3813,13 +3823,13 @@
           "EU27": {
             "dimension_key": "K",
             "dimension_label": "Telecommunication, computer programming, consulting, computing infrastructure and other information service activities",
-            "latest_rate": 2.4,
+            "latest_rate": 2.2,
             "latest_period": "2026-Q2",
-            "momentum_4q_change": 0.2,
-            "persistence_5q_avg": 2.4,
+            "momentum_4q_change": 0.0,
+            "persistence_5q_avg": 2.35,
             "coverage_quarters": 4
           },
-          "germany_vs_eu_spread": 0.3
+          "germany_vs_eu_spread": 0.5
         }
       ],
       "status": "evidence_only"
@@ -3843,13 +3853,13 @@
           "EU27": {
             "dimension_key": "K",
             "dimension_label": "Telecommunication, computer programming, consulting, computing infrastructure and other information service activities",
-            "latest_rate": 2.4,
+            "latest_rate": 2.2,
             "latest_period": "2026-Q2",
-            "momentum_4q_change": 0.2,
-            "persistence_5q_avg": 2.4,
+            "momentum_4q_change": 0.0,
+            "persistence_5q_avg": 2.35,
             "coverage_quarters": 4
           },
-          "germany_vs_eu_spread": 0.3
+          "germany_vs_eu_spread": 0.5
         },
         {
           "dimension_key": "N",
@@ -3866,13 +3876,13 @@
           "EU27": {
             "dimension_key": "N",
             "dimension_label": "Professional, scientific and technical activities",
-            "latest_rate": 2.3,
+            "latest_rate": 2.2,
             "latest_period": "2026-Q2",
-            "momentum_4q_change": -0.1,
-            "persistence_5q_avg": 2.375,
+            "momentum_4q_change": -0.2,
+            "persistence_5q_avg": 2.35,
             "coverage_quarters": 4
           },
-          "germany_vs_eu_spread": -0.1
+          "germany_vs_eu_spread": 0.0
         }
       ],
       "labor_cost_evidence": [
@@ -3882,22 +3892,22 @@
           "Germany": {
             "dimension_key": "J",
             "dimension_label": "Information and communication",
-            "latest_rate": 5.9,
-            "latest_period": "2026-Q1",
-            "momentum_4q_change": 4.8,
-            "persistence_5q_avg": 2.72,
-            "coverage_quarters": 11
+            "latest_rate": 5.8,
+            "latest_period": "2026-Q2",
+            "momentum_4q_change": 3.7,
+            "persistence_5q_avg": 3.8,
+            "coverage_quarters": 12
           },
           "EU27": {
             "dimension_key": "J",
             "dimension_label": "Information and communication",
-            "latest_rate": 4.3,
-            "latest_period": "2026-Q1",
-            "momentum_4q_change": -0.3,
-            "persistence_5q_avg": 4.14,
-            "coverage_quarters": 11
+            "latest_rate": 4.4,
+            "latest_period": "2026-Q2",
+            "momentum_4q_change": 0.3,
+            "persistence_5q_avg": 4.16,
+            "coverage_quarters": 12
           },
-          "germany_vs_eu_spread": 1.6
+          "germany_vs_eu_spread": 1.4
         },
         {
           "dimension_key": "M",
@@ -3905,22 +3915,22 @@
           "Germany": {
             "dimension_key": "M",
             "dimension_label": "Professional, scientific and technical activities",
-            "latest_rate": -4.4,
-            "latest_period": "2026-Q1",
-            "momentum_4q_change": -17.7,
-            "persistence_5q_avg": 7.68,
-            "coverage_quarters": 11
+            "latest_rate": -5.0,
+            "latest_period": "2026-Q2",
+            "momentum_4q_change": -21.5,
+            "persistence_5q_avg": 4.14,
+            "coverage_quarters": 12
           },
           "EU27": {
             "dimension_key": "M",
             "dimension_label": "Professional, scientific and technical activities",
-            "latest_rate": 1.1,
-            "latest_period": "2026-Q1",
-            "momentum_4q_change": -6.2,
-            "persistence_5q_avg": 5.44,
-            "coverage_quarters": 11
+            "latest_rate": 0.1,
+            "latest_period": "2026-Q2",
+            "momentum_4q_change": -8.9,
+            "persistence_5q_avg": 4.1,
+            "coverage_quarters": 12
           },
-          "germany_vs_eu_spread": -5.5
+          "germany_vs_eu_spread": -5.1
         }
       ],
       "evidence": [
@@ -3939,13 +3949,13 @@
           "EU27": {
             "dimension_key": "K",
             "dimension_label": "Telecommunication, computer programming, consulting, computing infrastructure and other information service activities",
-            "latest_rate": 2.4,
+            "latest_rate": 2.2,
             "latest_period": "2026-Q2",
-            "momentum_4q_change": 0.2,
-            "persistence_5q_avg": 2.4,
+            "momentum_4q_change": 0.0,
+            "persistence_5q_avg": 2.35,
             "coverage_quarters": 4
           },
-          "germany_vs_eu_spread": 0.3
+          "germany_vs_eu_spread": 0.5
         },
         {
           "dimension_key": "N",
@@ -3962,13 +3972,13 @@
           "EU27": {
             "dimension_key": "N",
             "dimension_label": "Professional, scientific and technical activities",
-            "latest_rate": 2.3,
+            "latest_rate": 2.2,
             "latest_period": "2026-Q2",
-            "momentum_4q_change": -0.1,
-            "persistence_5q_avg": 2.375,
+            "momentum_4q_change": -0.2,
+            "persistence_5q_avg": 2.35,
             "coverage_quarters": 4
           },
-          "germany_vs_eu_spread": -0.1
+          "germany_vs_eu_spread": 0.0
         }
       ],
       "status": "evidence_only"
@@ -3992,13 +4002,13 @@
           "EU27": {
             "dimension_key": "K",
             "dimension_label": "Telecommunication, computer programming, consulting, computing infrastructure and other information service activities",
-            "latest_rate": 2.4,
+            "latest_rate": 2.2,
             "latest_period": "2026-Q2",
-            "momentum_4q_change": 0.2,
-            "persistence_5q_avg": 2.4,
+            "momentum_4q_change": 0.0,
+            "persistence_5q_avg": 2.35,
             "coverage_quarters": 4
           },
-          "germany_vs_eu_spread": 0.3
+          "germany_vs_eu_spread": 0.5
         },
         {
           "dimension_key": "N",
@@ -4015,13 +4025,13 @@
           "EU27": {
             "dimension_key": "N",
             "dimension_label": "Professional, scientific and technical activities",
-            "latest_rate": 2.3,
+            "latest_rate": 2.2,
             "latest_period": "2026-Q2",
-            "momentum_4q_change": -0.1,
-            "persistence_5q_avg": 2.375,
+            "momentum_4q_change": -0.2,
+            "persistence_5q_avg": 2.35,
             "coverage_quarters": 4
           },
-          "germany_vs_eu_spread": -0.1
+          "germany_vs_eu_spread": 0.0
         }
       ],
       "labor_cost_evidence": [
@@ -4031,22 +4041,22 @@
           "Germany": {
             "dimension_key": "J",
             "dimension_label": "Information and communication",
-            "latest_rate": 5.9,
-            "latest_period": "2026-Q1",
-            "momentum_4q_change": 4.8,
-            "persistence_5q_avg": 2.72,
-            "coverage_quarters": 11
+            "latest_rate": 5.8,
+            "latest_period": "2026-Q2",
+            "momentum_4q_change": 3.7,
+            "persistence_5q_avg": 3.8,
+            "coverage_quarters": 12
           },
           "EU27": {
             "dimension_key": "J",
             "dimension_label": "Information and communication",
-            "latest_rate": 4.3,
-            "latest_period": "2026-Q1",
-            "momentum_4q_change": -0.3,
-            "persistence_5q_avg": 4.14,
-            "coverage_quarters": 11
+            "latest_rate": 4.4,
+            "latest_period": "2026-Q2",
+            "momentum_4q_change": 0.3,
+            "persistence_5q_avg": 4.16,
+            "coverage_quarters": 12
           },
-          "germany_vs_eu_spread": 1.6
+          "germany_vs_eu_spread": 1.4
         },
         {
           "dimension_key": "M",
@@ -4054,22 +4064,22 @@
           "Germany": {
             "dimension_key": "M",
             "dimension_label": "Professional, scientific and technical activities",
-            "latest_rate": -4.4,
-            "latest_period": "2026-Q1",
-            "momentum_4q_change": -17.7,
-            "persistence_5q_avg": 7.68,
-            "coverage_quarters": 11
+            "latest_rate": -5.0,
+            "latest_period": "2026-Q2",
+            "momentum_4q_change": -21.5,
+            "persistence_5q_avg": 4.14,
+            "coverage_quarters": 12
           },
           "EU27": {
             "dimension_key": "M",
             "dimension_label": "Professional, scientific and technical activities",
-            "latest_rate": 1.1,
-            "latest_period": "2026-Q1",
-            "momentum_4q_change": -6.2,
-            "persistence_5q_avg": 5.44,
-            "coverage_quarters": 11
+            "latest_rate": 0.1,
+            "latest_period": "2026-Q2",
+            "momentum_4q_change": -8.9,
+            "persistence_5q_avg": 4.1,
+            "coverage_quarters": 12
           },
-          "germany_vs_eu_spread": -5.5
+          "germany_vs_eu_spread": -5.1
         }
       ],
       "evidence": [
@@ -4088,13 +4098,13 @@
           "EU27": {
             "dimension_key": "K",
             "dimension_label": "Telecommunication, computer programming, consulting, computing infrastructure and other information service activities",
-            "latest_rate": 2.4,
+            "latest_rate": 2.2,
             "latest_period": "2026-Q2",
-            "momentum_4q_change": 0.2,
-            "persistence_5q_avg": 2.4,
+            "momentum_4q_change": 0.0,
+            "persistence_5q_avg": 2.35,
             "coverage_quarters": 4
           },
-          "germany_vs_eu_spread": 0.3
+          "germany_vs_eu_spread": 0.5
         },
         {
           "dimension_key": "N",
@@ -4111,13 +4121,13 @@
           "EU27": {
             "dimension_key": "N",
             "dimension_label": "Professional, scientific and technical activities",
-            "latest_rate": 2.3,
+            "latest_rate": 2.2,
             "latest_period": "2026-Q2",
-            "momentum_4q_change": -0.1,
-            "persistence_5q_avg": 2.375,
+            "momentum_4q_change": -0.2,
+            "persistence_5q_avg": 2.35,
             "coverage_quarters": 4
           },
-          "germany_vs_eu_spread": -0.1
+          "germany_vs_eu_spread": 0.0
         }
       ],
       "status": "evidence_only"
@@ -4141,13 +4151,13 @@
           "EU27": {
             "dimension_key": "K",
             "dimension_label": "Telecommunication, computer programming, consulting, computing infrastructure and other information service activities",
-            "latest_rate": 2.4,
+            "latest_rate": 2.2,
             "latest_period": "2026-Q2",
-            "momentum_4q_change": 0.2,
-            "persistence_5q_avg": 2.4,
+            "momentum_4q_change": 0.0,
+            "persistence_5q_avg": 2.35,
             "coverage_quarters": 4
           },
-          "germany_vs_eu_spread": 0.3
+          "germany_vs_eu_spread": 0.5
         }
       ],
       "labor_cost_evidence": [
@@ -4157,22 +4167,22 @@
           "Germany": {
             "dimension_key": "J",
             "dimension_label": "Information and communication",
-            "latest_rate": 5.9,
-            "latest_period": "2026-Q1",
-            "momentum_4q_change": 4.8,
-            "persistence_5q_avg": 2.72,
-            "coverage_quarters": 11
+            "latest_rate": 5.8,
+            "latest_period": "2026-Q2",
+            "momentum_4q_change": 3.7,
+            "persistence_5q_avg": 3.8,
+            "coverage_quarters": 12
           },
           "EU27": {
             "dimension_key": "J",
             "dimension_label": "Information and communication",
-            "latest_rate": 4.3,
-            "latest_period": "2026-Q1",
-            "momentum_4q_change": -0.3,
-            "persistence_5q_avg": 4.14,
-            "coverage_quarters": 11
+            "latest_rate": 4.4,
+            "latest_period": "2026-Q2",
+            "momentum_4q_change": 0.3,
+            "persistence_5q_avg": 4.16,
+            "coverage_quarters": 12
           },
-          "germany_vs_eu_spread": 1.6
+          "germany_vs_eu_spread": 1.4
         }
       ],
       "evidence": [
@@ -4191,13 +4201,13 @@
           "EU27": {
             "dimension_key": "K",
             "dimension_label": "Telecommunication, computer programming, consulting, computing infrastructure and other information service activities",
-            "latest_rate": 2.4,
+            "latest_rate": 2.2,
             "latest_period": "2026-Q2",
-            "momentum_4q_change": 0.2,
-            "persistence_5q_avg": 2.4,
+            "momentum_4q_change": 0.0,
+            "persistence_5q_avg": 2.35,
             "coverage_quarters": 4
           },
-          "germany_vs_eu_spread": 0.3
+          "germany_vs_eu_spread": 0.5
         }
       ],
       "status": "evidence_only"
@@ -4237,22 +4247,22 @@
           "Germany": {
             "dimension_key": "C",
             "dimension_label": "Manufacturing",
-            "latest_rate": 2.9,
-            "latest_period": "2026-Q1",
-            "momentum_4q_change": 3.3,
-            "persistence_5q_avg": 1.94,
-            "coverage_quarters": 11
+            "latest_rate": 2.7,
+            "latest_period": "2026-Q2",
+            "momentum_4q_change": -0.7,
+            "persistence_5q_avg": 2.68,
+            "coverage_quarters": 12
           },
           "EU27": {
             "dimension_key": "C",
             "dimension_label": "Manufacturing",
-            "latest_rate": 3.5,
-            "latest_period": "2026-Q1",
-            "momentum_4q_change": 0.2,
-            "persistence_5q_avg": 3.54,
-            "coverage_quarters": 11
+            "latest_rate": 3.0,
+            "latest_period": "2026-Q2",
+            "momentum_4q_change": -1.3,
+            "persistence_5q_avg": 3.52,
+            "coverage_quarters": 12
           },
-          "germany_vs_eu_spread": -0.6
+          "germany_vs_eu_spread": -0.3
         }
       ],
       "evidence": [
@@ -4317,22 +4327,22 @@
           "Germany": {
             "dimension_key": "C",
             "dimension_label": "Manufacturing",
-            "latest_rate": 2.9,
-            "latest_period": "2026-Q1",
-            "momentum_4q_change": 3.3,
-            "persistence_5q_avg": 1.94,
-            "coverage_quarters": 11
+            "latest_rate": 2.7,
+            "latest_period": "2026-Q2",
+            "momentum_4q_change": -0.7,
+            "persistence_5q_avg": 2.68,
+            "coverage_quarters": 12
           },
           "EU27": {
             "dimension_key": "C",
             "dimension_label": "Manufacturing",
-            "latest_rate": 3.5,
-            "latest_period": "2026-Q1",
-            "momentum_4q_change": 0.2,
-            "persistence_5q_avg": 3.54,
-            "coverage_quarters": 11
+            "latest_rate": 3.0,
+            "latest_period": "2026-Q2",
+            "momentum_4q_change": -1.3,
+            "persistence_5q_avg": 3.52,
+            "coverage_quarters": 12
           },
-          "germany_vs_eu_spread": -0.6
+          "germany_vs_eu_spread": -0.3
         }
       ],
       "evidence": [
@@ -4397,22 +4407,22 @@
           "Germany": {
             "dimension_key": "C",
             "dimension_label": "Manufacturing",
-            "latest_rate": 2.9,
-            "latest_period": "2026-Q1",
-            "momentum_4q_change": 3.3,
-            "persistence_5q_avg": 1.94,
-            "coverage_quarters": 11
+            "latest_rate": 2.7,
+            "latest_period": "2026-Q2",
+            "momentum_4q_change": -0.7,
+            "persistence_5q_avg": 2.68,
+            "coverage_quarters": 12
           },
           "EU27": {
             "dimension_key": "C",
             "dimension_label": "Manufacturing",
-            "latest_rate": 3.5,
-            "latest_period": "2026-Q1",
-            "momentum_4q_change": 0.2,
-            "persistence_5q_avg": 3.54,
-            "coverage_quarters": 11
+            "latest_rate": 3.0,
+            "latest_period": "2026-Q2",
+            "momentum_4q_change": -1.3,
+            "persistence_5q_avg": 3.52,
+            "coverage_quarters": 12
           },
-          "germany_vs_eu_spread": -0.6
+          "germany_vs_eu_spread": -0.3
         }
       ],
       "evidence": [
@@ -4462,10 +4472,10 @@
             "dimension_key": "D",
             "dimension_label": "Electricity, gas, steam and air conditioning supply",
             "latest_rate": 1.3,
-            "latest_period": "2026-Q1",
+            "latest_period": "2026-Q2",
             "momentum_4q_change": -0.1,
             "persistence_5q_avg": 1.3,
-            "coverage_quarters": 3
+            "coverage_quarters": 4
           },
           "germany_vs_eu_spread": 0.4
         },
@@ -4484,13 +4494,13 @@
           "EU27": {
             "dimension_key": "F",
             "dimension_label": "Construction",
-            "latest_rate": 2.7,
+            "latest_rate": 2.8,
             "latest_period": "2026-Q2",
-            "momentum_4q_change": 0.0,
-            "persistence_5q_avg": 2.775,
+            "momentum_4q_change": 0.1,
+            "persistence_5q_avg": 2.825,
             "coverage_quarters": 4
           },
-          "germany_vs_eu_spread": 1.9
+          "germany_vs_eu_spread": 1.8
         }
       ],
       "labor_cost_evidence": [
@@ -4501,21 +4511,21 @@
             "dimension_key": "D",
             "dimension_label": "Electricity, gas, steam and air conditioning supply",
             "latest_rate": 2.7,
-            "latest_period": "2026-Q1",
-            "momentum_4q_change": 1.7,
-            "persistence_5q_avg": 1.24,
-            "coverage_quarters": 11
+            "latest_period": "2026-Q2",
+            "momentum_4q_change": 3.9,
+            "persistence_5q_avg": 1.74,
+            "coverage_quarters": 12
           },
           "EU27": {
             "dimension_key": "D",
             "dimension_label": "Electricity, gas, steam and air conditioning supply",
-            "latest_rate": 3.7,
-            "latest_period": "2026-Q1",
-            "momentum_4q_change": 0.3,
-            "persistence_5q_avg": 3.2,
-            "coverage_quarters": 11
+            "latest_rate": 2.2,
+            "latest_period": "2026-Q2",
+            "momentum_4q_change": -1.4,
+            "persistence_5q_avg": 3.06,
+            "coverage_quarters": 12
           },
-          "germany_vs_eu_spread": -1.0
+          "germany_vs_eu_spread": 0.5
         },
         {
           "dimension_key": "F",
@@ -4523,22 +4533,22 @@
           "Germany": {
             "dimension_key": "F",
             "dimension_label": "Construction",
-            "latest_rate": 3.9,
-            "latest_period": "2026-Q1",
-            "momentum_4q_change": -0.1,
-            "persistence_5q_avg": 3.94,
-            "coverage_quarters": 11
+            "latest_rate": 5.2,
+            "latest_period": "2026-Q2",
+            "momentum_4q_change": 0.9,
+            "persistence_5q_avg": 4.32,
+            "coverage_quarters": 12
           },
           "EU27": {
             "dimension_key": "F",
             "dimension_label": "Construction",
-            "latest_rate": 4.2,
-            "latest_period": "2026-Q1",
-            "momentum_4q_change": -0.9,
-            "persistence_5q_avg": 4.64,
-            "coverage_quarters": 11
+            "latest_rate": 3.9,
+            "latest_period": "2026-Q2",
+            "momentum_4q_change": -1.2,
+            "persistence_5q_avg": 4.42,
+            "coverage_quarters": 12
           },
-          "germany_vs_eu_spread": -0.3
+          "germany_vs_eu_spread": 1.3
         }
       ],
       "evidence": [
@@ -4558,10 +4568,10 @@
             "dimension_key": "D",
             "dimension_label": "Electricity, gas, steam and air conditioning supply",
             "latest_rate": 1.3,
-            "latest_period": "2026-Q1",
+            "latest_period": "2026-Q2",
             "momentum_4q_change": -0.1,
             "persistence_5q_avg": 1.3,
-            "coverage_quarters": 3
+            "coverage_quarters": 4
           },
           "germany_vs_eu_spread": 0.4
         },
@@ -4580,13 +4590,13 @@
           "EU27": {
             "dimension_key": "F",
             "dimension_label": "Construction",
-            "latest_rate": 2.7,
+            "latest_rate": 2.8,
             "latest_period": "2026-Q2",
-            "momentum_4q_change": 0.0,
-            "persistence_5q_avg": 2.775,
+            "momentum_4q_change": 0.1,
+            "persistence_5q_avg": 2.825,
             "coverage_quarters": 4
           },
-          "germany_vs_eu_spread": 1.9
+          "germany_vs_eu_spread": 1.8
         }
       ],
       "status": "evidence_only"
@@ -4611,10 +4621,10 @@
             "dimension_key": "D",
             "dimension_label": "Electricity, gas, steam and air conditioning supply",
             "latest_rate": 1.3,
-            "latest_period": "2026-Q1",
+            "latest_period": "2026-Q2",
             "momentum_4q_change": -0.1,
             "persistence_5q_avg": 1.3,
-            "coverage_quarters": 3
+            "coverage_quarters": 4
           },
           "germany_vs_eu_spread": 0.4
         },
@@ -4633,13 +4643,13 @@
           "EU27": {
             "dimension_key": "F",
             "dimension_label": "Construction",
-            "latest_rate": 2.7,
+            "latest_rate": 2.8,
             "latest_period": "2026-Q2",
-            "momentum_4q_change": 0.0,
-            "persistence_5q_avg": 2.775,
+            "momentum_4q_change": 0.1,
+            "persistence_5q_avg": 2.825,
             "coverage_quarters": 4
           },
-          "germany_vs_eu_spread": 1.9
+          "germany_vs_eu_spread": 1.8
         },
         {
           "dimension_key": "K",
@@ -4656,13 +4666,13 @@
           "EU27": {
             "dimension_key": "K",
             "dimension_label": "Telecommunication, computer programming, consulting, computing infrastructure and other information service activities",
-            "latest_rate": 2.4,
+            "latest_rate": 2.2,
             "latest_period": "2026-Q2",
-            "momentum_4q_change": 0.2,
-            "persistence_5q_avg": 2.4,
+            "momentum_4q_change": 0.0,
+            "persistence_5q_avg": 2.35,
             "coverage_quarters": 4
           },
-          "germany_vs_eu_spread": 0.3
+          "germany_vs_eu_spread": 0.5
         }
       ],
       "labor_cost_evidence": [
@@ -4673,21 +4683,21 @@
             "dimension_key": "D",
             "dimension_label": "Electricity, gas, steam and air conditioning supply",
             "latest_rate": 2.7,
-            "latest_period": "2026-Q1",
-            "momentum_4q_change": 1.7,
-            "persistence_5q_avg": 1.24,
-            "coverage_quarters": 11
+            "latest_period": "2026-Q2",
+            "momentum_4q_change": 3.9,
+            "persistence_5q_avg": 1.74,
+            "coverage_quarters": 12
           },
           "EU27": {
             "dimension_key": "D",
             "dimension_label": "Electricity, gas, steam and air conditioning supply",
-            "latest_rate": 3.7,
-            "latest_period": "2026-Q1",
-            "momentum_4q_change": 0.3,
-            "persistence_5q_avg": 3.2,
-            "coverage_quarters": 11
+            "latest_rate": 2.2,
+            "latest_period": "2026-Q2",
+            "momentum_4q_change": -1.4,
+            "persistence_5q_avg": 3.06,
+            "coverage_quarters": 12
           },
-          "germany_vs_eu_spread": -1.0
+          "germany_vs_eu_spread": 0.5
         },
         {
           "dimension_key": "F",
@@ -4695,22 +4705,22 @@
           "Germany": {
             "dimension_key": "F",
             "dimension_label": "Construction",
-            "latest_rate": 3.9,
-            "latest_period": "2026-Q1",
-            "momentum_4q_change": -0.1,
-            "persistence_5q_avg": 3.94,
-            "coverage_quarters": 11
+            "latest_rate": 5.2,
+            "latest_period": "2026-Q2",
+            "momentum_4q_change": 0.9,
+            "persistence_5q_avg": 4.32,
+            "coverage_quarters": 12
           },
           "EU27": {
             "dimension_key": "F",
             "dimension_label": "Construction",
-            "latest_rate": 4.2,
-            "latest_period": "2026-Q1",
-            "momentum_4q_change": -0.9,
-            "persistence_5q_avg": 4.64,
-            "coverage_quarters": 11
+            "latest_rate": 3.9,
+            "latest_period": "2026-Q2",
+            "momentum_4q_change": -1.2,
+            "persistence_5q_avg": 4.42,
+            "coverage_quarters": 12
           },
-          "germany_vs_eu_spread": -0.3
+          "germany_vs_eu_spread": 1.3
         },
         {
           "dimension_key": "J",
@@ -4718,22 +4728,22 @@
           "Germany": {
             "dimension_key": "J",
             "dimension_label": "Information and communication",
-            "latest_rate": 5.9,
-            "latest_period": "2026-Q1",
-            "momentum_4q_change": 4.8,
-            "persistence_5q_avg": 2.72,
-            "coverage_quarters": 11
+            "latest_rate": 5.8,
+            "latest_period": "2026-Q2",
+            "momentum_4q_change": 3.7,
+            "persistence_5q_avg": 3.8,
+            "coverage_quarters": 12
           },
           "EU27": {
             "dimension_key": "J",
             "dimension_label": "Information and communication",
-            "latest_rate": 4.3,
-            "latest_period": "2026-Q1",
-            "momentum_4q_change": -0.3,
-            "persistence_5q_avg": 4.14,
-            "coverage_quarters": 11
+            "latest_rate": 4.4,
+            "latest_period": "2026-Q2",
+            "momentum_4q_change": 0.3,
+            "persistence_5q_avg": 4.16,
+            "coverage_quarters": 12
           },
-          "germany_vs_eu_spread": 1.6
+          "germany_vs_eu_spread": 1.4
         }
       ],
       "evidence": [
@@ -4753,10 +4763,10 @@
             "dimension_key": "D",
             "dimension_label": "Electricity, gas, steam and air conditioning supply",
             "latest_rate": 1.3,
-            "latest_period": "2026-Q1",
+            "latest_period": "2026-Q2",
             "momentum_4q_change": -0.1,
             "persistence_5q_avg": 1.3,
-            "coverage_quarters": 3
+            "coverage_quarters": 4
           },
           "germany_vs_eu_spread": 0.4
         },
@@ -4775,13 +4785,13 @@
           "EU27": {
             "dimension_key": "F",
             "dimension_label": "Construction",
-            "latest_rate": 2.7,
+            "latest_rate": 2.8,
             "latest_period": "2026-Q2",
-            "momentum_4q_change": 0.0,
-            "persistence_5q_avg": 2.775,
+            "momentum_4q_change": 0.1,
+            "persistence_5q_avg": 2.825,
             "coverage_quarters": 4
           },
-          "germany_vs_eu_spread": 1.9
+          "germany_vs_eu_spread": 1.8
         },
         {
           "dimension_key": "K",
@@ -4798,13 +4808,13 @@
           "EU27": {
             "dimension_key": "K",
             "dimension_label": "Telecommunication, computer programming, consulting, computing infrastructure and other information service activities",
-            "latest_rate": 2.4,
+            "latest_rate": 2.2,
             "latest_period": "2026-Q2",
-            "momentum_4q_change": 0.2,
-            "persistence_5q_avg": 2.4,
+            "momentum_4q_change": 0.0,
+            "persistence_5q_avg": 2.35,
             "coverage_quarters": 4
           },
-          "germany_vs_eu_spread": 0.3
+          "germany_vs_eu_spread": 0.5
         }
       ],
       "status": "evidence_only"
@@ -4831,7 +4841,7 @@
             "latest_rate": 1.6,
             "latest_period": "2026-Q2",
             "momentum_4q_change": 0.0,
-            "persistence_5q_avg": 1.65,
+            "persistence_5q_avg": 1.675,
             "coverage_quarters": 4
           },
           "germany_vs_eu_spread": 0.7
@@ -4851,13 +4861,13 @@
           "EU27": {
             "dimension_key": "K",
             "dimension_label": "Telecommunication, computer programming, consulting, computing infrastructure and other information service activities",
-            "latest_rate": 2.4,
+            "latest_rate": 2.2,
             "latest_period": "2026-Q2",
-            "momentum_4q_change": 0.2,
-            "persistence_5q_avg": 2.4,
+            "momentum_4q_change": 0.0,
+            "persistence_5q_avg": 2.35,
             "coverage_quarters": 4
           },
-          "germany_vs_eu_spread": 0.3
+          "germany_vs_eu_spread": 0.5
         }
       ],
       "labor_cost_evidence": [
@@ -4867,22 +4877,22 @@
           "Germany": {
             "dimension_key": "K",
             "dimension_label": "Financial and insurance activities",
-            "latest_rate": 1.9,
-            "latest_period": "2026-Q1",
-            "momentum_4q_change": 6.3,
-            "persistence_5q_avg": 1.78,
-            "coverage_quarters": 11
+            "latest_rate": 2.7,
+            "latest_period": "2026-Q2",
+            "momentum_4q_change": -2.0,
+            "persistence_5q_avg": 3.34,
+            "coverage_quarters": 12
           },
           "EU27": {
             "dimension_key": "K",
             "dimension_label": "Financial and insurance activities",
-            "latest_rate": 3.4,
-            "latest_period": "2026-Q1",
-            "momentum_4q_change": 0.2,
-            "persistence_5q_avg": 3.56,
-            "coverage_quarters": 11
+            "latest_rate": 3.2,
+            "latest_period": "2026-Q2",
+            "momentum_4q_change": -1.8,
+            "persistence_5q_avg": 3.62,
+            "coverage_quarters": 12
           },
-          "germany_vs_eu_spread": -1.5
+          "germany_vs_eu_spread": -0.5
         },
         {
           "dimension_key": "J",
@@ -4890,22 +4900,22 @@
           "Germany": {
             "dimension_key": "J",
             "dimension_label": "Information and communication",
-            "latest_rate": 5.9,
-            "latest_period": "2026-Q1",
-            "momentum_4q_change": 4.8,
-            "persistence_5q_avg": 2.72,
-            "coverage_quarters": 11
+            "latest_rate": 5.8,
+            "latest_period": "2026-Q2",
+            "momentum_4q_change": 3.7,
+            "persistence_5q_avg": 3.8,
+            "coverage_quarters": 12
           },
           "EU27": {
             "dimension_key": "J",
             "dimension_label": "Information and communication",
-            "latest_rate": 4.3,
-            "latest_period": "2026-Q1",
-            "momentum_4q_change": -0.3,
-            "persistence_5q_avg": 4.14,
-            "coverage_quarters": 11
+            "latest_rate": 4.4,
+            "latest_period": "2026-Q2",
+            "momentum_4q_change": 0.3,
+            "persistence_5q_avg": 4.16,
+            "coverage_quarters": 12
           },
-          "germany_vs_eu_spread": 1.6
+          "germany_vs_eu_spread": 1.4
         }
       ],
       "evidence": [
@@ -4927,7 +4937,7 @@
             "latest_rate": 1.6,
             "latest_period": "2026-Q2",
             "momentum_4q_change": 0.0,
-            "persistence_5q_avg": 1.65,
+            "persistence_5q_avg": 1.675,
             "coverage_quarters": 4
           },
           "germany_vs_eu_spread": 0.7
@@ -4947,13 +4957,13 @@
           "EU27": {
             "dimension_key": "K",
             "dimension_label": "Telecommunication, computer programming, consulting, computing infrastructure and other information service activities",
-            "latest_rate": 2.4,
+            "latest_rate": 2.2,
             "latest_period": "2026-Q2",
-            "momentum_4q_change": 0.2,
-            "persistence_5q_avg": 2.4,
+            "momentum_4q_change": 0.0,
+            "persistence_5q_avg": 2.35,
             "coverage_quarters": 4
           },
-          "germany_vs_eu_spread": 0.3
+          "germany_vs_eu_spread": 0.5
         }
       ],
       "status": "evidence_only"
@@ -4980,7 +4990,7 @@
             "latest_rate": 1.6,
             "latest_period": "2026-Q2",
             "momentum_4q_change": 0.0,
-            "persistence_5q_avg": 1.65,
+            "persistence_5q_avg": 1.675,
             "coverage_quarters": 4
           },
           "germany_vs_eu_spread": 0.7
@@ -5000,13 +5010,13 @@
           "EU27": {
             "dimension_key": "F",
             "dimension_label": "Construction",
-            "latest_rate": 2.7,
+            "latest_rate": 2.8,
             "latest_period": "2026-Q2",
-            "momentum_4q_change": 0.0,
-            "persistence_5q_avg": 2.775,
+            "momentum_4q_change": 0.1,
+            "persistence_5q_avg": 2.825,
             "coverage_quarters": 4
           },
-          "germany_vs_eu_spread": 1.9
+          "germany_vs_eu_spread": 1.8
         }
       ],
       "labor_cost_evidence": [
@@ -5016,22 +5026,22 @@
           "Germany": {
             "dimension_key": "K",
             "dimension_label": "Financial and insurance activities",
-            "latest_rate": 1.9,
-            "latest_period": "2026-Q1",
-            "momentum_4q_change": 6.3,
-            "persistence_5q_avg": 1.78,
-            "coverage_quarters": 11
+            "latest_rate": 2.7,
+            "latest_period": "2026-Q2",
+            "momentum_4q_change": -2.0,
+            "persistence_5q_avg": 3.34,
+            "coverage_quarters": 12
           },
           "EU27": {
             "dimension_key": "K",
             "dimension_label": "Financial and insurance activities",
-            "latest_rate": 3.4,
-            "latest_period": "2026-Q1",
-            "momentum_4q_change": 0.2,
-            "persistence_5q_avg": 3.56,
-            "coverage_quarters": 11
+            "latest_rate": 3.2,
+            "latest_period": "2026-Q2",
+            "momentum_4q_change": -1.8,
+            "persistence_5q_avg": 3.62,
+            "coverage_quarters": 12
           },
-          "germany_vs_eu_spread": -1.5
+          "germany_vs_eu_spread": -0.5
         },
         {
           "dimension_key": "F",
@@ -5039,22 +5049,22 @@
           "Germany": {
             "dimension_key": "F",
             "dimension_label": "Construction",
-            "latest_rate": 3.9,
-            "latest_period": "2026-Q1",
-            "momentum_4q_change": -0.1,
-            "persistence_5q_avg": 3.94,
-            "coverage_quarters": 11
+            "latest_rate": 5.2,
+            "latest_period": "2026-Q2",
+            "momentum_4q_change": 0.9,
+            "persistence_5q_avg": 4.32,
+            "coverage_quarters": 12
           },
           "EU27": {
             "dimension_key": "F",
             "dimension_label": "Construction",
-            "latest_rate": 4.2,
-            "latest_period": "2026-Q1",
-            "momentum_4q_change": -0.9,
-            "persistence_5q_avg": 4.64,
-            "coverage_quarters": 11
+            "latest_rate": 3.9,
+            "latest_period": "2026-Q2",
+            "momentum_4q_change": -1.2,
+            "persistence_5q_avg": 4.42,
+            "coverage_quarters": 12
           },
-          "germany_vs_eu_spread": -0.3
+          "germany_vs_eu_spread": 1.3
         }
       ],
       "evidence": [
@@ -5076,7 +5086,7 @@
             "latest_rate": 1.6,
             "latest_period": "2026-Q2",
             "momentum_4q_change": 0.0,
-            "persistence_5q_avg": 1.65,
+            "persistence_5q_avg": 1.675,
             "coverage_quarters": 4
           },
           "germany_vs_eu_spread": 0.7
@@ -5096,13 +5106,13 @@
           "EU27": {
             "dimension_key": "F",
             "dimension_label": "Construction",
-            "latest_rate": 2.7,
+            "latest_rate": 2.8,
             "latest_period": "2026-Q2",
-            "momentum_4q_change": 0.0,
-            "persistence_5q_avg": 2.775,
+            "momentum_4q_change": 0.1,
+            "persistence_5q_avg": 2.825,
             "coverage_quarters": 4
           },
-          "germany_vs_eu_spread": 1.9
+          "germany_vs_eu_spread": 1.8
         }
       ],
       "status": "evidence_only"
@@ -5127,10 +5137,10 @@
             "dimension_key": "D",
             "dimension_label": "Electricity, gas, steam and air conditioning supply",
             "latest_rate": 1.3,
-            "latest_period": "2026-Q1",
+            "latest_period": "2026-Q2",
             "momentum_4q_change": -0.1,
             "persistence_5q_avg": 1.3,
-            "coverage_quarters": 3
+            "coverage_quarters": 4
           },
           "germany_vs_eu_spread": 0.4
         },
@@ -5149,13 +5159,13 @@
           "EU27": {
             "dimension_key": "E",
             "dimension_label": "Water supply; sewerage, waste management and remediation activities",
-            "latest_rate": 1.4,
+            "latest_rate": 1.5,
             "latest_period": "2026-Q2",
-            "momentum_4q_change": 0.0,
-            "persistence_5q_avg": 1.4,
+            "momentum_4q_change": 0.1,
+            "persistence_5q_avg": 1.425,
             "coverage_quarters": 4
           },
-          "germany_vs_eu_spread": 0.3
+          "germany_vs_eu_spread": 0.2
         },
         {
           "dimension_key": "F",
@@ -5172,13 +5182,13 @@
           "EU27": {
             "dimension_key": "F",
             "dimension_label": "Construction",
-            "latest_rate": 2.7,
+            "latest_rate": 2.8,
             "latest_period": "2026-Q2",
-            "momentum_4q_change": 0.0,
-            "persistence_5q_avg": 2.775,
+            "momentum_4q_change": 0.1,
+            "persistence_5q_avg": 2.825,
             "coverage_quarters": 4
           },
-          "germany_vs_eu_spread": 1.9
+          "germany_vs_eu_spread": 1.8
         },
         {
           "dimension_key": "H",
@@ -5212,21 +5222,21 @@
             "dimension_key": "D",
             "dimension_label": "Electricity, gas, steam and air conditioning supply",
             "latest_rate": 2.7,
-            "latest_period": "2026-Q1",
-            "momentum_4q_change": 1.7,
-            "persistence_5q_avg": 1.24,
-            "coverage_quarters": 11
+            "latest_period": "2026-Q2",
+            "momentum_4q_change": 3.9,
+            "persistence_5q_avg": 1.74,
+            "coverage_quarters": 12
           },
           "EU27": {
             "dimension_key": "D",
             "dimension_label": "Electricity, gas, steam and air conditioning supply",
-            "latest_rate": 3.7,
-            "latest_period": "2026-Q1",
-            "momentum_4q_change": 0.3,
-            "persistence_5q_avg": 3.2,
-            "coverage_quarters": 11
+            "latest_rate": 2.2,
+            "latest_period": "2026-Q2",
+            "momentum_4q_change": -1.4,
+            "persistence_5q_avg": 3.06,
+            "coverage_quarters": 12
           },
-          "germany_vs_eu_spread": -1.0
+          "germany_vs_eu_spread": 0.5
         },
         {
           "dimension_key": "E",
@@ -5234,22 +5244,22 @@
           "Germany": {
             "dimension_key": "E",
             "dimension_label": "Water supply; sewerage, waste management and remediation activities",
-            "latest_rate": 4.7,
-            "latest_period": "2026-Q1",
-            "momentum_4q_change": 1.6,
-            "persistence_5q_avg": 3.92,
-            "coverage_quarters": 11
+            "latest_rate": 3.9,
+            "latest_period": "2026-Q2",
+            "momentum_4q_change": -0.8,
+            "persistence_5q_avg": 4.24,
+            "coverage_quarters": 12
           },
           "EU27": {
             "dimension_key": "E",
             "dimension_label": "Water supply; sewerage, waste management and remediation activities",
-            "latest_rate": 3.5,
-            "latest_period": "2026-Q1",
-            "momentum_4q_change": -1.6,
-            "persistence_5q_avg": 4.22,
-            "coverage_quarters": 11
+            "latest_rate": 3.4,
+            "latest_period": "2026-Q2",
+            "momentum_4q_change": -1.4,
+            "persistence_5q_avg": 3.96,
+            "coverage_quarters": 12
           },
-          "germany_vs_eu_spread": 1.2
+          "germany_vs_eu_spread": 0.5
         },
         {
           "dimension_key": "F",
@@ -5257,22 +5267,22 @@
           "Germany": {
             "dimension_key": "F",
             "dimension_label": "Construction",
-            "latest_rate": 3.9,
-            "latest_period": "2026-Q1",
-            "momentum_4q_change": -0.1,
-            "persistence_5q_avg": 3.94,
-            "coverage_quarters": 11
+            "latest_rate": 5.2,
+            "latest_period": "2026-Q2",
+            "momentum_4q_change": 0.9,
+            "persistence_5q_avg": 4.32,
+            "coverage_quarters": 12
           },
           "EU27": {
             "dimension_key": "F",
             "dimension_label": "Construction",
-            "latest_rate": 4.2,
-            "latest_period": "2026-Q1",
-            "momentum_4q_change": -0.9,
-            "persistence_5q_avg": 4.64,
-            "coverage_quarters": 11
+            "latest_rate": 3.9,
+            "latest_period": "2026-Q2",
+            "momentum_4q_change": -1.2,
+            "persistence_5q_avg": 4.42,
+            "coverage_quarters": 12
           },
-          "germany_vs_eu_spread": -0.3
+          "germany_vs_eu_spread": 1.3
         },
         {
           "dimension_key": "H",
@@ -5280,22 +5290,22 @@
           "Germany": {
             "dimension_key": "H",
             "dimension_label": "Transportation and storage",
-            "latest_rate": 5.2,
-            "latest_period": "2026-Q1",
-            "momentum_4q_change": 3.0,
-            "persistence_5q_avg": 2.68,
-            "coverage_quarters": 11
+            "latest_rate": 4.8,
+            "latest_period": "2026-Q2",
+            "momentum_4q_change": 3.5,
+            "persistence_5q_avg": 3.3,
+            "coverage_quarters": 12
           },
           "EU27": {
             "dimension_key": "H",
             "dimension_label": "Transportation and storage",
-            "latest_rate": 4.1,
-            "latest_period": "2026-Q1",
-            "momentum_4q_change": -0.4,
-            "persistence_5q_avg": 4.3,
-            "coverage_quarters": 11
+            "latest_rate": 3.6,
+            "latest_period": "2026-Q2",
+            "momentum_4q_change": -0.8,
+            "persistence_5q_avg": 4.1,
+            "coverage_quarters": 12
           },
-          "germany_vs_eu_spread": 1.1
+          "germany_vs_eu_spread": 1.2
         }
       ],
       "evidence": [
@@ -5315,10 +5325,10 @@
             "dimension_key": "D",
             "dimension_label": "Electricity, gas, steam and air conditioning supply",
             "latest_rate": 1.3,
-            "latest_period": "2026-Q1",
+            "latest_period": "2026-Q2",
             "momentum_4q_change": -0.1,
             "persistence_5q_avg": 1.3,
-            "coverage_quarters": 3
+            "coverage_quarters": 4
           },
           "germany_vs_eu_spread": 0.4
         },
@@ -5337,13 +5347,13 @@
           "EU27": {
             "dimension_key": "E",
             "dimension_label": "Water supply; sewerage, waste management and remediation activities",
-            "latest_rate": 1.4,
+            "latest_rate": 1.5,
             "latest_period": "2026-Q2",
-            "momentum_4q_change": 0.0,
-            "persistence_5q_avg": 1.4,
+            "momentum_4q_change": 0.1,
+            "persistence_5q_avg": 1.425,
             "coverage_quarters": 4
           },
-          "germany_vs_eu_spread": 0.3
+          "germany_vs_eu_spread": 0.2
         },
         {
           "dimension_key": "F",
@@ -5360,13 +5370,13 @@
           "EU27": {
             "dimension_key": "F",
             "dimension_label": "Construction",
-            "latest_rate": 2.7,
+            "latest_rate": 2.8,
             "latest_period": "2026-Q2",
-            "momentum_4q_change": 0.0,
-            "persistence_5q_avg": 2.775,
+            "momentum_4q_change": 0.1,
+            "persistence_5q_avg": 2.825,
             "coverage_quarters": 4
           },
-          "germany_vs_eu_spread": 1.9
+          "germany_vs_eu_spread": 1.8
         },
         {
           "dimension_key": "H",
@@ -5395,5 +5405,5 @@
       "status": "evidence_only"
     }
   ],
-  "generated_at": "2026-09-20T09:20:14Z"
+  "generated_at": "2026-09-21T10:01:52Z"
 }
