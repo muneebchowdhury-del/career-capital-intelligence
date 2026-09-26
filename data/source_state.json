@@ -66,14 +66,14 @@
     }
   },
   "watch:S8": {
-    "last_checked_at": "2026-09-19T08:50:56Z",
+    "last_checked_at": "2026-09-26T09:24:20Z",
     "fingerprint": "95aada4dd0c01c03453f4bea2cee038c79a18d5d138e87bd6840cd7cfa474c27",
     "text_chars": 1868,
     "final_url": "https://dealroom.co/reports/defence-security-and-resilience-in-europe-2026",
-    "last_success_at": "2026-09-19T08:50:57Z",
+    "last_success_at": "2026-09-26T09:24:21Z",
     "last_error": null,
     "last_result": {
-      "changed": true,
+      "changed": false,
       "not_modified": false
     }
   },
@@ -168,14 +168,14 @@
     "last_error": "HTTPError: HTTP Error 403: Forbidden"
   },
   "watch:S18": {
-    "last_checked_at": "2026-09-19T08:50:58Z",
+    "last_checked_at": "2026-09-26T09:24:21Z",
     "fingerprint": "982a2bda3db20e57b25be9ea2f19d3209f689958463fded8bb2921dc7df2fb55",
     "text_chars": 2205,
     "final_url": "https://dealroom.co/reports/the-european-deep-tech-report-2026",
-    "last_success_at": "2026-09-19T08:50:58Z",
+    "last_success_at": "2026-09-26T09:24:22Z",
     "last_error": null,
     "last_result": {
-      "changed": true,
+      "changed": false,
       "not_modified": false
     }
   },
