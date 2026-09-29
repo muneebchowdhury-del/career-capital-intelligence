@@ -1,16 +1,16 @@
 {
-  "run_id": "run_20a14a772982a67be35b0606",
-  "started_at": "2026-09-28T11:00:46Z",
-  "completed_at": "2026-09-28T11:00:57Z",
+  "run_id": "run_a3a2a2532c2225e4ddd0a677",
+  "started_at": "2026-09-29T10:45:10Z",
+  "completed_at": "2026-09-29T10:45:10Z",
   "status": "success",
   "summary": {
-    "checked": 13,
-    "success": 13,
+    "checked": 0,
+    "success": 0,
     "failed": 0,
     "new_observations": 0,
     "changed_pages": 0,
     "new_discoveries": 0,
-    "skipped": 8,
+    "skipped": 21,
     "manual_skipped": 13
   },
   "errors": []
