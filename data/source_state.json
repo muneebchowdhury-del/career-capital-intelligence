@@ -112,13 +112,13 @@
     "last_error": "TimeoutError: The read operation timed out"
   },
   "watch:S13": {
-    "last_checked_at": "2026-09-28T11:00:47Z",
+    "last_checked_at": "2026-09-30T10:33:33Z",
     "fingerprint": "500790d119fbe442d38160fd66d8140ba308f8815ed1c485da36ca9dc32d40eb",
     "text_chars": 11746,
     "final_url": "https://kpmg.com/xx/en/media/press-releases/2026/07/vc-investment-already-at-five-year-high-of-billions.html",
-    "etag": "\"2e14a-65c88bbe82506-gzip\"",
-    "last_modified": "Mon, 28 Sep 2026 10:43:18 GMT",
-    "last_success_at": "2026-09-28T11:00:47Z",
+    "etag": "W/\"2f438-65cb07d5782e0-gzip\"",
+    "last_modified": "Wed, 30 Sep 2026 10:09:07 GMT",
+    "last_success_at": "2026-09-30T10:33:33Z",
     "last_error": null,
     "last_result": {
       "changed": false,
@@ -126,13 +126,13 @@
     }
   },
   "watch:S14": {
-    "last_checked_at": "2026-09-28T11:00:47Z",
+    "last_checked_at": "2026-09-30T10:33:33Z",
     "fingerprint": "b988e20fd5f8d2bb624c24e3a5048211f74aa291328ca8a4fcd1a2a5e5e02a75",
     "text_chars": 12480,
     "final_url": "https://kpmg.com/cy/en/insights/2026/09/pulse-of-fintech.html",
-    "etag": "W/\"37ea6-65c87bd24a453-gzip\"",
-    "last_modified": "Mon, 28 Sep 2026 09:32:03 GMT",
-    "last_success_at": "2026-09-28T11:00:48Z",
+    "etag": "W/\"37ea6-65cb0d4e026d8-gzip\"",
+    "last_modified": "Wed, 30 Sep 2026 10:33:35 GMT",
+    "last_success_at": "2026-09-30T10:33:35Z",
     "last_error": null,
     "last_result": {
       "changed": false,
