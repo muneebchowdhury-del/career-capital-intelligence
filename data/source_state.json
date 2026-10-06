@@ -52,13 +52,13 @@
     }
   },
   "watch:S7": {
-    "last_checked_at": "2026-09-06T11:01:56Z",
+    "last_checked_at": "2026-10-06T11:20:45Z",
     "fingerprint": "52a845e2d0cbcf9d0c0640c4b32b61bdb1ddd8a6a0e27e73647a4f5a5e782ff4",
     "text_chars": 11714,
     "final_url": "https://www.sipri.org/media/press-release/2026/global-military-spending-rise-continues-european-and-asian-expenditures-surge",
-    "etag": "\"1788441278-gzip\"",
-    "last_modified": "Thu, 03 Sep 2026 13:14:38 GMT",
-    "last_success_at": "2026-09-06T11:01:57Z",
+    "etag": "\"1791281501-gzip\"",
+    "last_modified": "Tue, 06 Oct 2026 10:11:41 GMT",
+    "last_success_at": "2026-10-06T11:20:47Z",
     "last_error": null,
     "last_result": {
       "changed": false,
@@ -78,28 +78,28 @@
     }
   },
   "watch:S9": {
-    "last_checked_at": "2026-09-06T11:01:58Z",
-    "fingerprint": "caa919f76ffd3afdfdd4cb65ad38e4a2f038ea34e33948b6b5d0d4d2d08c6226",
-    "text_chars": 11159,
+    "last_checked_at": "2026-10-06T11:20:47Z",
+    "fingerprint": "ebf9f9465860a65e7f1de1b02d65750824e71f5491d8461196e07e1a153e6554",
+    "text_chars": 2271,
     "final_url": "https://ifr.org/worldrobotics/report-2025",
-    "last_modified": "Sun, 06 Sep 2026 11:01:58 GMT",
-    "last_success_at": "2026-09-06T11:01:58Z",
+    "last_modified": "Tue, 06 Oct 2026 11:20:47 GMT",
+    "last_success_at": "2026-10-06T11:20:47Z",
     "last_error": null,
     "last_result": {
-      "changed": false,
+      "changed": true,
       "not_modified": false
     }
   },
   "watch:S10": {
-    "last_checked_at": "2026-09-06T11:01:58Z",
-    "fingerprint": "2c3a4eef0c559cc853a153a247ebffd961e2113d0ca395eb447b27a044198b33",
-    "text_chars": 18531,
+    "last_checked_at": "2026-10-06T11:20:47Z",
+    "fingerprint": "4e2fad1594d5dfec72f71341e7c1fbf72ad9a2ff4df85df2eee8a8159a91869b",
+    "text_chars": 18546,
     "final_url": "https://ifr.org/ifr-press-releases/en/news/",
-    "last_modified": "Sun, 06 Sep 2026 11:01:59 GMT",
-    "last_success_at": "2026-09-06T11:02:00Z",
+    "last_modified": "Tue, 06 Oct 2026 11:20:48 GMT",
+    "last_success_at": "2026-10-06T11:20:48Z",
     "last_error": null,
     "last_result": {
-      "changed": false,
+      "changed": true,
       "not_modified": false
     }
   },
@@ -140,28 +140,29 @@
     }
   },
   "watch:S15": {
-    "last_checked_at": "2026-09-06T11:02:02Z",
-    "fingerprint": "4c67752c332abdb334a5612c04d61adb97133966469e6d3c68a65c8233733843",
-    "text_chars": 12526,
+    "last_checked_at": "2026-10-06T11:20:48Z",
+    "fingerprint": "1be9ad9b7acb12092c9b65ccdef04c1739682b6467f6807a94c00dbd2b221188",
+    "text_chars": 12553,
     "final_url": "https://www.ey.com/en_us/newsroom/2026/06/ey-2026-biotech-beyond-borders-report-a-fundamentally-strong-biotech-industry-seeks-balance-amid-continued-uncertainty",
-    "last_success_at": "2026-09-06T11:02:03Z",
+    "last_success_at": "2026-10-06T11:20:49Z",
     "last_error": null,
     "last_result": {
-      "changed": false,
+      "changed": true,
       "not_modified": false
     }
   },
   "watch:S16": {
-    "last_checked_at": "2026-09-06T11:02:03Z",
-    "fingerprint": "fc170c5adc6ec604e4a4f943c24f19ccbd60a7d18bddde8b887ceddd964c9982",
-    "text_chars": 6356,
-    "final_url": "https://www.svb.com/trends-insights/reports/healthcare-investments-and-exits/",
-    "last_success_at": "2026-09-06T11:02:03Z",
+    "last_checked_at": "2026-10-06T11:20:49Z",
+    "fingerprint": "de266915c115a6fcc6984b43b4045ff84b982483429f69a5907cc43ea3cbd28b",
+    "text_chars": 6244,
+    "final_url": "https://innovation.firstcitizens.com/trends-insights/reports/healthcare-investments-and-exits",
+    "last_success_at": "2026-10-06T11:20:49Z",
     "last_error": null,
     "last_result": {
-      "changed": false,
+      "changed": true,
       "not_modified": false
-    }
+    },
+    "last_modified": "Tue, 06 Oct 2026 05:48:30 GMT"
   },
   "watch:S17": {
     "last_checked_at": "2026-09-06T10:49:38Z",
@@ -206,11 +207,11 @@
     "last_error": "HTTPError: HTTP Error 403: Forbidden"
   },
   "watch:S23": {
-    "last_checked_at": "2026-09-06T11:02:06Z",
+    "last_checked_at": "2026-10-06T11:20:49Z",
     "fingerprint": "85bd230d2c901cf9fe6d03b821a22067c7657d6148f8f56a2ef19876fffaa254",
     "text_chars": 4041,
     "final_url": "https://www.semiconductors.org/global-semiconductor-sales-increase-11-month-to-month-in-april/",
-    "last_success_at": "2026-09-06T11:02:06Z",
+    "last_success_at": "2026-10-06T11:20:49Z",
     "last_error": null,
     "last_result": {
       "changed": false,
