@@ -94,5 +94,19 @@
     "created_at": "2026-10-06T11:20:49Z",
     "resolved_at": null,
     "resolution_note": null
+  },
+  {
+    "id": "rv_eb6bd4ba08bd1f42d4c70a61",
+    "source_id": "discover:D4-SIA-market",
+    "kind": "new_report",
+    "title": "Year-to-Date Global Semiconductor Sales Top $1 Trillion Through August",
+    "url": "https://www.semiconductors.org/year-to-date-global-semiconductor-sales-top-1-trillion-through-august/",
+    "status": "pending",
+    "details": {
+      "discovery_id": "disc_2f5431384ada2e0377d42433"
+    },
+    "created_at": "2026-10-09T11:22:57Z",
+    "resolved_at": null,
+    "resolution_note": null
   }
 ]
