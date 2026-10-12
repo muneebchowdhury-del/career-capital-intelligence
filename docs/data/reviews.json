@@ -108,5 +108,21 @@
     "created_at": "2026-10-09T11:22:57Z",
     "resolved_at": null,
     "resolution_note": null
+  },
+  {
+    "id": "rv_42afb60effc347eeefd9c72f",
+    "source_id": "watch:S21",
+    "kind": "report_changed",
+    "title": "SIPRI — World Military Expenditure 2024",
+    "url": "https://www.sipri.org/publications/2025/sipri-fact-sheets/trends-world-military-expenditure-2024",
+    "status": "pending",
+    "details": {
+      "old_fingerprint": "5004d3ec35ccafbe9a4dc311b89c6487c23e541dafab48a6aa1a0206f580b075",
+      "new_fingerprint": "43c5242efffcd3205b6c4636a4aa70d0e228ee853b81f863815e50aa932229a4",
+      "text_chars": 33899
+    },
+    "created_at": "2026-10-12T12:08:40Z",
+    "resolved_at": null,
+    "resolution_note": null
   }
 ]
