@@ -1,7 +1,7 @@
 {
   "observation_count": 1153,
   "current_observation_count": 1010,
-  "last_run_at": "2026-10-12T12:08:45Z",
+  "last_run_at": "2026-10-13T11:53:56Z",
   "last_run_status": "success",
   "last_collector": "LIVE-EUROSTAT-LCI",
   "labor_sector_count": 31,
