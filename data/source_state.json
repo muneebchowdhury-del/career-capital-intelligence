@@ -66,11 +66,11 @@
     }
   },
   "watch:S8": {
-    "last_checked_at": "2026-10-10T10:40:20Z",
-    "fingerprint": "ab25fed8d44f16d77d7f6c3a3a1c639754e6068dcbfc757cca492c75e36d315f",
-    "text_chars": 1841,
+    "last_checked_at": "2026-10-18T08:54:33Z",
+    "fingerprint": "cff45bc1e48eec4ef3a933629c296f9e56c3bae51f26879a68be355e4a69028b",
+    "text_chars": 2135,
     "final_url": "https://dealroom.co/reports/defence-security-and-resilience-in-europe-2026",
-    "last_success_at": "2026-10-10T10:40:22Z",
+    "last_success_at": "2026-10-18T08:54:34Z",
     "last_error": null,
     "last_result": {
       "changed": true,
@@ -112,13 +112,13 @@
     "last_error": "TimeoutError: The read operation timed out"
   },
   "watch:S13": {
-    "last_checked_at": "2026-10-16T09:05:17Z",
+    "last_checked_at": "2026-10-18T08:54:34Z",
     "fingerprint": "500790d119fbe442d38160fd66d8140ba308f8815ed1c485da36ca9dc32d40eb",
     "text_chars": 11746,
     "final_url": "https://kpmg.com/xx/en/media/press-releases/2026/07/vc-investment-already-at-five-year-high-of-billions.html",
-    "etag": "W/\"2faf3-65df1769f97ca-gzip\"",
-    "last_modified": "Fri, 16 Oct 2026 09:05:18 GMT",
-    "last_success_at": "2026-10-16T09:05:19Z",
+    "etag": "W/\"2faf3-65e1709c91e37-gzip\"",
+    "last_modified": "Sun, 18 Oct 2026 05:55:01 GMT",
+    "last_success_at": "2026-10-18T08:54:34Z",
     "last_error": null,
     "last_result": {
       "changed": false,
@@ -126,13 +126,13 @@
     }
   },
   "watch:S14": {
-    "last_checked_at": "2026-10-16T09:05:19Z",
+    "last_checked_at": "2026-10-18T08:54:34Z",
     "fingerprint": "b988e20fd5f8d2bb624c24e3a5048211f74aa291328ca8a4fcd1a2a5e5e02a75",
     "text_chars": 12480,
     "final_url": "https://kpmg.com/cy/en/insights/2026/09/pulse-of-fintech.html",
-    "etag": "W/\"380f5-65defc82db5a9-gzip\"",
-    "last_modified": "Fri, 16 Oct 2026 07:04:57 GMT",
-    "last_success_at": "2026-10-16T09:05:19Z",
+    "etag": "W/\"380f5-65e198c098ac8-gzip\"",
+    "last_modified": "Sun, 18 Oct 2026 08:54:36 GMT",
+    "last_success_at": "2026-10-18T08:54:37Z",
     "last_error": null,
     "last_result": {
       "changed": false,
@@ -169,11 +169,11 @@
     "last_error": "HTTPError: HTTP Error 403: Forbidden"
   },
   "watch:S18": {
-    "last_checked_at": "2026-10-10T10:40:24Z",
-    "fingerprint": "f69d01dab4a6e3ff58aaef70307c0c0287097c47602ec591b13b45e4825afda1",
-    "text_chars": 2178,
+    "last_checked_at": "2026-10-18T08:54:37Z",
+    "fingerprint": "da382c04398a20e2b935df2efba0c80e0e0cc67b727fd274264173dd402ccf14",
+    "text_chars": 2472,
     "final_url": "https://dealroom.co/reports/the-european-deep-tech-report-2026",
-    "last_success_at": "2026-10-10T10:40:25Z",
+    "last_success_at": "2026-10-18T08:54:37Z",
     "last_error": null,
     "last_result": {
       "changed": true,
