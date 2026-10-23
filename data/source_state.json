@@ -252,9 +252,9 @@
     "last_error": "HTTPError: HTTP Error 403: Forbidden"
   },
   "discover:D4-SIA-market": {
-    "last_checked_at": "2026-10-19T10:01:08Z",
+    "last_checked_at": "2026-10-23T09:24:31Z",
     "final_url": "https://www.semiconductors.org/news-events/latest-news/",
-    "last_success_at": "2026-10-19T10:01:08Z",
+    "last_success_at": "2026-10-23T09:24:31Z",
     "last_error": null,
     "last_result": {
       "found": 7,
