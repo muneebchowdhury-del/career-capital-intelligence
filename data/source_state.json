@@ -112,13 +112,13 @@
     "last_error": "TimeoutError: The read operation timed out"
   },
   "watch:S13": {
-    "last_checked_at": "2026-10-25T09:13:00Z",
+    "last_checked_at": "2026-10-26T10:15:13Z",
     "fingerprint": "500790d119fbe442d38160fd66d8140ba308f8815ed1c485da36ca9dc32d40eb",
     "text_chars": 11746,
     "final_url": "https://kpmg.com/xx/en/media/press-releases/2026/07/vc-investment-already-at-five-year-high-of-billions.html",
-    "etag": "W/\"2faf3-65ea69ec62fc0-gzip\"",
-    "last_modified": "Sun, 25 Oct 2026 09:13:01 GMT",
-    "last_success_at": "2026-10-25T09:13:01Z",
+    "etag": "W/\"2faf3-65ebb9b10b895-gzip\"",
+    "last_modified": "Mon, 26 Oct 2026 10:15:13 GMT",
+    "last_success_at": "2026-10-26T10:15:13Z",
     "last_error": null,
     "last_result": {
       "changed": false,
@@ -126,13 +126,13 @@
     }
   },
   "watch:S14": {
-    "last_checked_at": "2026-10-25T09:13:01Z",
+    "last_checked_at": "2026-10-26T10:15:13Z",
     "fingerprint": "b988e20fd5f8d2bb624c24e3a5048211f74aa291328ca8a4fcd1a2a5e5e02a75",
     "text_chars": 12480,
     "final_url": "https://kpmg.com/cy/en/insights/2026/09/pulse-of-fintech.html",
-    "etag": "\"380f5-65ea16247cece-gzip\"",
-    "last_modified": "Sun, 25 Oct 2026 02:58:11 GMT",
-    "last_success_at": "2026-10-25T09:13:02Z",
+    "etag": "W/\"380f5-65ebb9b31978e-gzip\"",
+    "last_modified": "Mon, 26 Oct 2026 10:15:15 GMT",
+    "last_success_at": "2026-10-26T10:15:15Z",
     "last_error": null,
     "last_result": {
       "changed": false,
@@ -252,9 +252,9 @@
     "last_error": "HTTPError: HTTP Error 403: Forbidden"
   },
   "discover:D4-SIA-market": {
-    "last_checked_at": "2026-10-23T09:24:31Z",
+    "last_checked_at": "2026-10-26T10:15:15Z",
     "final_url": "https://www.semiconductors.org/news-events/latest-news/",
-    "last_success_at": "2026-10-23T09:24:31Z",
+    "last_success_at": "2026-10-26T10:15:16Z",
     "last_error": null,
     "last_result": {
       "found": 7,
