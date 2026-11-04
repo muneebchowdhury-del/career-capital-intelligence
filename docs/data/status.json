@@ -1,29 +1,38 @@
 {
   "mode": "zero-cost static live",
-  "generated_at": "2026-11-03T12:01:47Z",
+  "generated_at": "2026-11-04T12:15:47Z",
   "evidence_updated_at": "2026-09-05",
   "version": "4.1",
   "source_count": 34,
   "automated_source_count": 21,
   "manual_review_source_count": 13,
   "snapshot_count": 1,
-  "pending_review": 8,
-  "new_discovered_items": 1,
+  "pending_review": 9,
+  "new_discovered_items": 2,
   "last_run": {
-    "completed_at": "2026-11-03T12:01:46Z",
-    "errors": [],
-    "run_id": "run_ba3811fdcb02ab8e5c5382be",
-    "started_at": "2026-11-03T12:01:38Z",
-    "status": "success",
+    "completed_at": "2026-11-04T12:15:47Z",
+    "errors": [
+      {
+        "error": "HTTPError: HTTP Error 403: Forbidden",
+        "source_id": "watch:S8"
+      },
+      {
+        "error": "HTTPError: HTTP Error 403: Forbidden",
+        "source_id": "watch:S18"
+      }
+    ],
+    "run_id": "run_3c95a9a85bb7d51b7881b814",
+    "started_at": "2026-11-04T12:15:41Z",
+    "status": "partial",
     "summary": {
       "changed_pages": 0,
-      "checked": 10,
-      "failed": 0,
+      "checked": 5,
+      "failed": 2,
       "manual_skipped": 13,
-      "new_discoveries": 0,
+      "new_discoveries": 1,
       "new_observations": 0,
-      "skipped": 11,
-      "success": 10
+      "skipped": 16,
+      "success": 3
     }
   },
   "failed_sources": [
