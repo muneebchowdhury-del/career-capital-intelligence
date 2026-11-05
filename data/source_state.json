@@ -52,13 +52,13 @@
     }
   },
   "watch:S7": {
-    "last_checked_at": "2026-10-06T11:20:45Z",
+    "last_checked_at": "2026-11-05T12:29:27Z",
     "fingerprint": "52a845e2d0cbcf9d0c0640c4b32b61bdb1ddd8a6a0e27e73647a4f5a5e782ff4",
     "text_chars": 11714,
     "final_url": "https://www.sipri.org/media/press-release/2026/global-military-spending-rise-continues-european-and-asian-expenditures-surge",
-    "etag": "\"1791281501-gzip\"",
-    "last_modified": "Tue, 06 Oct 2026 10:11:41 GMT",
-    "last_success_at": "2026-10-06T11:20:47Z",
+    "etag": "\"1793873792-gzip\"",
+    "last_modified": "Thu, 05 Nov 2026 10:16:32 GMT",
+    "last_success_at": "2026-11-05T12:29:28Z",
     "last_error": null,
     "last_result": {
       "changed": false,
@@ -66,7 +66,7 @@
     }
   },
   "watch:S8": {
-    "last_checked_at": "2026-11-04T12:15:41Z",
+    "last_checked_at": "2026-11-05T12:29:28Z",
     "fingerprint": "cff45bc1e48eec4ef3a933629c296f9e56c3bae51f26879a68be355e4a69028b",
     "text_chars": 2135,
     "final_url": "https://dealroom.co/reports/defence-security-and-resilience-in-europe-2026",
@@ -78,12 +78,12 @@
     }
   },
   "watch:S9": {
-    "last_checked_at": "2026-10-06T11:20:47Z",
-    "fingerprint": "ebf9f9465860a65e7f1de1b02d65750824e71f5491d8461196e07e1a153e6554",
-    "text_chars": 2271,
+    "last_checked_at": "2026-11-05T12:29:29Z",
+    "fingerprint": "184a07755eb13bad45213a17492d2a82ede519d398021158d2816cac10dd354c",
+    "text_chars": 2753,
     "final_url": "https://ifr.org/worldrobotics/report-2025",
-    "last_modified": "Tue, 06 Oct 2026 11:20:47 GMT",
-    "last_success_at": "2026-10-06T11:20:47Z",
+    "last_modified": "Thu, 05 Nov 2026 12:29:30 GMT",
+    "last_success_at": "2026-11-05T12:29:30Z",
     "last_error": null,
     "last_result": {
       "changed": true,
@@ -91,15 +91,15 @@
     }
   },
   "watch:S10": {
-    "last_checked_at": "2026-10-06T11:20:47Z",
+    "last_checked_at": "2026-11-05T12:29:30Z",
     "fingerprint": "4e2fad1594d5dfec72f71341e7c1fbf72ad9a2ff4df85df2eee8a8159a91869b",
     "text_chars": 18546,
     "final_url": "https://ifr.org/ifr-press-releases/en/news/",
-    "last_modified": "Tue, 06 Oct 2026 11:20:48 GMT",
-    "last_success_at": "2026-10-06T11:20:48Z",
+    "last_modified": "Thu, 05 Nov 2026 12:29:31 GMT",
+    "last_success_at": "2026-11-05T12:29:31Z",
     "last_error": null,
     "last_result": {
-      "changed": true,
+      "changed": false,
       "not_modified": false
     }
   },
@@ -112,13 +112,13 @@
     "last_error": "TimeoutError: The read operation timed out"
   },
   "watch:S13": {
-    "last_checked_at": "2026-11-04T12:15:42Z",
+    "last_checked_at": "2026-11-05T12:29:31Z",
     "fingerprint": "500790d119fbe442d38160fd66d8140ba308f8815ed1c485da36ca9dc32d40eb",
     "text_chars": 11746,
     "final_url": "https://kpmg.com/xx/en/media/press-releases/2026/07/vc-investment-already-at-five-year-high-of-billions.html",
-    "etag": "W/\"2fd27-65f7231459ce1-gzip\"",
-    "last_modified": "Wed, 04 Nov 2026 12:05:17 GMT",
-    "last_success_at": "2026-11-04T12:15:43Z",
+    "etag": "W/\"2fd27-65f86a5d66c7e-gzip\"",
+    "last_modified": "Thu, 05 Nov 2026 12:29:32 GMT",
+    "last_success_at": "2026-11-05T12:29:32Z",
     "last_error": null,
     "last_result": {
       "changed": false,
@@ -126,13 +126,13 @@
     }
   },
   "watch:S14": {
-    "last_checked_at": "2026-11-04T12:15:43Z",
+    "last_checked_at": "2026-11-05T12:29:32Z",
     "fingerprint": "b988e20fd5f8d2bb624c24e3a5048211f74aa291328ca8a4fcd1a2a5e5e02a75",
     "text_chars": 12480,
     "final_url": "https://kpmg.com/cy/en/insights/2026/09/pulse-of-fintech.html",
-    "etag": "W/\"3822b-65f7256af488d-gzip\"",
-    "last_modified": "Wed, 04 Nov 2026 12:15:45 GMT",
-    "last_success_at": "2026-11-04T12:15:45Z",
+    "etag": "W/\"3822b-65f86a5f44a6a-gzip\"",
+    "last_modified": "Thu, 05 Nov 2026 12:29:34 GMT",
+    "last_success_at": "2026-11-05T12:29:34Z",
     "last_error": null,
     "last_result": {
       "changed": false,
@@ -140,11 +140,11 @@
     }
   },
   "watch:S15": {
-    "last_checked_at": "2026-10-06T11:20:48Z",
-    "fingerprint": "1be9ad9b7acb12092c9b65ccdef04c1739682b6467f6807a94c00dbd2b221188",
-    "text_chars": 12553,
+    "last_checked_at": "2026-11-05T12:29:34Z",
+    "fingerprint": "c22ce65ccfb6846c99f6a080d71212c23ea08f3a0a24733561d40cbbec578b33",
+    "text_chars": 12523,
     "final_url": "https://www.ey.com/en_us/newsroom/2026/06/ey-2026-biotech-beyond-borders-report-a-fundamentally-strong-biotech-industry-seeks-balance-amid-continued-uncertainty",
-    "last_success_at": "2026-10-06T11:20:49Z",
+    "last_success_at": "2026-11-05T12:29:36Z",
     "last_error": null,
     "last_result": {
       "changed": true,
@@ -152,24 +152,24 @@
     }
   },
   "watch:S16": {
-    "last_checked_at": "2026-10-06T11:20:49Z",
-    "fingerprint": "de266915c115a6fcc6984b43b4045ff84b982483429f69a5907cc43ea3cbd28b",
-    "text_chars": 6244,
+    "last_checked_at": "2026-11-05T12:29:36Z",
+    "fingerprint": "9e804d96cdf05d20bdd20a28d071ebce1aaac6d2522e079d5b77c00764e7c1bc",
+    "text_chars": 6216,
     "final_url": "https://innovation.firstcitizens.com/trends-insights/reports/healthcare-investments-and-exits",
-    "last_success_at": "2026-10-06T11:20:49Z",
+    "last_success_at": "2026-11-05T12:29:37Z",
     "last_error": null,
     "last_result": {
       "changed": true,
       "not_modified": false
     },
-    "last_modified": "Tue, 06 Oct 2026 05:48:30 GMT"
+    "last_modified": "Thu, 05 Nov 2026 09:32:24 GMT"
   },
   "watch:S17": {
     "last_checked_at": "2026-09-06T10:49:38Z",
     "last_error": "HTTPError: HTTP Error 403: Forbidden"
   },
   "watch:S18": {
-    "last_checked_at": "2026-11-04T12:15:45Z",
+    "last_checked_at": "2026-11-05T12:29:37Z",
     "fingerprint": "da382c04398a20e2b935df2efba0c80e0e0cc67b727fd274264173dd402ccf14",
     "text_chars": 2472,
     "final_url": "https://dealroom.co/reports/the-european-deep-tech-report-2026",
@@ -207,11 +207,11 @@
     "last_error": "HTTPError: HTTP Error 403: Forbidden"
   },
   "watch:S23": {
-    "last_checked_at": "2026-10-06T11:20:49Z",
+    "last_checked_at": "2026-11-05T12:29:38Z",
     "fingerprint": "85bd230d2c901cf9fe6d03b821a22067c7657d6148f8f56a2ef19876fffaa254",
     "text_chars": 4041,
     "final_url": "https://www.semiconductors.org/global-semiconductor-sales-increase-11-month-to-month-in-april/",
-    "last_success_at": "2026-10-06T11:20:49Z",
+    "last_success_at": "2026-11-05T12:29:38Z",
     "last_error": null,
     "last_result": {
       "changed": false,
