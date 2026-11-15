@@ -1,6 +1,6 @@
 {
   "mode": "zero-cost static live",
-  "generated_at": "2026-11-14T11:35:42Z",
+  "generated_at": "2026-11-15T12:01:29Z",
   "evidence_updated_at": "2026-09-05",
   "version": "4.1",
   "source_count": 34,
@@ -10,23 +10,41 @@
   "pending_review": 9,
   "new_discovered_items": 2,
   "last_run": {
-    "completed_at": "2026-11-14T11:35:41Z",
-    "errors": [],
-    "run_id": "run_30dd94a7a22a99d1c007cd4e",
-    "started_at": "2026-11-14T11:35:40Z",
-    "status": "success",
+    "completed_at": "2026-11-15T12:01:28Z",
+    "errors": [
+      {
+        "error": "HTTPError: HTTP Error 403: Forbidden",
+        "source_id": "watch:S8"
+      },
+      {
+        "error": "HTTPError: HTTP Error 403: Forbidden",
+        "source_id": "watch:S18"
+      }
+    ],
+    "run_id": "run_df49d14886c0b258f5edb540",
+    "started_at": "2026-11-15T12:01:22Z",
+    "status": "partial",
     "summary": {
       "changed_pages": 0,
-      "checked": 2,
-      "failed": 0,
+      "checked": 5,
+      "failed": 2,
       "manual_skipped": 13,
       "new_discoveries": 0,
       "new_observations": 0,
-      "skipped": 19,
-      "success": 2
+      "skipped": 16,
+      "success": 3
     }
   },
-  "failed_sources": [],
+  "failed_sources": [
+    {
+      "source_id": "watch:S8",
+      "error": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "source_id": "watch:S18",
+      "error": "HTTPError: HTTP Error 403: Forbidden"
+    }
+  ],
   "manual_review_sources": [
     {
       "source_id": "watch:S1",
