@@ -1,9 +1,9 @@
 {
-  "observation_count": 1153,
-  "current_observation_count": 1010,
-  "last_run_at": "2026-11-16T12:53:22Z",
+  "observation_count": 1173,
+  "current_observation_count": 1024,
+  "last_run_at": "2026-11-17T13:36:20Z",
   "last_run_status": "success",
-  "last_collector": "LIVE-EUROSTAT-LCI",
+  "last_collector": "LIVE-EUROSTAT-OJA-ICT-MIX",
   "labor_sector_count": 31,
   "labor_cost_sector_count": 26,
   "ict_occupation_mix_count": 7,

@@ -1,6 +1,6 @@
 {
   "mode": "zero-cost static live",
-  "generated_at": "2026-11-16T12:53:22Z",
+  "generated_at": "2026-11-17T13:36:21Z",
   "evidence_updated_at": "2026-09-05",
   "version": "4.1",
   "source_count": 34,
@@ -10,20 +10,20 @@
   "pending_review": 9,
   "new_discovered_items": 2,
   "last_run": {
-    "completed_at": "2026-11-16T12:53:22Z",
+    "completed_at": "2026-11-17T13:36:20Z",
     "errors": [],
-    "run_id": "run_b4a80139f2e62f9e89b07249",
-    "started_at": "2026-11-16T12:53:17Z",
+    "run_id": "run_36279fd261c8a9a823477d5f",
+    "started_at": "2026-11-17T13:36:06Z",
     "status": "success",
     "summary": {
       "changed_pages": 0,
-      "checked": 4,
+      "checked": 12,
       "failed": 0,
       "manual_skipped": 13,
       "new_discoveries": 0,
-      "new_observations": 0,
-      "skipped": 17,
-      "success": 4
+      "new_observations": 20,
+      "skipped": 9,
+      "success": 12
     }
   },
   "failed_sources": [],
