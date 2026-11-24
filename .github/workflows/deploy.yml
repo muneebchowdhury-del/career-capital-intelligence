@@ -12,7 +12,7 @@ concurrency:
   cancel-in-progress: true
 jobs:
   deploy:
-    runs-on: ubuntu-24.04  # Playwright 1.55 does not support ubuntu-latest (26.04) yet
+    runs-on: ubuntu-latest
     timeout-minutes: 15
     environment:
       name: github-pages
@@ -33,7 +33,7 @@ jobs:
           node --check docs/bootstrap.js
       - name: Install browser smoke-test runtime
         run: |
-          npm install --no-save playwright@1.55.0
+          npm install --no-save playwright@1.65.1
           npx playwright install --with-deps chromium
       - name: Browser-test built dashboard
         shell: bash
