@@ -12,7 +12,7 @@ concurrency:
   cancel-in-progress: true
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04  # Playwright 1.55 does not support ubuntu-latest (26.04) yet
     timeout-minutes: 15
     environment:
       name: github-pages
